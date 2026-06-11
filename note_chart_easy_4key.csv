@@ -1,0 +1,164 @@
+﻿time_ms,time_sec,lane,lanes,type,duration_ms,section,pattern,intent
+1200,1.200,D,D,tap,0,calm intro,easy_calm_A,Very sparse D to J call for first-read timing. easy downbeat anchor
+2400,2.400,J,J,tap,0,calm intro,easy_calm_A,Very sparse D to J call for first-read timing. wide response with rest
+3600,3.600,F,F,tap,0,calm intro,easy_calm_B,Wide-gap inner-lane notes with one simple hold. soft inner-lane anchor
+4800,4.800,K,K,hold,600,calm intro,easy_calm_B,Wide-gap inner-lane notes with one simple hold. short right hold check
+6000,6.000,D,D,tap,0,calm intro,easy_calm_A,Very sparse D to J call for first-read timing. easy downbeat anchor
+7200,7.200,J,J,tap,0,calm intro,easy_calm_A,Very sparse D to J call for first-read timing. wide response with rest
+8400,8.400,F,F,tap,0,calm intro,easy_calm_B,Wide-gap inner-lane notes with one simple hold. soft inner-lane anchor
+9600,9.600,K,K,hold,600,calm intro,easy_calm_B,Wide-gap inner-lane notes with one simple hold. short right hold check
+10800,10.800,D,D,tap,0,calm intro,easy_calm_A,Very sparse D to J call for first-read timing. easy downbeat anchor
+12000,12.000,J,J,tap,0,calm intro,easy_calm_A,Very sparse D to J call for first-read timing. wide response with rest
+13200,13.200,F,F,tap,0,calm intro,easy_calm_B,Wide-gap inner-lane notes with one simple hold. soft inner-lane anchor
+14400,14.400,K,K,hold,600,calm intro,easy_calm_B,Wide-gap inner-lane notes with one simple hold. short right hold check
+15600,15.600,D,D,tap,0,calm intro,easy_calm_A,Very sparse D to J call for first-read timing. easy downbeat anchor
+16800,16.800,D,D,tap,0,easy verse,easy_verse_A,Plain D F J K quarter-note loop. DFJK quarter loop
+17400,17.400,F,F,tap,0,easy verse,easy_verse_A,Plain D F J K quarter-note loop. DFJK quarter loop
+18000,18.000,J,J,tap,0,easy verse,easy_verse_A,Plain D F J K quarter-note loop. DFJK quarter loop
+18600,18.600,K,K,tap,0,easy verse,easy_verse_A,Plain D F J K quarter-note loop. DFJK quarter loop
+19200,19.200,K,K,tap,0,easy verse,easy_verse_B,Plain K J F D quarter-note reverse loop. KJFD reverse quarter loop
+19800,19.800,J,J,tap,0,easy verse,easy_verse_B,Plain K J F D quarter-note reverse loop. KJFD reverse quarter loop
+20400,20.400,F,F,tap,0,easy verse,easy_verse_B,Plain K J F D quarter-note reverse loop. KJFD reverse quarter loop
+21000,21.000,D,D,tap,0,easy verse,easy_verse_B,Plain K J F D quarter-note reverse loop. KJFD reverse quarter loop
+21600,21.600,D,D,hold,600,easy verse,easy_verse_hold,Short hold with two spacious follow-up taps. left hold check
+22800,22.800,J,J,tap,0,easy verse,easy_verse_hold,Short hold with two spacious follow-up taps. wide-gap answer
+23400,23.400,K,K,tap,0,easy verse,easy_verse_hold,Short hold with two spacious follow-up taps. pickup
+24000,24.000,D,D,tap,0,easy verse,easy_verse_A,Plain D F J K quarter-note loop. DFJK quarter loop
+24600,24.600,F,F,tap,0,easy verse,easy_verse_A,Plain D F J K quarter-note loop. DFJK quarter loop
+25200,25.200,J,J,tap,0,easy verse,easy_verse_A,Plain D F J K quarter-note loop. DFJK quarter loop
+25800,25.800,K,K,tap,0,easy verse,easy_verse_A,Plain D F J K quarter-note loop. DFJK quarter loop
+26400,26.400,D,D,tap,0,easy verse,easy_verse_A,Plain D F J K quarter-note loop. DFJK quarter loop
+27000,27.000,F,F,tap,0,easy verse,easy_verse_A,Plain D F J K quarter-note loop. DFJK quarter loop
+27600,27.600,J,J,tap,0,easy verse,easy_verse_A,Plain D F J K quarter-note loop. DFJK quarter loop
+28200,28.200,K,K,tap,0,easy verse,easy_verse_A,Plain D F J K quarter-note loop. DFJK quarter loop
+28800,28.800,K,K,tap,0,easy verse,easy_verse_B,Plain K J F D quarter-note reverse loop. KJFD reverse quarter loop
+29400,29.400,J,J,tap,0,easy verse,easy_verse_B,Plain K J F D quarter-note reverse loop. KJFD reverse quarter loop
+30000,30.000,F,F,tap,0,easy verse,easy_verse_B,Plain K J F D quarter-note reverse loop. KJFD reverse quarter loop
+30600,30.600,D,D,tap,0,easy verse,easy_verse_B,Plain K J F D quarter-note reverse loop. KJFD reverse quarter loop
+31200,31.200,D,D,tap,0,build up,easy_build_A,Light build-up with one 8th-note pair and readable right answer. light build start
+31500,31.500,F,F,tap,0,build up,easy_build_A,Light build-up with one 8th-note pair and readable right answer. small 8th-note lift
+32400,32.400,J,J,tap,0,build up,easy_build_A,Light build-up with one 8th-note pair and readable right answer. right answer
+33000,33.000,K,K,tap,0,build up,easy_build_A,Light build-up with one 8th-note pair and readable right answer. right pickup
+33600,33.600,K,K,tap,0,build up,easy_build_B,Reverse light build-up with one 8th-note pair. reverse build start
+33900,33.900,J,J,tap,0,build up,easy_build_B,Reverse light build-up with one 8th-note pair. small 8th-note lift
+34800,34.800,F,F,tap,0,build up,easy_build_B,Reverse light build-up with one 8th-note pair. left answer
+35400,35.400,D,D,tap,0,build up,easy_build_B,Reverse light build-up with one 8th-note pair. left pickup
+36000,36.000,D,D,tap,0,build up,easy_build_chord,First easy 2-key accent after single-note setup. single setup
+36600,36.600,F,F,tap,0,build up,easy_build_chord,First easy 2-key accent after single-note setup. single setup
+37200,37.200,J,J,tap,0,build up,easy_build_chord,First easy 2-key accent after single-note setup. single answer
+37800,37.800,D+J,D+J,chord,0,build up,easy_build_chord,First easy 2-key accent after single-note setup. easy D+J chord accent
+38400,38.400,D,D,tap,0,build up,easy_build_A,Light build-up with one 8th-note pair and readable right answer. light build start
+38700,38.700,F,F,tap,0,build up,easy_build_A,Light build-up with one 8th-note pair and readable right answer. small 8th-note lift
+39600,39.600,J,J,tap,0,build up,easy_build_A,Light build-up with one 8th-note pair and readable right answer. right answer
+40200,40.200,K,K,tap,0,build up,easy_build_A,Light build-up with one 8th-note pair and readable right answer. right pickup
+40800,40.800,K,K,tap,0,build up,easy_build_B,Reverse light build-up with one 8th-note pair. reverse build start
+41100,41.100,J,J,tap,0,build up,easy_build_B,Reverse light build-up with one 8th-note pair. small 8th-note lift
+42000,42.000,F,F,tap,0,build up,easy_build_B,Reverse light build-up with one 8th-note pair. left answer
+42600,42.600,D,D,tap,0,build up,easy_build_B,Reverse light build-up with one 8th-note pair. left pickup
+43200,43.200,D,D,tap,0,build up,easy_build_A,Light build-up with one 8th-note pair and readable right answer. light build start
+43500,43.500,F,F,tap,0,build up,easy_build_A,Light build-up with one 8th-note pair and readable right answer. small 8th-note lift
+44400,44.400,J,J,tap,0,build up,easy_build_A,Light build-up with one 8th-note pair and readable right answer. right answer
+45000,45.000,K,K,tap,0,build up,easy_build_A,Light build-up with one 8th-note pair and readable right answer. right pickup
+45600,45.600,K,K,tap,0,build up,easy_build_B,Reverse light build-up with one 8th-note pair. reverse build start
+45900,45.900,J,J,tap,0,build up,easy_build_B,Reverse light build-up with one 8th-note pair. small 8th-note lift
+46800,46.800,F,F,tap,0,build up,easy_build_B,Reverse light build-up with one 8th-note pair. left answer
+47400,47.400,D,D,tap,0,build up,easy_build_B,Reverse light build-up with one 8th-note pair. left pickup
+48000,48.000,D,D,tap,0,build up,easy_build_chord,First easy 2-key accent after single-note setup. single setup
+48600,48.600,F,F,tap,0,build up,easy_build_chord,First easy 2-key accent after single-note setup. single setup
+49200,49.200,J,J,tap,0,build up,easy_build_chord,First easy 2-key accent after single-note setup. single answer
+49800,49.800,D+J,D+J,chord,0,build up,easy_build_chord,First easy 2-key accent after single-note setup. easy D+J chord accent
+50400,50.400,D,D,tap,0,build up,easy_build_A,Light build-up with one 8th-note pair and readable right answer. light build start
+50700,50.700,F,F,tap,0,build up,easy_build_A,Light build-up with one 8th-note pair and readable right answer. small 8th-note lift
+51600,51.600,J,J,tap,0,build up,easy_build_A,Light build-up with one 8th-note pair and readable right answer. right answer
+52200,52.200,K,K,tap,0,build up,easy_build_A,Light build-up with one 8th-note pair and readable right answer. right pickup
+52800,52.800,K,K,tap,0,build up,easy_build_B,Reverse light build-up with one 8th-note pair. reverse build start
+53100,53.100,J,J,tap,0,build up,easy_build_B,Reverse light build-up with one 8th-note pair. small 8th-note lift
+54000,54.000,F,F,tap,0,build up,easy_build_B,Reverse light build-up with one 8th-note pair. left answer
+54600,54.600,D,D,tap,0,build up,easy_build_B,Reverse light build-up with one 8th-note pair. left pickup
+55200,55.200,D,D,tap,0,highlight,easy_high_A,Easy highlight density using DFJK plus one readable chord. highlight quarter loop
+55500,55.500,F,F,tap,0,highlight,easy_high_A,Easy highlight density using DFJK plus one readable chord. short lift
+56100,56.100,J,J,tap,0,highlight,easy_high_A,Easy highlight density using DFJK plus one readable chord. right answer
+56700,56.700,K,K,tap,0,highlight,easy_high_A,Easy highlight density using DFJK plus one readable chord. right cadence
+57000,57.000,D+J,D+J,chord,0,highlight,easy_high_A,Easy highlight density using DFJK plus one readable chord. D+J accent
+57600,57.600,K,K,tap,0,highlight,easy_high_B,Easy highlight reverse density with F+K accent. highlight reverse loop
+57900,57.900,J,J,tap,0,highlight,easy_high_B,Easy highlight reverse density with F+K accent. short lift
+58500,58.500,F,F,tap,0,highlight,easy_high_B,Easy highlight reverse density with F+K accent. left answer
+59100,59.100,D,D,tap,0,highlight,easy_high_B,Easy highlight reverse density with F+K accent. left cadence
+59400,59.400,F+K,F+K,chord,0,highlight,easy_high_B,Easy highlight reverse density with F+K accent. F+K accent
+60000,60.000,D,D,hold,600,highlight,easy_high_hold,Highlight hold phrase without extra chord pressure. short left hold
+60900,60.900,F,F,tap,0,highlight,easy_high_hold,Highlight hold phrase without extra chord pressure. inner tap
+61500,61.500,K,K,hold,600,highlight,easy_high_hold,Highlight hold phrase without extra chord pressure. short right hold
+62400,62.400,D,D,tap,0,highlight,easy_high_A,Easy highlight density using DFJK plus one readable chord. highlight quarter loop
+62700,62.700,F,F,tap,0,highlight,easy_high_A,Easy highlight density using DFJK plus one readable chord. short lift
+63300,63.300,J,J,tap,0,highlight,easy_high_A,Easy highlight density using DFJK plus one readable chord. right answer
+63900,63.900,K,K,tap,0,highlight,easy_high_A,Easy highlight density using DFJK plus one readable chord. right cadence
+64200,64.200,D+J,D+J,chord,0,highlight,easy_high_A,Easy highlight density using DFJK plus one readable chord. D+J accent
+64800,64.800,K,K,tap,0,highlight,easy_high_B,Easy highlight reverse density with F+K accent. highlight reverse loop
+65100,65.100,J,J,tap,0,highlight,easy_high_B,Easy highlight reverse density with F+K accent. short lift
+65700,65.700,F,F,tap,0,highlight,easy_high_B,Easy highlight reverse density with F+K accent. left answer
+66300,66.300,D,D,tap,0,highlight,easy_high_B,Easy highlight reverse density with F+K accent. left cadence
+66600,66.600,F+K,F+K,chord,0,highlight,easy_high_B,Easy highlight reverse density with F+K accent. F+K accent
+67200,67.200,D,D,tap,0,highlight,easy_high_A,Easy highlight density using DFJK plus one readable chord. highlight quarter loop
+67500,67.500,F,F,tap,0,highlight,easy_high_A,Easy highlight density using DFJK plus one readable chord. short lift
+68100,68.100,J,J,tap,0,highlight,easy_high_A,Easy highlight density using DFJK plus one readable chord. right answer
+68700,68.700,K,K,tap,0,highlight,easy_high_A,Easy highlight density using DFJK plus one readable chord. right cadence
+69000,69.000,D+J,D+J,chord,0,highlight,easy_high_A,Easy highlight density using DFJK plus one readable chord. D+J accent
+69600,69.600,K,K,tap,0,highlight,easy_high_B,Easy highlight reverse density with F+K accent. highlight reverse loop
+69900,69.900,J,J,tap,0,highlight,easy_high_B,Easy highlight reverse density with F+K accent. short lift
+70500,70.500,F,F,tap,0,highlight,easy_high_B,Easy highlight reverse density with F+K accent. left answer
+71100,71.100,D,D,tap,0,highlight,easy_high_B,Easy highlight reverse density with F+K accent. left cadence
+71400,71.400,F+K,F+K,chord,0,highlight,easy_high_B,Easy highlight reverse density with F+K accent. F+K accent
+72000,72.000,D,D,hold,600,highlight,easy_high_hold,Highlight hold phrase without extra chord pressure. short left hold
+72900,72.900,F,F,tap,0,highlight,easy_high_hold,Highlight hold phrase without extra chord pressure. inner tap
+73500,73.500,K,K,hold,600,highlight,easy_high_hold,Highlight hold phrase without extra chord pressure. short right hold
+74400,74.400,D,D,tap,0,highlight,easy_high_A,Easy highlight density using DFJK plus one readable chord. highlight quarter loop
+74700,74.700,F,F,tap,0,highlight,easy_high_A,Easy highlight density using DFJK plus one readable chord. short lift
+75300,75.300,J,J,tap,0,highlight,easy_high_A,Easy highlight density using DFJK plus one readable chord. right answer
+75900,75.900,K,K,tap,0,highlight,easy_high_A,Easy highlight density using DFJK plus one readable chord. right cadence
+76200,76.200,D+J,D+J,chord,0,highlight,easy_high_A,Easy highlight density using DFJK plus one readable chord. D+J accent
+76800,76.800,K,K,tap,0,highlight,easy_high_B,Easy highlight reverse density with F+K accent. highlight reverse loop
+77100,77.100,J,J,tap,0,highlight,easy_high_B,Easy highlight reverse density with F+K accent. short lift
+77700,77.700,F,F,tap,0,highlight,easy_high_B,Easy highlight reverse density with F+K accent. left answer
+78300,78.300,D,D,tap,0,highlight,easy_high_B,Easy highlight reverse density with F+K accent. left cadence
+78600,78.600,F+K,F+K,chord,0,highlight,easy_high_B,Easy highlight reverse density with F+K accent. F+K accent
+79200,79.200,D,D,tap,0,steady drive,easy_drive_A,Post-highlight recovery using familiar DFJK fragments. recovery anchor
+79800,79.800,F,F,tap,0,steady drive,easy_drive_A,Post-highlight recovery using familiar DFJK fragments. inner response
+80700,80.700,J,J,tap,0,steady drive,easy_drive_A,Post-highlight recovery using familiar DFJK fragments. wide-gap right answer
+81600,81.600,K,K,tap,0,steady drive,easy_drive_B,Post-highlight reverse recovery. reverse recovery anchor
+82200,82.200,J,J,tap,0,steady drive,easy_drive_B,Post-highlight reverse recovery. inner response
+83100,83.100,F,F,tap,0,steady drive,easy_drive_B,Post-highlight reverse recovery. wide-gap left answer
+84000,84.000,D,D,hold,600,steady drive,easy_drive_hold,Simple hold recovery phrase. hold recovery
+85200,85.200,K,K,tap,0,steady drive,easy_drive_hold,Simple hold recovery phrase. far response
+86400,86.400,D,D,tap,0,steady drive,easy_drive_A,Post-highlight recovery using familiar DFJK fragments. recovery anchor
+87000,87.000,F,F,tap,0,steady drive,easy_drive_A,Post-highlight recovery using familiar DFJK fragments. inner response
+87900,87.900,J,J,tap,0,steady drive,easy_drive_A,Post-highlight recovery using familiar DFJK fragments. wide-gap right answer
+88800,88.800,D,D,tap,0,steady drive,easy_drive_A,Post-highlight recovery using familiar DFJK fragments. recovery anchor
+89400,89.400,F,F,tap,0,steady drive,easy_drive_A,Post-highlight recovery using familiar DFJK fragments. inner response
+90300,90.300,J,J,tap,0,steady drive,easy_drive_A,Post-highlight recovery using familiar DFJK fragments. wide-gap right answer
+91200,91.200,K,K,tap,0,steady drive,easy_drive_B,Post-highlight reverse recovery. reverse recovery anchor
+91800,91.800,J,J,tap,0,steady drive,easy_drive_B,Post-highlight reverse recovery. inner response
+92700,92.700,F,F,tap,0,steady drive,easy_drive_B,Post-highlight reverse recovery. wide-gap left answer
+93600,93.600,D,D,hold,600,steady drive,easy_drive_hold,Simple hold recovery phrase. hold recovery
+94800,94.800,K,K,tap,0,steady drive,easy_drive_hold,Simple hold recovery phrase. far response
+96000,96.000,D,D,tap,0,steady drive,easy_drive_A,Post-highlight recovery using familiar DFJK fragments. recovery anchor
+96600,96.600,F,F,tap,0,steady drive,easy_drive_A,Post-highlight recovery using familiar DFJK fragments. inner response
+97500,97.500,J,J,tap,0,steady drive,easy_drive_A,Post-highlight recovery using familiar DFJK fragments. wide-gap right answer
+98400,98.400,D,D,tap,0,steady drive,easy_drive_A,Post-highlight recovery using familiar DFJK fragments. recovery anchor
+99000,99.000,F,F,tap,0,steady drive,easy_drive_A,Post-highlight recovery using familiar DFJK fragments. inner response
+99900,99.900,J,J,tap,0,steady drive,easy_drive_A,Post-highlight recovery using familiar DFJK fragments. wide-gap right answer
+100800,100.800,K,K,tap,0,steady drive,easy_drive_B,Post-highlight reverse recovery. reverse recovery anchor
+101400,101.400,J,J,tap,0,steady drive,easy_drive_B,Post-highlight reverse recovery. inner response
+102300,102.300,F,F,tap,0,steady drive,easy_drive_B,Post-highlight reverse recovery. wide-gap left answer
+103200,103.200,D,D,hold,600,release,easy_release_A,Cooldown with large spacing. cooldown hold
+104700,104.700,J,J,tap,0,release,easy_release_A,Cooldown with large spacing. wide-gap answer
+105600,105.600,K,K,hold,600,release,easy_release_B,Reverse cooldown with large spacing. cooldown hold
+107100,107.100,F,F,tap,0,release,easy_release_B,Reverse cooldown with large spacing. wide-gap answer
+108000,108.000,D,D,hold,600,release,easy_release_A,Cooldown with large spacing. cooldown hold
+109500,109.500,J,J,tap,0,release,easy_release_A,Cooldown with large spacing. wide-gap answer
+110400,110.400,K,K,hold,600,release,easy_release_B,Reverse cooldown with large spacing. cooldown hold
+111900,111.900,F,F,tap,0,release,easy_release_B,Reverse cooldown with large spacing. wide-gap answer
+112800,112.800,D,D,tap,0,outro,easy_outro_A,Two-note final cadence. ending anchor
+114000,114.000,J,J,tap,0,outro,easy_outro_A,Two-note final cadence. ending answer
+115200,115.200,F,F,hold,600,outro,easy_outro_B,Final hold and pickup. final short hold
+116400,116.400,K,K,tap,0,outro,easy_outro_B,Final hold and pickup. last pickup
+117600,117.600,D,D,tap,0,outro,easy_outro_A,Two-note final cadence. ending anchor
