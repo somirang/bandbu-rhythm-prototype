@@ -1,0 +1,210 @@
+time_ms,time_sec,lanes,lane_count,duration_ms,type,section,pattern,intent
+1200,1.200,D,1,0,tap,calm intro,calm_A,Sparse left-to-right single notes for first-read timing. downbeat anchor
+2400,2.400,F,1,0,tap,calm intro,calm_A,Sparse left-to-right single notes for first-read timing. wide single-note response
+3000,3.000,J,1,0,tap,calm intro,calm_A,Sparse left-to-right single notes for first-read timing. gentle pickup
+3600,3.600,K,1,0,tap,calm intro,calm_B,Reverse-side anchor plus one easy hold. reverse-side anchor
+4500,4.500,J,1,600,hold,calm intro,calm_B,Reverse-side anchor plus one easy hold. easy hold check
+5400,5.400,F,1,0,tap,calm intro,calm_B,Reverse-side anchor plus one easy hold. return pickup
+6000,6.000,D,1,0,tap,calm intro,calm_C,Two-note spacious call and response. repeatable left anchor
+7200,7.200,J,1,0,tap,calm intro,calm_C,Two-note spacious call and response. center-right response
+8400,8.400,F,1,0,tap,calm intro,calm_D,"Inner-lane start, right hold, late pickup. soft inner-lane anchor"
+9600,9.600,K,1,600,hold,calm intro,calm_D,"Inner-lane start, right hold, late pickup. right hold check"
+10500,10.500,D,1,0,tap,calm intro,calm_D,"Inner-lane start, right hold, late pickup. late pickup into next bar"
+10800,10.800,D,1,0,tap,calm intro,calm_A,Sparse left-to-right single notes for first-read timing. downbeat anchor
+12000,12.000,F,1,0,tap,calm intro,calm_A,Sparse left-to-right single notes for first-read timing. wide single-note response
+12600,12.600,J,1,0,tap,calm intro,calm_A,Sparse left-to-right single notes for first-read timing. gentle pickup
+13200,13.200,K,1,0,tap,calm intro,calm_B,Reverse-side anchor plus one easy hold. reverse-side anchor
+14100,14.100,J,1,600,hold,calm intro,calm_B,Reverse-side anchor plus one easy hold. easy hold check
+15000,15.000,F,1,0,tap,calm intro,calm_B,Reverse-side anchor plus one easy hold. return pickup
+15600,15.600,D,1,0,tap,calm intro,calm_C,Two-note spacious call and response. repeatable left anchor
+18000,18.000,K,1,600,hold,easy verse,easy_D,K hold followed by J -> F D answer. right hold over the groove
+18900,18.900,J,1,0,tap,easy verse,easy_D,K hold followed by J -> F D answer. reverse half-loop setup
+19200,19.200,F,1,0,tap,easy verse,easy_D,K hold followed by J -> F D answer. left answer
+19500,19.500,D,1,0,tap,easy verse,easy_D,K hold followed by J -> F D answer. left answer completion
+20400,20.400,D,1,0,tap,easy verse,easy_A,D F J K loop fragment with open beats. DFJK loop beat 1
+20700,20.700,F,1,0,tap,easy verse,easy_A,D F J K loop fragment with open beats. DFJK loop beat 1-and
+21300,21.300,J,1,0,tap,easy verse,easy_A,D F J K loop fragment with open beats. DFJK loop beat 2-and
+21900,21.900,K,1,0,tap,easy verse,easy_A,D F J K loop fragment with open beats. DFJK loop beat 3-and
+22800,22.800,K,1,0,tap,easy verse,easy_B,K J F D reverse loop fragment. KJFD reverse loop beat 1
+23100,23.100,J,1,0,tap,easy verse,easy_B,K J F D reverse loop fragment. KJFD reverse loop beat 1-and
+23700,23.700,F,1,0,tap,easy verse,easy_B,K J F D reverse loop fragment. KJFD reverse loop beat 2-and
+24300,24.300,D,1,0,tap,easy verse,easy_B,K J F D reverse loop fragment. KJFD reverse loop beat 3-and
+25200,25.200,D,1,600,hold,easy verse,easy_C,D hold followed by F -> J K answer. left hold over the groove
+26100,26.100,F,1,0,tap,easy verse,easy_C,D hold followed by F -> J K answer. DF half-loop setup
+26400,26.400,J,1,0,tap,easy verse,easy_C,D hold followed by F -> J K answer. answer on right hand
+26700,26.700,K,1,0,tap,easy verse,easy_C,D hold followed by F -> J K answer. answer completion
+27600,27.600,K,1,600,hold,easy verse,easy_D,K hold followed by J -> F D answer. right hold over the groove
+28500,28.500,J,1,0,tap,easy verse,easy_D,K hold followed by J -> F D answer. reverse half-loop setup
+28800,28.800,F,1,0,tap,easy verse,easy_D,K hold followed by J -> F D answer. left answer
+29100,29.100,D,1,0,tap,easy verse,easy_D,K hold followed by J -> F D answer. left answer completion
+30000,30.000,D,1,0,tap,easy verse,easy_A,D F J K loop fragment with open beats. DFJK loop beat 1
+30300,30.300,F,1,0,tap,easy verse,easy_A,D F J K loop fragment with open beats. DFJK loop beat 1-and
+30900,30.900,J,1,0,tap,easy verse,easy_A,D F J K loop fragment with open beats. DFJK loop beat 2-and
+32400,32.400,K,1,0,tap,build up,build_D,K J -> F D call/answer ending with F+K. K J to F D call
+32700,32.700,J,1,0,tap,build up,build_D,K J -> F D call/answer ending with F+K. K J to F D call
+33300,33.300,F,1,0,tap,build up,build_D,K J -> F D call/answer ending with F+K. F D answer
+33600,33.600,D,1,0,tap,build up,build_D,K J -> F D call/answer ending with F+K. F D answer
+34200,34.200,F+K,2,0,tap,build up,build_D,K J -> F D call/answer ending with F+K. second readable 2-key chord
+34800,34.800,D,1,600,hold,build up,build_hold,Build-up hold check with simple follow-up taps. short left hold during build
+35400,35.400,F,1,0,tap,build up,build_hold,Build-up hold check with simple follow-up taps. inner tap after hold
+36000,36.000,J,1,0,tap,build up,build_hold,Build-up hold check with simple follow-up taps. right answer
+36600,36.600,K,1,0,tap,build up,build_hold,Build-up hold check with simple follow-up taps. right pickup
+37200,37.200,D,1,0,tap,build up,build_A,"DFJK 8th-note motion, no chord yet. DFJK 8th loop start"
+37500,37.500,F,1,0,tap,build up,build_A,"DFJK 8th-note motion, no chord yet. DFJK 8th loop"
+37800,37.800,J,1,0,tap,build up,build_A,"DFJK 8th-note motion, no chord yet. DFJK 8th loop"
+38100,38.100,K,1,0,tap,build up,build_A,"DFJK 8th-note motion, no chord yet. DFJK 8th loop"
+38700,38.700,D,1,0,tap,build up,build_A,"DFJK 8th-note motion, no chord yet. left reset"
+39300,39.300,F,1,0,tap,build up,build_A,"DFJK 8th-note motion, no chord yet. pickup"
+39600,39.600,K,1,0,tap,build up,build_B,KJFD reverse 8th-note motion. KJFD reverse loop start
+39900,39.900,J,1,0,tap,build up,build_B,KJFD reverse 8th-note motion. KJFD reverse loop
+40200,40.200,F,1,0,tap,build up,build_B,KJFD reverse 8th-note motion. KJFD reverse loop
+40500,40.500,D,1,0,tap,build up,build_B,KJFD reverse 8th-note motion. KJFD reverse loop
+41100,41.100,K,1,0,tap,build up,build_B,KJFD reverse 8th-note motion. right reset
+41700,41.700,J,1,0,tap,build up,build_B,KJFD reverse 8th-note motion. pickup
+42000,42.000,D,1,0,tap,build up,build_C,D F -> J K call/answer ending with D+J. D F to J K call
+42300,42.300,F,1,0,tap,build up,build_C,D F -> J K call/answer ending with D+J. D F to J K call
+42900,42.900,J,1,0,tap,build up,build_C,D F -> J K call/answer ending with D+J. J K answer
+43200,43.200,K,1,0,tap,build up,build_C,D F -> J K call/answer ending with D+J. J K answer
+43800,43.800,D+J,2,0,tap,build up,build_C,D F -> J K call/answer ending with D+J. first readable 2-key chord
+44400,44.400,K,1,0,tap,build up,build_D,K J -> F D call/answer ending with F+K. K J to F D call
+44700,44.700,J,1,0,tap,build up,build_D,K J -> F D call/answer ending with F+K. K J to F D call
+45300,45.300,F,1,0,tap,build up,build_D,K J -> F D call/answer ending with F+K. F D answer
+45600,45.600,D,1,0,tap,build up,build_D,K J -> F D call/answer ending with F+K. F D answer
+46200,46.200,F+K,2,0,tap,build up,build_D,K J -> F D call/answer ending with F+K. second readable 2-key chord
+46800,46.800,D,1,600,hold,build up,build_hold,Build-up hold check with simple follow-up taps. short left hold during build
+47400,47.400,F,1,0,tap,build up,build_hold,Build-up hold check with simple follow-up taps. inner tap after hold
+48000,48.000,J,1,0,tap,build up,build_hold,Build-up hold check with simple follow-up taps. right answer
+48600,48.600,K,1,0,tap,build up,build_hold,Build-up hold check with simple follow-up taps. right pickup
+49200,49.200,D,1,0,tap,build up,build_A,"DFJK 8th-note motion, no chord yet. DFJK 8th loop start"
+49500,49.500,F,1,0,tap,build up,build_A,"DFJK 8th-note motion, no chord yet. DFJK 8th loop"
+49800,49.800,J,1,0,tap,build up,build_A,"DFJK 8th-note motion, no chord yet. DFJK 8th loop"
+50100,50.100,K,1,0,tap,build up,build_A,"DFJK 8th-note motion, no chord yet. DFJK 8th loop"
+50700,50.700,D,1,0,tap,build up,build_A,"DFJK 8th-note motion, no chord yet. left reset"
+51300,51.300,F,1,0,tap,build up,build_A,"DFJK 8th-note motion, no chord yet. pickup"
+51600,51.600,K,1,0,tap,build up,build_B,KJFD reverse 8th-note motion. KJFD reverse loop start
+51900,51.900,J,1,0,tap,build up,build_B,KJFD reverse 8th-note motion. KJFD reverse loop
+52200,52.200,F,1,0,tap,build up,build_B,KJFD reverse 8th-note motion. KJFD reverse loop
+52500,52.500,D,1,0,tap,build up,build_B,KJFD reverse 8th-note motion. KJFD reverse loop
+53100,53.100,K,1,0,tap,build up,build_B,KJFD reverse 8th-note motion. right reset
+53700,53.700,J,1,0,tap,build up,build_B,KJFD reverse 8th-note motion. pickup
+54000,54.000,D,1,0,tap,build up,build_C,D F -> J K call/answer ending with D+J. D F to J K call
+54300,54.300,F,1,0,tap,build up,build_C,D F -> J K call/answer ending with D+J. D F to J K call
+54900,54.900,J,1,0,tap,build up,build_C,D F -> J K call/answer ending with D+J. J K answer
+56400,56.400,K,1,0,tap,highlight,high_D,K J -> F D burst and D+K color chord. K J to F D burst
+56700,56.700,J,1,0,tap,highlight,high_D,K J -> F D burst and D+K color chord. K J to F D burst
+57000,57.000,F,1,0,tap,highlight,high_D,K J -> F D burst and D+K color chord. left answer
+57300,57.300,D,1,0,tap,highlight,high_D,K J -> F D burst and D+K color chord. left answer
+57600,57.600,D+K,2,0,tap,highlight,high_D,K J -> F D burst and D+K color chord. outer chord color
+58050,58.050,F,1,0,tap,highlight,high_D,K J -> F D burst and D+K color chord. late pickup
+58500,58.500,J,1,0,tap,highlight,high_D,K J -> F D burst and D+K color chord. turnaround pickup
+58800,58.800,D,1,600,hold,highlight,high_hold,Chorus hold phrase with chord release accent. short hold inside chorus
+59100,59.100,F,1,0,tap,highlight,high_hold,Chorus hold phrase with chord release accent. syncopated tap under hold
+59700,59.700,J,1,0,tap,highlight,high_hold,Chorus hold phrase with chord release accent. right response
+60000,60.000,K,1,600,hold,highlight,high_hold,Chorus hold phrase with chord release accent. right hold answer
+60600,60.600,D+J,2,0,tap,highlight,high_hold,Chorus hold phrase with chord release accent. chord release accent
+61200,61.200,D,1,0,tap,highlight,high_A,Highlight DFJK density with D+J accent. highlight DFJK loop
+61500,61.500,F,1,0,tap,highlight,high_A,Highlight DFJK density with D+J accent. highlight DFJK loop
+61800,61.800,J,1,0,tap,highlight,high_A,Highlight DFJK density with D+J accent. highlight DFJK loop
+62100,62.100,K,1,0,tap,highlight,high_A,Highlight DFJK density with D+J accent. highlight DFJK loop
+62400,62.400,D,1,0,tap,highlight,high_A,Highlight DFJK density with D+J accent. left repeat
+62700,62.700,F,1,0,tap,highlight,high_A,Highlight DFJK density with D+J accent. left repeat
+63000,63.000,D+J,2,0,tap,highlight,high_A,Highlight DFJK density with D+J accent. D+J chord accent
+63600,63.600,K,1,0,tap,highlight,high_B,Highlight reverse loop with F+K accent. highlight KJFD reverse loop
+63900,63.900,J,1,0,tap,highlight,high_B,Highlight reverse loop with F+K accent. highlight KJFD reverse loop
+64200,64.200,F,1,0,tap,highlight,high_B,Highlight reverse loop with F+K accent. highlight KJFD reverse loop
+64500,64.500,D,1,0,tap,highlight,high_B,Highlight reverse loop with F+K accent. highlight KJFD reverse loop
+64800,64.800,K,1,0,tap,highlight,high_B,Highlight reverse loop with F+K accent. right repeat
+65100,65.100,J,1,0,tap,highlight,high_B,Highlight reverse loop with F+K accent. right repeat
+65400,65.400,F+K,2,0,tap,highlight,high_B,Highlight reverse loop with F+K accent. F+K chord accent
+66000,66.000,D,1,0,tap,highlight,high_C,D F -> J K burst and F+J color chord. D F to J K burst
+66300,66.300,F,1,0,tap,highlight,high_C,D F -> J K burst and F+J color chord. D F to J K burst
+66600,66.600,J,1,0,tap,highlight,high_C,D F -> J K burst and F+J color chord. right answer
+66900,66.900,K,1,0,tap,highlight,high_C,D F -> J K burst and F+J color chord. right answer
+67200,67.200,F+J,2,0,tap,highlight,high_C,D F -> J K burst and F+J color chord. inner chord color
+67650,67.650,D,1,0,tap,highlight,high_C,D F -> J K burst and F+J color chord. late pickup
+68100,68.100,K,1,0,tap,highlight,high_C,D F -> J K burst and F+J color chord. turnaround pickup
+68400,68.400,K,1,0,tap,highlight,high_D,K J -> F D burst and D+K color chord. K J to F D burst
+68700,68.700,J,1,0,tap,highlight,high_D,K J -> F D burst and D+K color chord. K J to F D burst
+69000,69.000,F,1,0,tap,highlight,high_D,K J -> F D burst and D+K color chord. left answer
+69300,69.300,D,1,0,tap,highlight,high_D,K J -> F D burst and D+K color chord. left answer
+69600,69.600,D+K,2,0,tap,highlight,high_D,K J -> F D burst and D+K color chord. outer chord color
+70050,70.050,F,1,0,tap,highlight,high_D,K J -> F D burst and D+K color chord. late pickup
+70500,70.500,J,1,0,tap,highlight,high_D,K J -> F D burst and D+K color chord. turnaround pickup
+70800,70.800,D,1,600,hold,highlight,high_hold,Chorus hold phrase with chord release accent. short hold inside chorus
+71100,71.100,F,1,0,tap,highlight,high_hold,Chorus hold phrase with chord release accent. syncopated tap under hold
+71700,71.700,J,1,0,tap,highlight,high_hold,Chorus hold phrase with chord release accent. right response
+72000,72.000,K,1,600,hold,highlight,high_hold,Chorus hold phrase with chord release accent. right hold answer
+72600,72.600,D+J,2,0,tap,highlight,high_hold,Chorus hold phrase with chord release accent. chord release accent
+73200,73.200,D,1,0,tap,highlight,high_A,Highlight DFJK density with D+J accent. highlight DFJK loop
+73500,73.500,F,1,0,tap,highlight,high_A,Highlight DFJK density with D+J accent. highlight DFJK loop
+73800,73.800,J,1,0,tap,highlight,high_A,Highlight DFJK density with D+J accent. highlight DFJK loop
+74100,74.100,K,1,0,tap,highlight,high_A,Highlight DFJK density with D+J accent. highlight DFJK loop
+74400,74.400,D,1,0,tap,highlight,high_A,Highlight DFJK density with D+J accent. left repeat
+74700,74.700,F,1,0,tap,highlight,high_A,Highlight DFJK density with D+J accent. left repeat
+75000,75.000,D+J,2,0,tap,highlight,high_A,Highlight DFJK density with D+J accent. D+J chord accent
+75600,75.600,K,1,0,tap,highlight,high_B,Highlight reverse loop with F+K accent. highlight KJFD reverse loop
+75900,75.900,J,1,0,tap,highlight,high_B,Highlight reverse loop with F+K accent. highlight KJFD reverse loop
+76200,76.200,F,1,0,tap,highlight,high_B,Highlight reverse loop with F+K accent. highlight KJFD reverse loop
+76500,76.500,D,1,0,tap,highlight,high_B,Highlight reverse loop with F+K accent. highlight KJFD reverse loop
+76800,76.800,K,1,0,tap,highlight,high_B,Highlight reverse loop with F+K accent. right repeat
+77100,77.100,J,1,0,tap,highlight,high_B,Highlight reverse loop with F+K accent. right repeat
+77400,77.400,F+K,2,0,tap,highlight,high_B,Highlight reverse loop with F+K accent. F+K chord accent
+78000,78.000,D,1,0,tap,highlight,high_C,D F -> J K burst and F+J color chord. D F to J K burst
+78300,78.300,F,1,0,tap,highlight,high_C,D F -> J K burst and F+J color chord. D F to J K burst
+78600,78.600,J,1,0,tap,highlight,high_C,D F -> J K burst and F+J color chord. right answer
+78900,78.900,K,1,0,tap,highlight,high_C,D F -> J K burst and F+J color chord. right answer
+80400,80.400,K,1,0,tap,steady drive,drive_B,Reduced-density KJFD post-highlight groove. post-chorus KJFD fragment
+80700,80.700,J,1,0,tap,steady drive,drive_B,Reduced-density KJFD post-highlight groove. fragment continuation
+81300,81.300,F,1,0,tap,steady drive,drive_B,Reduced-density KJFD post-highlight groove. left response
+81900,81.900,D,1,0,tap,steady drive,drive_B,Reduced-density KJFD post-highlight groove. left cadence
+82500,82.500,J,1,0,tap,steady drive,drive_B,Reduced-density KJFD post-highlight groove. pickup
+82800,82.800,D+J,2,0,tap,steady drive,drive_C,D+J chord accent with hold recovery. familiar chord accent
+83400,83.400,F,1,0,tap,steady drive,drive_C,D+J chord accent with hold recovery. single-note recovery
+84000,84.000,K,1,600,hold,steady drive,drive_C,D+J chord accent with hold recovery. short hold check
+84900,84.900,D,1,0,tap,steady drive,drive_C,D+J chord accent with hold recovery. turnaround
+85200,85.200,F+K,2,0,tap,steady drive,drive_D,F+K chord accent with hold recovery. familiar chord accent
+85800,85.800,J,1,0,tap,steady drive,drive_D,F+K chord accent with hold recovery. single-note recovery
+86400,86.400,D,1,600,hold,steady drive,drive_D,F+K chord accent with hold recovery. short hold check
+87300,87.300,K,1,0,tap,steady drive,drive_D,F+K chord accent with hold recovery. turnaround
+87600,87.600,D,1,0,tap,steady drive,drive_A,Reduced-density DFJK post-highlight groove. post-chorus DFJK fragment
+87900,87.900,F,1,0,tap,steady drive,drive_A,Reduced-density DFJK post-highlight groove. fragment continuation
+88500,88.500,J,1,0,tap,steady drive,drive_A,Reduced-density DFJK post-highlight groove. right response
+89100,89.100,K,1,0,tap,steady drive,drive_A,Reduced-density DFJK post-highlight groove. right cadence
+89700,89.700,F,1,0,tap,steady drive,drive_A,Reduced-density DFJK post-highlight groove. pickup
+90000,90.000,K,1,0,tap,steady drive,drive_B,Reduced-density KJFD post-highlight groove. post-chorus KJFD fragment
+90300,90.300,J,1,0,tap,steady drive,drive_B,Reduced-density KJFD post-highlight groove. fragment continuation
+90900,90.900,F,1,0,tap,steady drive,drive_B,Reduced-density KJFD post-highlight groove. left response
+91500,91.500,D,1,0,tap,steady drive,drive_B,Reduced-density KJFD post-highlight groove. left cadence
+92100,92.100,J,1,0,tap,steady drive,drive_B,Reduced-density KJFD post-highlight groove. pickup
+92400,92.400,D+J,2,0,tap,steady drive,drive_C,D+J chord accent with hold recovery. familiar chord accent
+93000,93.000,F,1,0,tap,steady drive,drive_C,D+J chord accent with hold recovery. single-note recovery
+93600,93.600,K,1,600,hold,steady drive,drive_C,D+J chord accent with hold recovery. short hold check
+94500,94.500,D,1,0,tap,steady drive,drive_C,D+J chord accent with hold recovery. turnaround
+94800,94.800,F+K,2,0,tap,steady drive,drive_D,F+K chord accent with hold recovery. familiar chord accent
+95400,95.400,J,1,0,tap,steady drive,drive_D,F+K chord accent with hold recovery. single-note recovery
+96000,96.000,D,1,600,hold,steady drive,drive_D,F+K chord accent with hold recovery. short hold check
+96900,96.900,K,1,0,tap,steady drive,drive_D,F+K chord accent with hold recovery. turnaround
+97200,97.200,D,1,0,tap,steady drive,drive_A,Reduced-density DFJK post-highlight groove. post-chorus DFJK fragment
+97500,97.500,F,1,0,tap,steady drive,drive_A,Reduced-density DFJK post-highlight groove. fragment continuation
+98100,98.100,J,1,0,tap,steady drive,drive_A,Reduced-density DFJK post-highlight groove. right response
+98700,98.700,K,1,0,tap,steady drive,drive_A,Reduced-density DFJK post-highlight groove. right cadence
+99300,99.300,F,1,0,tap,steady drive,drive_A,Reduced-density DFJK post-highlight groove. pickup
+99600,99.600,K,1,0,tap,steady drive,drive_B,Reduced-density KJFD post-highlight groove. post-chorus KJFD fragment
+99900,99.900,J,1,0,tap,steady drive,drive_B,Reduced-density KJFD post-highlight groove. fragment continuation
+100500,100.500,F,1,0,tap,steady drive,drive_B,Reduced-density KJFD post-highlight groove. left response
+101100,101.100,D,1,0,tap,steady drive,drive_B,Reduced-density KJFD post-highlight groove. left cadence
+101700,101.700,J,1,0,tap,steady drive,drive_B,Reduced-density KJFD post-highlight groove. pickup
+102000,102.000,D+J,2,0,tap,steady drive,drive_C,D+J chord accent with hold recovery. familiar chord accent
+102600,102.600,F,1,0,tap,steady drive,drive_C,D+J chord accent with hold recovery. single-note recovery
+104400,104.400,D,1,900,hold,release,release_A,Cooldown left hold and delayed answer. cooldown left hold
+105900,105.900,J,1,0,tap,release,release_A,Cooldown left hold and delayed answer. spaced answer
+106800,106.800,D,1,900,hold,release,release_A,Cooldown left hold and delayed answer. cooldown left hold
+108300,108.300,J,1,0,tap,release,release_A,Cooldown left hold and delayed answer. spaced answer
+109200,109.200,K,1,900,hold,release,release_B,Cooldown right hold and delayed answer. cooldown right hold
+110700,110.700,F,1,0,tap,release,release_B,Cooldown right hold and delayed answer. spaced answer
+111600,111.600,D,1,0,tap,release,release_C,Plain quarter-note DFJK reminder. final DFJK reminder
+112200,112.200,F,1,0,tap,release,release_C,Plain quarter-note DFJK reminder. final DFJK reminder
+114000,114.000,F,1,600,hold,outro,outro_B,Final hold and last pickup. final short hold
+115200,115.200,K,1,0,tap,outro,outro_B,Final hold and last pickup. last pickup
+116400,116.400,D,1,0,tap,outro,outro_A,Two-note ending cadence. ending anchor
+117600,117.600,J,1,0,tap,outro,outro_A,Two-note ending cadence. ending answer
