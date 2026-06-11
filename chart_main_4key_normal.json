@@ -13,9 +13,9 @@
   "approachMs": 1850,
   "durationMs": 119171,
   "judgementWindowsMs": {
-    "perfect": 40,
-    "great": 80,
-    "good": 145
+    "perfect": 60,
+    "great": 110,
+    "good": 180
   },
   "purpose": "Band rhythm game note-timing prototype for checking timing, density, loop readability, chords, holds, fever, and input feel.",
   "patternDesign": "Deterministic 2-4 measure loops: D F J K, K J F D, D F -> J K, D+J, F+K, plus restrained D+K/F+J color chords in highlight. No random note generation.",
