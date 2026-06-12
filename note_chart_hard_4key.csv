@@ -1,0 +1,366 @@
+time_ms,time_sec,lanes,lane_count,duration_ms,type,section,pattern,intent
+1200,1.200,D,1,0,tap,opening rehearsal,hard_intro_A,Opening left-to-right riff with a small chord lift. opening riff anchor
+1500,1.500,F,1,0,tap,opening rehearsal,hard_intro_A,Opening left-to-right riff with a small chord lift. quick hand lift
+2100,2.100,J,1,0,tap,opening rehearsal,hard_intro_A,Opening left-to-right riff with a small chord lift. right response
+2400,2.400,K,1,0,tap,opening rehearsal,hard_intro_A,Opening left-to-right riff with a small chord lift. right cadence
+3000,3.000,D+J,2,0,chord,opening rehearsal,hard_intro_A,Opening left-to-right riff with a small chord lift. first performance chord
+3300,3.300,F,1,0,tap,opening rehearsal,hard_intro_A,Opening left-to-right riff with a small chord lift. pickup
+3600,3.600,K,1,0,tap,opening rehearsal,hard_intro_B,Reverse riff with a short right hold check. reverse riff anchor
+3900,3.900,J,1,0,tap,opening rehearsal,hard_intro_B,Reverse riff with a short right hold check. quick reverse lift
+4500,4.500,F,1,0,tap,opening rehearsal,hard_intro_B,Reverse riff with a short right hold check. left response
+4800,4.800,D,1,0,tap,opening rehearsal,hard_intro_B,Reverse riff with a short right hold check. left cadence
+5100,5.100,K,1,600,hold,opening rehearsal,hard_intro_B,Reverse riff with a short right hold check. short right hold
+5700,5.700,J,1,0,tap,opening rehearsal,hard_intro_B,Reverse riff with a short right hold check. hold release pickup
+6000,6.000,D,1,0,tap,opening rehearsal,hard_intro_fill,Compact call-answer fill without overloading the intro. call start
+6300,6.300,F,1,0,tap,opening rehearsal,hard_intro_fill,Compact call-answer fill without overloading the intro. call continuation
+6600,6.600,J,1,0,tap,opening rehearsal,hard_intro_fill,Compact call-answer fill without overloading the intro. answer start
+6900,6.900,K,1,0,tap,opening rehearsal,hard_intro_fill,Compact call-answer fill without overloading the intro. answer continuation
+7500,7.500,F+K,2,0,chord,opening rehearsal,hard_intro_fill,Compact call-answer fill without overloading the intro. bright chord accent
+7950,7.950,D,1,0,tap,opening rehearsal,hard_intro_fill,Compact call-answer fill without overloading the intro. late pickup
+8400,8.400,D,1,0,tap,opening rehearsal,hard_intro_A,Opening left-to-right riff with a small chord lift. opening riff anchor
+8700,8.700,F,1,0,tap,opening rehearsal,hard_intro_A,Opening left-to-right riff with a small chord lift. quick hand lift
+9300,9.300,J,1,0,tap,opening rehearsal,hard_intro_A,Opening left-to-right riff with a small chord lift. right response
+9600,9.600,K,1,0,tap,opening rehearsal,hard_intro_A,Opening left-to-right riff with a small chord lift. right cadence
+10200,10.200,D+J,2,0,chord,opening rehearsal,hard_intro_A,Opening left-to-right riff with a small chord lift. first performance chord
+10500,10.500,F,1,0,tap,opening rehearsal,hard_intro_A,Opening left-to-right riff with a small chord lift. pickup
+10800,10.800,K,1,0,tap,opening rehearsal,hard_intro_B,Reverse riff with a short right hold check. reverse riff anchor
+11100,11.100,J,1,0,tap,opening rehearsal,hard_intro_B,Reverse riff with a short right hold check. quick reverse lift
+11700,11.700,F,1,0,tap,opening rehearsal,hard_intro_B,Reverse riff with a short right hold check. left response
+12000,12.000,D,1,0,tap,opening rehearsal,hard_intro_B,Reverse riff with a short right hold check. left cadence
+12300,12.300,K,1,600,hold,opening rehearsal,hard_intro_B,Reverse riff with a short right hold check. short right hold
+12900,12.900,J,1,0,tap,opening rehearsal,hard_intro_B,Reverse riff with a short right hold check. hold release pickup
+13200,13.200,D,1,0,tap,opening rehearsal,hard_intro_fill,Compact call-answer fill without overloading the intro. call start
+13500,13.500,F,1,0,tap,opening rehearsal,hard_intro_fill,Compact call-answer fill without overloading the intro. call continuation
+13800,13.800,J,1,0,tap,opening rehearsal,hard_intro_fill,Compact call-answer fill without overloading the intro. answer start
+14100,14.100,K,1,0,tap,opening rehearsal,hard_intro_fill,Compact call-answer fill without overloading the intro. answer continuation
+14700,14.700,F+K,2,0,chord,opening rehearsal,hard_intro_fill,Compact call-answer fill without overloading the intro. bright chord accent
+15150,15.150,D,1,0,tap,opening rehearsal,hard_intro_fill,Compact call-answer fill without overloading the intro. late pickup
+16800,16.800,D,1,0,tap,verse performance,hard_verse_A,DFJK 8th loop with a clear D+J accent. DFJK run
+17100,17.100,F,1,0,tap,verse performance,hard_verse_A,DFJK 8th loop with a clear D+J accent. DFJK run
+17400,17.400,J,1,0,tap,verse performance,hard_verse_A,DFJK 8th loop with a clear D+J accent. DFJK run
+17700,17.700,K,1,0,tap,verse performance,hard_verse_A,DFJK 8th loop with a clear D+J accent. DFJK run
+18000,18.000,D,1,0,tap,verse performance,hard_verse_A,DFJK 8th loop with a clear D+J accent. left reset
+18300,18.300,F,1,0,tap,verse performance,hard_verse_A,DFJK 8th loop with a clear D+J accent. left lift
+18600,18.600,D+J,2,0,chord,verse performance,hard_verse_A,DFJK 8th loop with a clear D+J accent. chord accent
+18900,18.900,K,1,0,tap,verse performance,hard_verse_A,DFJK 8th loop with a clear D+J accent. right pickup
+19200,19.200,K,1,0,tap,verse performance,hard_verse_B,KJFD reverse 8th loop with F+K accent. KJFD reverse run
+19500,19.500,J,1,0,tap,verse performance,hard_verse_B,KJFD reverse 8th loop with F+K accent. KJFD reverse run
+19800,19.800,F,1,0,tap,verse performance,hard_verse_B,KJFD reverse 8th loop with F+K accent. KJFD reverse run
+20100,20.100,D,1,0,tap,verse performance,hard_verse_B,KJFD reverse 8th loop with F+K accent. KJFD reverse run
+20400,20.400,K,1,0,tap,verse performance,hard_verse_B,KJFD reverse 8th loop with F+K accent. right reset
+20700,20.700,J,1,0,tap,verse performance,hard_verse_B,KJFD reverse 8th loop with F+K accent. right lift
+21000,21.000,F+K,2,0,chord,verse performance,hard_verse_B,KJFD reverse 8th loop with F+K accent. chord accent
+21300,21.300,D,1,0,tap,verse performance,hard_verse_B,KJFD reverse 8th loop with F+K accent. left pickup
+21600,21.600,D,1,0,tap,verse performance,hard_verse_call,D F to J K call-answer with a short 16th-feel pickup. call anchor
+21900,21.900,F,1,0,tap,verse performance,hard_verse_call,D F to J K call-answer with a short 16th-feel pickup. call lift
+22500,22.500,J,1,0,tap,verse performance,hard_verse_call,D F to J K call-answer with a short 16th-feel pickup. answer
+22800,22.800,K,1,0,tap,verse performance,hard_verse_call,D F to J K call-answer with a short 16th-feel pickup. answer close
+22950,22.950,F,1,0,tap,verse performance,hard_verse_call,D F to J K call-answer with a short 16th-feel pickup. short pickup
+23100,23.100,J,1,0,tap,verse performance,hard_verse_call,D F to J K call-answer with a short 16th-feel pickup. pickup answer
+23400,23.400,F+J,2,0,chord,verse performance,hard_verse_call,D F to J K call-answer with a short 16th-feel pickup. inner color chord
+23700,23.700,D,1,0,tap,verse performance,hard_verse_call,D F to J K call-answer with a short 16th-feel pickup. turnaround
+24000,24.000,D,1,0,tap,verse performance,hard_verse_A,DFJK 8th loop with a clear D+J accent. DFJK run
+24300,24.300,F,1,0,tap,verse performance,hard_verse_A,DFJK 8th loop with a clear D+J accent. DFJK run
+24600,24.600,J,1,0,tap,verse performance,hard_verse_A,DFJK 8th loop with a clear D+J accent. DFJK run
+24900,24.900,K,1,0,tap,verse performance,hard_verse_A,DFJK 8th loop with a clear D+J accent. DFJK run
+25200,25.200,D,1,0,tap,verse performance,hard_verse_A,DFJK 8th loop with a clear D+J accent. left reset
+25500,25.500,F,1,0,tap,verse performance,hard_verse_A,DFJK 8th loop with a clear D+J accent. left lift
+25800,25.800,D+J,2,0,chord,verse performance,hard_verse_A,DFJK 8th loop with a clear D+J accent. chord accent
+26100,26.100,K,1,0,tap,verse performance,hard_verse_A,DFJK 8th loop with a clear D+J accent. right pickup
+26400,26.400,K,1,0,tap,verse performance,hard_verse_B,KJFD reverse 8th loop with F+K accent. KJFD reverse run
+26700,26.700,J,1,0,tap,verse performance,hard_verse_B,KJFD reverse 8th loop with F+K accent. KJFD reverse run
+27000,27.000,F,1,0,tap,verse performance,hard_verse_B,KJFD reverse 8th loop with F+K accent. KJFD reverse run
+27300,27.300,D,1,0,tap,verse performance,hard_verse_B,KJFD reverse 8th loop with F+K accent. KJFD reverse run
+27600,27.600,K,1,0,tap,verse performance,hard_verse_B,KJFD reverse 8th loop with F+K accent. right reset
+27900,27.900,J,1,0,tap,verse performance,hard_verse_B,KJFD reverse 8th loop with F+K accent. right lift
+28200,28.200,F+K,2,0,chord,verse performance,hard_verse_B,KJFD reverse 8th loop with F+K accent. chord accent
+28500,28.500,D,1,0,tap,verse performance,hard_verse_B,KJFD reverse 8th loop with F+K accent. left pickup
+28800,28.800,D,1,0,tap,verse performance,hard_verse_call,D F to J K call-answer with a short 16th-feel pickup. call anchor
+29100,29.100,F,1,0,tap,verse performance,hard_verse_call,D F to J K call-answer with a short 16th-feel pickup. call lift
+29700,29.700,J,1,0,tap,verse performance,hard_verse_call,D F to J K call-answer with a short 16th-feel pickup. answer
+30000,30.000,K,1,0,tap,verse performance,hard_verse_call,D F to J K call-answer with a short 16th-feel pickup. answer close
+30150,30.150,F,1,0,tap,verse performance,hard_verse_call,D F to J K call-answer with a short 16th-feel pickup. short pickup
+30300,30.300,J,1,0,tap,verse performance,hard_verse_call,D F to J K call-answer with a short 16th-feel pickup. pickup answer
+30600,30.600,F+J,2,0,chord,verse performance,hard_verse_call,D F to J K call-answer with a short 16th-feel pickup. inner color chord
+30900,30.900,D,1,0,tap,verse performance,hard_verse_call,D F to J K call-answer with a short 16th-feel pickup. turnaround
+31200,31.200,D,1,0,tap,build up,hard_build_A,Build-up alternating run with outer chord punctuation. build run
+31500,31.500,F,1,0,tap,build up,hard_build_A,Build-up alternating run with outer chord punctuation. build run
+31800,31.800,J,1,0,tap,build up,hard_build_A,Build-up alternating run with outer chord punctuation. build run
+32100,32.100,K,1,0,tap,build up,hard_build_A,Build-up alternating run with outer chord punctuation. build run
+32400,32.400,D,1,0,tap,build up,hard_build_A,Build-up alternating run with outer chord punctuation. second phrase
+32550,32.550,F,1,0,tap,build up,hard_build_A,Build-up alternating run with outer chord punctuation. tight lift
+32700,32.700,J,1,0,tap,build up,hard_build_A,Build-up alternating run with outer chord punctuation. tight answer
+33000,33.000,D+K,2,0,chord,build up,hard_build_A,Build-up alternating run with outer chord punctuation. outer chord punctuation
+33300,33.300,F,1,0,tap,build up,hard_build_A,Build-up alternating run with outer chord punctuation. pickup
+33600,33.600,K,1,0,tap,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. reverse build run
+33900,33.900,J,1,0,tap,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. reverse build run
+34200,34.200,F,1,0,tap,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. reverse build run
+34500,34.500,D,1,0,tap,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. reverse build run
+34800,34.800,K,1,0,tap,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. second phrase
+34950,34.950,J,1,0,tap,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. tight lift
+35100,35.100,F,1,0,tap,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. tight answer
+35400,35.400,F+J,2,0,chord,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. inner chord punctuation
+35700,35.700,K,1,0,tap,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. pickup
+36000,36.000,D+J,2,0,chord,build up,hard_build_call,Call-answer phrase that feels like a rehearsal riff tightening up. call chord
+36300,36.300,F,1,0,tap,build up,hard_build_call,Call-answer phrase that feels like a rehearsal riff tightening up. single recovery
+36600,36.600,J,1,0,tap,build up,hard_build_call,Call-answer phrase that feels like a rehearsal riff tightening up. right lift
+36900,36.900,K,1,0,tap,build up,hard_build_call,Call-answer phrase that feels like a rehearsal riff tightening up. right close
+37200,37.200,F+K,2,0,chord,build up,hard_build_call,Call-answer phrase that feels like a rehearsal riff tightening up. answer chord
+37500,37.500,J,1,0,tap,build up,hard_build_call,Call-answer phrase that feels like a rehearsal riff tightening up. single recovery
+37800,37.800,D,1,0,tap,build up,hard_build_call,Call-answer phrase that feels like a rehearsal riff tightening up. left reset
+38100,38.100,F,1,0,tap,build up,hard_build_call,Call-answer phrase that feels like a rehearsal riff tightening up. pickup
+38400,38.400,D,1,600,hold,build up,hard_build_hold,Short hold under alternating taps for band-performance control. left hold under riff
+38700,38.700,J,1,0,tap,build up,hard_build_hold,Short hold under alternating taps for band-performance control. tap over hold
+39150,39.150,F,1,0,tap,build up,hard_build_hold,Short hold under alternating taps for band-performance control. release-side lift
+39450,39.450,K,1,0,tap,build up,hard_build_hold,Short hold under alternating taps for band-performance control. right answer
+39900,39.900,F+K,2,0,chord,build up,hard_build_hold,Short hold under alternating taps for band-performance control. release chord
+40350,40.350,D,1,0,tap,build up,hard_build_hold,Short hold under alternating taps for band-performance control. late turnaround
+40800,40.800,D,1,0,tap,build up,hard_build_A,Build-up alternating run with outer chord punctuation. build run
+41100,41.100,F,1,0,tap,build up,hard_build_A,Build-up alternating run with outer chord punctuation. build run
+41400,41.400,J,1,0,tap,build up,hard_build_A,Build-up alternating run with outer chord punctuation. build run
+41700,41.700,K,1,0,tap,build up,hard_build_A,Build-up alternating run with outer chord punctuation. build run
+42000,42.000,D,1,0,tap,build up,hard_build_A,Build-up alternating run with outer chord punctuation. second phrase
+42150,42.150,F,1,0,tap,build up,hard_build_A,Build-up alternating run with outer chord punctuation. tight lift
+42300,42.300,J,1,0,tap,build up,hard_build_A,Build-up alternating run with outer chord punctuation. tight answer
+42600,42.600,D+K,2,0,chord,build up,hard_build_A,Build-up alternating run with outer chord punctuation. outer chord punctuation
+42900,42.900,F,1,0,tap,build up,hard_build_A,Build-up alternating run with outer chord punctuation. pickup
+43200,43.200,K,1,0,tap,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. reverse build run
+43500,43.500,J,1,0,tap,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. reverse build run
+43800,43.800,F,1,0,tap,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. reverse build run
+44100,44.100,D,1,0,tap,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. reverse build run
+44400,44.400,K,1,0,tap,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. second phrase
+44550,44.550,J,1,0,tap,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. tight lift
+44700,44.700,F,1,0,tap,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. tight answer
+45000,45.000,F+J,2,0,chord,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. inner chord punctuation
+45300,45.300,K,1,0,tap,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. pickup
+45600,45.600,D+J,2,0,chord,build up,hard_build_call,Call-answer phrase that feels like a rehearsal riff tightening up. call chord
+45900,45.900,F,1,0,tap,build up,hard_build_call,Call-answer phrase that feels like a rehearsal riff tightening up. single recovery
+46200,46.200,J,1,0,tap,build up,hard_build_call,Call-answer phrase that feels like a rehearsal riff tightening up. right lift
+46500,46.500,K,1,0,tap,build up,hard_build_call,Call-answer phrase that feels like a rehearsal riff tightening up. right close
+46800,46.800,F+K,2,0,chord,build up,hard_build_call,Call-answer phrase that feels like a rehearsal riff tightening up. answer chord
+47100,47.100,J,1,0,tap,build up,hard_build_call,Call-answer phrase that feels like a rehearsal riff tightening up. single recovery
+47400,47.400,D,1,0,tap,build up,hard_build_call,Call-answer phrase that feels like a rehearsal riff tightening up. left reset
+47700,47.700,F,1,0,tap,build up,hard_build_call,Call-answer phrase that feels like a rehearsal riff tightening up. pickup
+48000,48.000,D,1,600,hold,build up,hard_build_hold,Short hold under alternating taps for band-performance control. left hold under riff
+48300,48.300,J,1,0,tap,build up,hard_build_hold,Short hold under alternating taps for band-performance control. tap over hold
+48750,48.750,F,1,0,tap,build up,hard_build_hold,Short hold under alternating taps for band-performance control. release-side lift
+49050,49.050,K,1,0,tap,build up,hard_build_hold,Short hold under alternating taps for band-performance control. right answer
+49500,49.500,F+K,2,0,chord,build up,hard_build_hold,Short hold under alternating taps for band-performance control. release chord
+49950,49.950,D,1,0,tap,build up,hard_build_hold,Short hold under alternating taps for band-performance control. late turnaround
+50400,50.400,D,1,0,tap,build up,hard_build_A,Build-up alternating run with outer chord punctuation. build run
+50700,50.700,F,1,0,tap,build up,hard_build_A,Build-up alternating run with outer chord punctuation. build run
+51000,51.000,J,1,0,tap,build up,hard_build_A,Build-up alternating run with outer chord punctuation. build run
+51300,51.300,K,1,0,tap,build up,hard_build_A,Build-up alternating run with outer chord punctuation. build run
+51600,51.600,D,1,0,tap,build up,hard_build_A,Build-up alternating run with outer chord punctuation. second phrase
+51750,51.750,F,1,0,tap,build up,hard_build_A,Build-up alternating run with outer chord punctuation. tight lift
+51900,51.900,J,1,0,tap,build up,hard_build_A,Build-up alternating run with outer chord punctuation. tight answer
+52200,52.200,D+K,2,0,chord,build up,hard_build_A,Build-up alternating run with outer chord punctuation. outer chord punctuation
+52500,52.500,F,1,0,tap,build up,hard_build_A,Build-up alternating run with outer chord punctuation. pickup
+52800,52.800,K,1,0,tap,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. reverse build run
+53100,53.100,J,1,0,tap,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. reverse build run
+53400,53.400,F,1,0,tap,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. reverse build run
+53700,53.700,D,1,0,tap,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. reverse build run
+54000,54.000,K,1,0,tap,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. second phrase
+54150,54.150,J,1,0,tap,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. tight lift
+54300,54.300,F,1,0,tap,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. tight answer
+54600,54.600,F+J,2,0,chord,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. inner chord punctuation
+54900,54.900,K,1,0,tap,build up,hard_build_B,Reverse build-up alternating run with inner chord punctuation. pickup
+55200,55.200,D,1,0,tap,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. peak riff
+55500,55.500,F,1,0,tap,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. peak riff
+55650,55.650,J,1,0,tap,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. short pickup
+55800,55.800,K,1,0,tap,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. peak close
+56100,56.100,D+J,2,0,chord,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. stage hit chord
+56400,56.400,F,1,0,tap,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. second phrase
+56550,56.550,J,1,0,tap,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. quick lift
+56700,56.700,K,1,0,tap,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. right answer
+57000,57.000,F+K,2,0,chord,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. bright chord
+57300,57.300,D,1,0,tap,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. turnaround
+57600,57.600,K,1,0,tap,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. peak reverse riff
+57900,57.900,J,1,0,tap,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. peak reverse riff
+58050,58.050,F,1,0,tap,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. short pickup
+58200,58.200,D,1,0,tap,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. peak close
+58500,58.500,F+K,2,0,chord,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. stage hit chord
+58800,58.800,J,1,0,tap,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. second phrase
+58950,58.950,F,1,0,tap,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. quick lift
+59100,59.100,D,1,0,tap,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. left answer
+59400,59.400,D+J,2,0,chord,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. bright chord
+59700,59.700,K,1,0,tap,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. turnaround
+60000,60.000,D,1,0,tap,highlight live,hard_high_riff,Concert-style call-answer burst with inner and outer chord colors. riff call
+60150,60.150,F,1,0,tap,highlight live,hard_high_riff,Concert-style call-answer burst with inner and outer chord colors. riff pickup
+60300,60.300,J,1,0,tap,highlight live,hard_high_riff,Concert-style call-answer burst with inner and outer chord colors. riff answer
+60600,60.600,K,1,0,tap,highlight live,hard_high_riff,Concert-style call-answer burst with inner and outer chord colors. right close
+60900,60.900,F+J,2,0,chord,highlight live,hard_high_riff,Concert-style call-answer burst with inner and outer chord colors. inner color hit
+61200,61.200,K,1,0,tap,highlight live,hard_high_riff,Concert-style call-answer burst with inner and outer chord colors. reverse call
+61350,61.350,J,1,0,tap,highlight live,hard_high_riff,Concert-style call-answer burst with inner and outer chord colors. reverse pickup
+61500,61.500,F,1,0,tap,highlight live,hard_high_riff,Concert-style call-answer burst with inner and outer chord colors. reverse answer
+61800,61.800,D+K,2,0,chord,highlight live,hard_high_riff,Concert-style call-answer burst with inner and outer chord colors. outer color hit
+62100,62.100,F,1,0,tap,highlight live,hard_high_riff,Concert-style call-answer burst with inner and outer chord colors. turnaround
+62400,62.400,D,1,900,hold,highlight live,hard_high_hold,Highlight hold phrase with taps underneath and chord release. left sustain performance
+62700,62.700,J,1,0,tap,highlight live,hard_high_hold,Highlight hold phrase with taps underneath and chord release. right tap over sustain
+63000,63.000,K,1,0,tap,highlight live,hard_high_hold,Highlight hold phrase with taps underneath and chord release. right tap over sustain
+63450,63.450,F,1,0,tap,highlight live,hard_high_hold,Highlight hold phrase with taps underneath and chord release. release lift
+63600,63.600,K,1,600,hold,highlight live,hard_high_hold,Highlight hold phrase with taps underneath and chord release. right sustain answer
+63900,63.900,D,1,0,tap,highlight live,hard_high_hold,Highlight hold phrase with taps underneath and chord release. left tap under right hold
+64200,64.200,D+J,2,0,chord,highlight live,hard_high_hold,Highlight hold phrase with taps underneath and chord release. release chord
+64500,64.500,F,1,0,tap,highlight live,hard_high_hold,Highlight hold phrase with taps underneath and chord release. pickup
+64800,64.800,D,1,0,tap,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. peak riff
+65100,65.100,F,1,0,tap,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. peak riff
+65250,65.250,J,1,0,tap,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. short pickup
+65400,65.400,K,1,0,tap,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. peak close
+65700,65.700,D+J,2,0,chord,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. stage hit chord
+66000,66.000,F,1,0,tap,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. second phrase
+66150,66.150,J,1,0,tap,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. quick lift
+66300,66.300,K,1,0,tap,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. right answer
+66600,66.600,F+K,2,0,chord,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. bright chord
+66900,66.900,D,1,0,tap,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. turnaround
+67200,67.200,K,1,0,tap,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. peak reverse riff
+67500,67.500,J,1,0,tap,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. peak reverse riff
+67650,67.650,F,1,0,tap,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. short pickup
+67800,67.800,D,1,0,tap,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. peak close
+68100,68.100,F+K,2,0,chord,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. stage hit chord
+68400,68.400,J,1,0,tap,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. second phrase
+68550,68.550,F,1,0,tap,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. quick lift
+68700,68.700,D,1,0,tap,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. left answer
+69000,69.000,D+J,2,0,chord,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. bright chord
+69300,69.300,K,1,0,tap,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. turnaround
+69600,69.600,D,1,0,tap,highlight live,hard_high_riff,Concert-style call-answer burst with inner and outer chord colors. riff call
+69750,69.750,F,1,0,tap,highlight live,hard_high_riff,Concert-style call-answer burst with inner and outer chord colors. riff pickup
+69900,69.900,J,1,0,tap,highlight live,hard_high_riff,Concert-style call-answer burst with inner and outer chord colors. riff answer
+70200,70.200,K,1,0,tap,highlight live,hard_high_riff,Concert-style call-answer burst with inner and outer chord colors. right close
+70500,70.500,F+J,2,0,chord,highlight live,hard_high_riff,Concert-style call-answer burst with inner and outer chord colors. inner color hit
+70800,70.800,K,1,0,tap,highlight live,hard_high_riff,Concert-style call-answer burst with inner and outer chord colors. reverse call
+70950,70.950,J,1,0,tap,highlight live,hard_high_riff,Concert-style call-answer burst with inner and outer chord colors. reverse pickup
+71100,71.100,F,1,0,tap,highlight live,hard_high_riff,Concert-style call-answer burst with inner and outer chord colors. reverse answer
+71400,71.400,D+K,2,0,chord,highlight live,hard_high_riff,Concert-style call-answer burst with inner and outer chord colors. outer color hit
+71700,71.700,F,1,0,tap,highlight live,hard_high_riff,Concert-style call-answer burst with inner and outer chord colors. turnaround
+72000,72.000,D,1,900,hold,highlight live,hard_high_hold,Highlight hold phrase with taps underneath and chord release. left sustain performance
+72300,72.300,J,1,0,tap,highlight live,hard_high_hold,Highlight hold phrase with taps underneath and chord release. right tap over sustain
+72600,72.600,K,1,0,tap,highlight live,hard_high_hold,Highlight hold phrase with taps underneath and chord release. right tap over sustain
+73050,73.050,F,1,0,tap,highlight live,hard_high_hold,Highlight hold phrase with taps underneath and chord release. release lift
+73200,73.200,K,1,600,hold,highlight live,hard_high_hold,Highlight hold phrase with taps underneath and chord release. right sustain answer
+73500,73.500,D,1,0,tap,highlight live,hard_high_hold,Highlight hold phrase with taps underneath and chord release. left tap under right hold
+73800,73.800,D+J,2,0,chord,highlight live,hard_high_hold,Highlight hold phrase with taps underneath and chord release. release chord
+74100,74.100,F,1,0,tap,highlight live,hard_high_hold,Highlight hold phrase with taps underneath and chord release. pickup
+74400,74.400,D,1,0,tap,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. peak riff
+74700,74.700,F,1,0,tap,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. peak riff
+74850,74.850,J,1,0,tap,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. short pickup
+75000,75.000,K,1,0,tap,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. peak close
+75300,75.300,D+J,2,0,chord,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. stage hit chord
+75600,75.600,F,1,0,tap,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. second phrase
+75750,75.750,J,1,0,tap,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. quick lift
+75900,75.900,K,1,0,tap,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. right answer
+76200,76.200,F+K,2,0,chord,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. bright chord
+76500,76.500,D,1,0,tap,highlight live,hard_high_A,Peak DFJK riff with quick pickups and D+J hit. turnaround
+76800,76.800,K,1,0,tap,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. peak reverse riff
+77100,77.100,J,1,0,tap,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. peak reverse riff
+77250,77.250,F,1,0,tap,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. short pickup
+77400,77.400,D,1,0,tap,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. peak close
+77700,77.700,F+K,2,0,chord,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. stage hit chord
+78000,78.000,J,1,0,tap,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. second phrase
+78150,78.150,F,1,0,tap,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. quick lift
+78300,78.300,D,1,0,tap,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. left answer
+78600,78.600,D+J,2,0,chord,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. bright chord
+78900,78.900,K,1,0,tap,highlight live,hard_high_B,Peak reverse riff with quick pickups and F+K hit. turnaround
+79200,79.200,D,1,0,tap,steady drive,hard_drive_A,Post-highlight DFJK drive with fewer peak chords. drive anchor
+79500,79.500,F,1,0,tap,steady drive,hard_drive_A,Post-highlight DFJK drive with fewer peak chords. drive lift
+79800,79.800,J,1,0,tap,steady drive,hard_drive_A,Post-highlight DFJK drive with fewer peak chords. drive answer
+80100,80.100,K,1,0,tap,steady drive,hard_drive_A,Post-highlight DFJK drive with fewer peak chords. drive close
+80550,80.550,D,1,0,tap,steady drive,hard_drive_A,Post-highlight DFJK drive with fewer peak chords. sync pickup
+80700,80.700,F,1,0,tap,steady drive,hard_drive_A,Post-highlight DFJK drive with fewer peak chords. sync pickup
+81000,81.000,D+J,2,0,chord,steady drive,hard_drive_A,Post-highlight DFJK drive with fewer peak chords. drive chord
+81300,81.300,K,1,0,tap,steady drive,hard_drive_A,Post-highlight DFJK drive with fewer peak chords. turnaround
+81600,81.600,K,1,0,tap,steady drive,hard_drive_B,Post-highlight reverse drive. reverse drive anchor
+81900,81.900,J,1,0,tap,steady drive,hard_drive_B,Post-highlight reverse drive. reverse drive lift
+82200,82.200,F,1,0,tap,steady drive,hard_drive_B,Post-highlight reverse drive. reverse drive answer
+82500,82.500,D,1,0,tap,steady drive,hard_drive_B,Post-highlight reverse drive. reverse drive close
+82950,82.950,K,1,0,tap,steady drive,hard_drive_B,Post-highlight reverse drive. sync pickup
+83100,83.100,J,1,0,tap,steady drive,hard_drive_B,Post-highlight reverse drive. sync pickup
+83400,83.400,F+K,2,0,chord,steady drive,hard_drive_B,Post-highlight reverse drive. drive chord
+83700,83.700,D,1,0,tap,steady drive,hard_drive_B,Post-highlight reverse drive. turnaround
+84000,84.000,D+K,2,0,chord,steady drive,hard_drive_sync,Syncopated drive phrase for groove checking. outer sync hit
+84450,84.450,F,1,0,tap,steady drive,hard_drive_sync,Syncopated drive phrase for groove checking. offbeat lift
+84750,84.750,J,1,0,tap,steady drive,hard_drive_sync,Syncopated drive phrase for groove checking. offbeat answer
+85200,85.200,F+J,2,0,chord,steady drive,hard_drive_sync,Syncopated drive phrase for groove checking. inner sync hit
+85650,85.650,K,1,0,tap,steady drive,hard_drive_sync,Syncopated drive phrase for groove checking. late right
+85950,85.950,D,1,0,tap,steady drive,hard_drive_sync,Syncopated drive phrase for groove checking. late left
+86400,86.400,F,1,600,hold,steady drive,hard_drive_hold,Drive hold recovery with chord finish. inner hold
+86700,86.700,K,1,0,tap,steady drive,hard_drive_hold,Drive hold recovery with chord finish. tap over hold
+87300,87.300,D,1,0,tap,steady drive,hard_drive_hold,Drive hold recovery with chord finish. left answer
+87600,87.600,J,1,600,hold,steady drive,hard_drive_hold,Drive hold recovery with chord finish. right hold
+87900,87.900,F,1,0,tap,steady drive,hard_drive_hold,Drive hold recovery with chord finish. tap under hold
+88200,88.200,F+K,2,0,chord,steady drive,hard_drive_hold,Drive hold recovery with chord finish. finish chord
+88800,88.800,D,1,0,tap,steady drive,hard_drive_A,Post-highlight DFJK drive with fewer peak chords. drive anchor
+89100,89.100,F,1,0,tap,steady drive,hard_drive_A,Post-highlight DFJK drive with fewer peak chords. drive lift
+89400,89.400,J,1,0,tap,steady drive,hard_drive_A,Post-highlight DFJK drive with fewer peak chords. drive answer
+89700,89.700,K,1,0,tap,steady drive,hard_drive_A,Post-highlight DFJK drive with fewer peak chords. drive close
+90150,90.150,D,1,0,tap,steady drive,hard_drive_A,Post-highlight DFJK drive with fewer peak chords. sync pickup
+90300,90.300,F,1,0,tap,steady drive,hard_drive_A,Post-highlight DFJK drive with fewer peak chords. sync pickup
+90600,90.600,D+J,2,0,chord,steady drive,hard_drive_A,Post-highlight DFJK drive with fewer peak chords. drive chord
+90900,90.900,K,1,0,tap,steady drive,hard_drive_A,Post-highlight DFJK drive with fewer peak chords. turnaround
+91200,91.200,K,1,0,tap,steady drive,hard_drive_B,Post-highlight reverse drive. reverse drive anchor
+91500,91.500,J,1,0,tap,steady drive,hard_drive_B,Post-highlight reverse drive. reverse drive lift
+91800,91.800,F,1,0,tap,steady drive,hard_drive_B,Post-highlight reverse drive. reverse drive answer
+92100,92.100,D,1,0,tap,steady drive,hard_drive_B,Post-highlight reverse drive. reverse drive close
+92550,92.550,K,1,0,tap,steady drive,hard_drive_B,Post-highlight reverse drive. sync pickup
+92700,92.700,J,1,0,tap,steady drive,hard_drive_B,Post-highlight reverse drive. sync pickup
+93000,93.000,F+K,2,0,chord,steady drive,hard_drive_B,Post-highlight reverse drive. drive chord
+93300,93.300,D,1,0,tap,steady drive,hard_drive_B,Post-highlight reverse drive. turnaround
+93600,93.600,D+K,2,0,chord,steady drive,hard_drive_sync,Syncopated drive phrase for groove checking. outer sync hit
+94050,94.050,F,1,0,tap,steady drive,hard_drive_sync,Syncopated drive phrase for groove checking. offbeat lift
+94350,94.350,J,1,0,tap,steady drive,hard_drive_sync,Syncopated drive phrase for groove checking. offbeat answer
+94800,94.800,F+J,2,0,chord,steady drive,hard_drive_sync,Syncopated drive phrase for groove checking. inner sync hit
+95250,95.250,K,1,0,tap,steady drive,hard_drive_sync,Syncopated drive phrase for groove checking. late right
+95550,95.550,D,1,0,tap,steady drive,hard_drive_sync,Syncopated drive phrase for groove checking. late left
+96000,96.000,F,1,600,hold,steady drive,hard_drive_hold,Drive hold recovery with chord finish. inner hold
+96300,96.300,K,1,0,tap,steady drive,hard_drive_hold,Drive hold recovery with chord finish. tap over hold
+96900,96.900,D,1,0,tap,steady drive,hard_drive_hold,Drive hold recovery with chord finish. left answer
+97200,97.200,J,1,600,hold,steady drive,hard_drive_hold,Drive hold recovery with chord finish. right hold
+97500,97.500,F,1,0,tap,steady drive,hard_drive_hold,Drive hold recovery with chord finish. tap under hold
+97800,97.800,F+K,2,0,chord,steady drive,hard_drive_hold,Drive hold recovery with chord finish. finish chord
+98400,98.400,D,1,0,tap,steady drive,hard_drive_A,Post-highlight DFJK drive with fewer peak chords. drive anchor
+98700,98.700,F,1,0,tap,steady drive,hard_drive_A,Post-highlight DFJK drive with fewer peak chords. drive lift
+99000,99.000,J,1,0,tap,steady drive,hard_drive_A,Post-highlight DFJK drive with fewer peak chords. drive answer
+99300,99.300,K,1,0,tap,steady drive,hard_drive_A,Post-highlight DFJK drive with fewer peak chords. drive close
+99750,99.750,D,1,0,tap,steady drive,hard_drive_A,Post-highlight DFJK drive with fewer peak chords. sync pickup
+99900,99.900,F,1,0,tap,steady drive,hard_drive_A,Post-highlight DFJK drive with fewer peak chords. sync pickup
+100200,100.200,D+J,2,0,chord,steady drive,hard_drive_A,Post-highlight DFJK drive with fewer peak chords. drive chord
+100500,100.500,K,1,0,tap,steady drive,hard_drive_A,Post-highlight DFJK drive with fewer peak chords. turnaround
+100800,100.800,K,1,0,tap,steady drive,hard_drive_B,Post-highlight reverse drive. reverse drive anchor
+101100,101.100,J,1,0,tap,steady drive,hard_drive_B,Post-highlight reverse drive. reverse drive lift
+101400,101.400,F,1,0,tap,steady drive,hard_drive_B,Post-highlight reverse drive. reverse drive answer
+101700,101.700,D,1,0,tap,steady drive,hard_drive_B,Post-highlight reverse drive. reverse drive close
+102150,102.150,K,1,0,tap,steady drive,hard_drive_B,Post-highlight reverse drive. sync pickup
+102300,102.300,J,1,0,tap,steady drive,hard_drive_B,Post-highlight reverse drive. sync pickup
+102600,102.600,F+K,2,0,chord,steady drive,hard_drive_B,Post-highlight reverse drive. drive chord
+102900,102.900,D,1,0,tap,steady drive,hard_drive_B,Post-highlight reverse drive. turnaround
+103200,103.200,D,1,900,hold,release,hard_release_A,Expressive cooldown hold with a harder answer shape. cooldown sustain
+103800,103.800,K,1,0,tap,release,hard_release_A,Expressive cooldown hold with a harder answer shape. wide tap over sustain
+104550,104.550,F,1,0,tap,release,hard_release_A,Expressive cooldown hold with a harder answer shape. late answer
+104850,104.850,J,1,0,tap,release,hard_release_A,Expressive cooldown hold with a harder answer shape. late answer
+105150,105.150,D+J,2,0,chord,release,hard_release_A,Expressive cooldown hold with a harder answer shape. soft story-impact chord
+105600,105.600,K,1,900,hold,release,hard_release_B,Reverse expressive cooldown hold. reverse cooldown sustain
+106200,106.200,D,1,0,tap,release,hard_release_B,Reverse expressive cooldown hold. wide tap over sustain
+106950,106.950,J,1,0,tap,release,hard_release_B,Reverse expressive cooldown hold. late answer
+107250,107.250,F,1,0,tap,release,hard_release_B,Reverse expressive cooldown hold. late answer
+107550,107.550,F+K,2,0,chord,release,hard_release_B,Reverse expressive cooldown hold. soft story-impact chord
+108000,108.000,D,1,900,hold,release,hard_release_A,Expressive cooldown hold with a harder answer shape. cooldown sustain
+108600,108.600,K,1,0,tap,release,hard_release_A,Expressive cooldown hold with a harder answer shape. wide tap over sustain
+109350,109.350,F,1,0,tap,release,hard_release_A,Expressive cooldown hold with a harder answer shape. late answer
+109650,109.650,J,1,0,tap,release,hard_release_A,Expressive cooldown hold with a harder answer shape. late answer
+109950,109.950,D+J,2,0,chord,release,hard_release_A,Expressive cooldown hold with a harder answer shape. soft story-impact chord
+110400,110.400,K,1,900,hold,release,hard_release_B,Reverse expressive cooldown hold. reverse cooldown sustain
+111000,111.000,D,1,0,tap,release,hard_release_B,Reverse expressive cooldown hold. wide tap over sustain
+111750,111.750,J,1,0,tap,release,hard_release_B,Reverse expressive cooldown hold. late answer
+112050,112.050,F,1,0,tap,release,hard_release_B,Reverse expressive cooldown hold. late answer
+112350,112.350,F+K,2,0,chord,release,hard_release_B,Reverse expressive cooldown hold. soft story-impact chord
+112800,112.800,D,1,0,tap,encore outro,hard_outro_A,Encore cadence with compact flourish. final anchor
+113100,113.100,F,1,0,tap,encore outro,hard_outro_A,Encore cadence with compact flourish. final lift
+113400,113.400,J,1,0,tap,encore outro,hard_outro_A,Encore cadence with compact flourish. final answer
+113700,113.700,K,1,0,tap,encore outro,hard_outro_A,Encore cadence with compact flourish. final close
+114150,114.150,D+J,2,0,chord,encore outro,hard_outro_A,Encore cadence with compact flourish. encore chord
+114600,114.600,F,1,0,tap,encore outro,hard_outro_A,Encore cadence with compact flourish. pickup
+115200,115.200,F,1,600,hold,encore outro,hard_outro_B,Final hold and last chord. final sustain
+115650,115.650,K,1,0,tap,encore outro,hard_outro_B,Final hold and last chord. tap over sustain
+116100,116.100,D,1,0,tap,encore outro,hard_outro_B,Final hold and last chord. last left answer
+116550,116.550,F+K,2,0,chord,encore outro,hard_outro_B,Final hold and last chord. last bright chord
+117000,117.000,D+K,2,0,chord,encore outro,hard_outro_B,Final hold and last chord. final outer hit

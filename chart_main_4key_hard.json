@@ -1,0 +1,4907 @@
+{
+  "title": "main 4-key hard performance chart",
+  "audio": "main.wav",
+  "difficulty": "Hard",
+  "keys": [
+    "D",
+    "F",
+    "J",
+    "K"
+  ],
+  "bpm": 100,
+  "offsetMs": 0,
+  "approachMs": 1780,
+  "durationMs": 119171,
+  "judgementWindowsMs": {
+    "perfect": 60,
+    "great": 110,
+    "good": 180
+  },
+  "purpose": "Hard 4-key reference chart for checking performance-like density, syncopation, chord readability, holds, fever feel, and story-performance intensity.",
+  "patternDesign": "Deterministic hard loops built from DFJK/KJFD runs, call-answer bursts, readable D+J/F+K/D+K/F+J chords, and hold-under-tap phrases. Dense but still playable with alternating hands; no random note generation.",
+  "sections": [
+    {
+      "startMs": 1200,
+      "endMs": 16800,
+      "name": "opening rehearsal",
+      "intent": "Hard onboarding with quicker hand alternation while staying readable",
+      "loop": [
+        "hard_intro_A",
+        "hard_intro_B",
+        "hard_intro_fill"
+      ],
+      "patternIntent": "Hard onboarding with quicker hand alternation while staying readable"
+    },
+    {
+      "startMs": 16800,
+      "endMs": 31200,
+      "name": "verse performance",
+      "intent": "steady 8th-note performance loop with first chord accents",
+      "loop": [
+        "hard_verse_A",
+        "hard_verse_B",
+        "hard_verse_call"
+      ],
+      "patternIntent": "steady 8th-note performance loop with first chord accents"
+    },
+    {
+      "startMs": 31200,
+      "endMs": 55200,
+      "name": "build up",
+      "intent": "active build with alternating hands, short bursts, and hold-under-tap checks",
+      "loop": [
+        "hard_build_A",
+        "hard_build_B",
+        "hard_build_call",
+        "hard_build_hold"
+      ],
+      "patternIntent": "active build with alternating hands, short bursts, and hold-under-tap checks"
+    },
+    {
+      "startMs": 55200,
+      "endMs": 79200,
+      "name": "highlight live",
+      "intent": "Hard peak density using performance-like riffs, readable 2-key chords, and short 16th-feel pickups",
+      "loop": [
+        "hard_high_A",
+        "hard_high_B",
+        "hard_high_riff",
+        "hard_high_hold"
+      ],
+      "patternIntent": "Hard peak density using performance-like riffs, readable 2-key chords, and short 16th-feel pickups"
+    },
+    {
+      "startMs": 79200,
+      "endMs": 103200,
+      "name": "steady drive",
+      "intent": "post-highlight drive that keeps momentum with fewer peak chords",
+      "loop": [
+        "hard_drive_A",
+        "hard_drive_B",
+        "hard_drive_sync",
+        "hard_drive_hold"
+      ],
+      "patternIntent": "post-highlight drive that keeps momentum with fewer peak chords"
+    },
+    {
+      "startMs": 103200,
+      "endMs": 112800,
+      "name": "release",
+      "intent": "cooldown with expressive holds and spacious but still Hard-level answers",
+      "loop": [
+        "hard_release_A",
+        "hard_release_B"
+      ],
+      "patternIntent": "cooldown with expressive holds and spacious but still Hard-level answers"
+    },
+    {
+      "startMs": 112800,
+      "endMs": 118200,
+      "name": "encore outro",
+      "intent": "final cadence with a compact encore-style flourish",
+      "loop": [
+        "hard_outro_A",
+        "hard_outro_B"
+      ],
+      "patternIntent": "final cadence with a compact encore-style flourish"
+    }
+  ],
+  "patterns": {
+    "hard_intro_A": {
+      "description": "Opening left-to-right riff with a small chord lift.",
+      "events": [
+        [
+          0,
+          [
+            "D"
+          ],
+          0,
+          "opening riff anchor"
+        ],
+        [
+          0.5,
+          [
+            "F"
+          ],
+          0,
+          "quick hand lift"
+        ],
+        [
+          1.5,
+          [
+            "J"
+          ],
+          0,
+          "right response"
+        ],
+        [
+          2,
+          [
+            "K"
+          ],
+          0,
+          "right cadence"
+        ],
+        [
+          3,
+          [
+            "D",
+            "J"
+          ],
+          0,
+          "first performance chord"
+        ],
+        [
+          3.5,
+          [
+            "F"
+          ],
+          0,
+          "pickup"
+        ]
+      ]
+    },
+    "hard_intro_B": {
+      "description": "Reverse riff with a short right hold check.",
+      "events": [
+        [
+          0,
+          [
+            "K"
+          ],
+          0,
+          "reverse riff anchor"
+        ],
+        [
+          0.5,
+          [
+            "J"
+          ],
+          0,
+          "quick reverse lift"
+        ],
+        [
+          1.5,
+          [
+            "F"
+          ],
+          0,
+          "left response"
+        ],
+        [
+          2,
+          [
+            "D"
+          ],
+          0,
+          "left cadence"
+        ],
+        [
+          2.5,
+          [
+            "K"
+          ],
+          1,
+          "short right hold"
+        ],
+        [
+          3.5,
+          [
+            "J"
+          ],
+          0,
+          "hold release pickup"
+        ]
+      ]
+    },
+    "hard_intro_fill": {
+      "description": "Compact call-answer fill without overloading the intro.",
+      "events": [
+        [
+          0,
+          [
+            "D"
+          ],
+          0,
+          "call start"
+        ],
+        [
+          0.5,
+          [
+            "F"
+          ],
+          0,
+          "call continuation"
+        ],
+        [
+          1,
+          [
+            "J"
+          ],
+          0,
+          "answer start"
+        ],
+        [
+          1.5,
+          [
+            "K"
+          ],
+          0,
+          "answer continuation"
+        ],
+        [
+          2.5,
+          [
+            "F",
+            "K"
+          ],
+          0,
+          "bright chord accent"
+        ],
+        [
+          3.25,
+          [
+            "D"
+          ],
+          0,
+          "late pickup"
+        ]
+      ]
+    },
+    "hard_verse_A": {
+      "description": "DFJK 8th loop with a clear D+J accent.",
+      "events": [
+        [
+          0,
+          [
+            "D"
+          ],
+          0,
+          "DFJK run"
+        ],
+        [
+          0.5,
+          [
+            "F"
+          ],
+          0,
+          "DFJK run"
+        ],
+        [
+          1,
+          [
+            "J"
+          ],
+          0,
+          "DFJK run"
+        ],
+        [
+          1.5,
+          [
+            "K"
+          ],
+          0,
+          "DFJK run"
+        ],
+        [
+          2,
+          [
+            "D"
+          ],
+          0,
+          "left reset"
+        ],
+        [
+          2.5,
+          [
+            "F"
+          ],
+          0,
+          "left lift"
+        ],
+        [
+          3,
+          [
+            "D",
+            "J"
+          ],
+          0,
+          "chord accent"
+        ],
+        [
+          3.5,
+          [
+            "K"
+          ],
+          0,
+          "right pickup"
+        ]
+      ]
+    },
+    "hard_verse_B": {
+      "description": "KJFD reverse 8th loop with F+K accent.",
+      "events": [
+        [
+          0,
+          [
+            "K"
+          ],
+          0,
+          "KJFD reverse run"
+        ],
+        [
+          0.5,
+          [
+            "J"
+          ],
+          0,
+          "KJFD reverse run"
+        ],
+        [
+          1,
+          [
+            "F"
+          ],
+          0,
+          "KJFD reverse run"
+        ],
+        [
+          1.5,
+          [
+            "D"
+          ],
+          0,
+          "KJFD reverse run"
+        ],
+        [
+          2,
+          [
+            "K"
+          ],
+          0,
+          "right reset"
+        ],
+        [
+          2.5,
+          [
+            "J"
+          ],
+          0,
+          "right lift"
+        ],
+        [
+          3,
+          [
+            "F",
+            "K"
+          ],
+          0,
+          "chord accent"
+        ],
+        [
+          3.5,
+          [
+            "D"
+          ],
+          0,
+          "left pickup"
+        ]
+      ]
+    },
+    "hard_verse_call": {
+      "description": "D F to J K call-answer with a short 16th-feel pickup.",
+      "events": [
+        [
+          0,
+          [
+            "D"
+          ],
+          0,
+          "call anchor"
+        ],
+        [
+          0.5,
+          [
+            "F"
+          ],
+          0,
+          "call lift"
+        ],
+        [
+          1.5,
+          [
+            "J"
+          ],
+          0,
+          "answer"
+        ],
+        [
+          2,
+          [
+            "K"
+          ],
+          0,
+          "answer close"
+        ],
+        [
+          2.25,
+          [
+            "F"
+          ],
+          0,
+          "short pickup"
+        ],
+        [
+          2.5,
+          [
+            "J"
+          ],
+          0,
+          "pickup answer"
+        ],
+        [
+          3,
+          [
+            "F",
+            "J"
+          ],
+          0,
+          "inner color chord"
+        ],
+        [
+          3.5,
+          [
+            "D"
+          ],
+          0,
+          "turnaround"
+        ]
+      ]
+    },
+    "hard_build_A": {
+      "description": "Build-up alternating run with outer chord punctuation.",
+      "events": [
+        [
+          0,
+          [
+            "D"
+          ],
+          0,
+          "build run"
+        ],
+        [
+          0.5,
+          [
+            "F"
+          ],
+          0,
+          "build run"
+        ],
+        [
+          1,
+          [
+            "J"
+          ],
+          0,
+          "build run"
+        ],
+        [
+          1.5,
+          [
+            "K"
+          ],
+          0,
+          "build run"
+        ],
+        [
+          2,
+          [
+            "D"
+          ],
+          0,
+          "second phrase"
+        ],
+        [
+          2.25,
+          [
+            "F"
+          ],
+          0,
+          "tight lift"
+        ],
+        [
+          2.5,
+          [
+            "J"
+          ],
+          0,
+          "tight answer"
+        ],
+        [
+          3,
+          [
+            "D",
+            "K"
+          ],
+          0,
+          "outer chord punctuation"
+        ],
+        [
+          3.5,
+          [
+            "F"
+          ],
+          0,
+          "pickup"
+        ]
+      ]
+    },
+    "hard_build_B": {
+      "description": "Reverse build-up alternating run with inner chord punctuation.",
+      "events": [
+        [
+          0,
+          [
+            "K"
+          ],
+          0,
+          "reverse build run"
+        ],
+        [
+          0.5,
+          [
+            "J"
+          ],
+          0,
+          "reverse build run"
+        ],
+        [
+          1,
+          [
+            "F"
+          ],
+          0,
+          "reverse build run"
+        ],
+        [
+          1.5,
+          [
+            "D"
+          ],
+          0,
+          "reverse build run"
+        ],
+        [
+          2,
+          [
+            "K"
+          ],
+          0,
+          "second phrase"
+        ],
+        [
+          2.25,
+          [
+            "J"
+          ],
+          0,
+          "tight lift"
+        ],
+        [
+          2.5,
+          [
+            "F"
+          ],
+          0,
+          "tight answer"
+        ],
+        [
+          3,
+          [
+            "F",
+            "J"
+          ],
+          0,
+          "inner chord punctuation"
+        ],
+        [
+          3.5,
+          [
+            "K"
+          ],
+          0,
+          "pickup"
+        ]
+      ]
+    },
+    "hard_build_call": {
+      "description": "Call-answer phrase that feels like a rehearsal riff tightening up.",
+      "events": [
+        [
+          0,
+          [
+            "D",
+            "J"
+          ],
+          0,
+          "call chord"
+        ],
+        [
+          0.5,
+          [
+            "F"
+          ],
+          0,
+          "single recovery"
+        ],
+        [
+          1,
+          [
+            "J"
+          ],
+          0,
+          "right lift"
+        ],
+        [
+          1.5,
+          [
+            "K"
+          ],
+          0,
+          "right close"
+        ],
+        [
+          2,
+          [
+            "F",
+            "K"
+          ],
+          0,
+          "answer chord"
+        ],
+        [
+          2.5,
+          [
+            "J"
+          ],
+          0,
+          "single recovery"
+        ],
+        [
+          3,
+          [
+            "D"
+          ],
+          0,
+          "left reset"
+        ],
+        [
+          3.5,
+          [
+            "F"
+          ],
+          0,
+          "pickup"
+        ]
+      ]
+    },
+    "hard_build_hold": {
+      "description": "Short hold under alternating taps for band-performance control.",
+      "events": [
+        [
+          0,
+          [
+            "D"
+          ],
+          1,
+          "left hold under riff"
+        ],
+        [
+          0.5,
+          [
+            "J"
+          ],
+          0,
+          "tap over hold"
+        ],
+        [
+          1.25,
+          [
+            "F"
+          ],
+          0,
+          "release-side lift"
+        ],
+        [
+          1.75,
+          [
+            "K"
+          ],
+          0,
+          "right answer"
+        ],
+        [
+          2.5,
+          [
+            "F",
+            "K"
+          ],
+          0,
+          "release chord"
+        ],
+        [
+          3.25,
+          [
+            "D"
+          ],
+          0,
+          "late turnaround"
+        ]
+      ]
+    },
+    "hard_high_A": {
+      "description": "Peak DFJK riff with quick pickups and D+J hit.",
+      "events": [
+        [
+          0,
+          [
+            "D"
+          ],
+          0,
+          "peak riff"
+        ],
+        [
+          0.5,
+          [
+            "F"
+          ],
+          0,
+          "peak riff"
+        ],
+        [
+          0.75,
+          [
+            "J"
+          ],
+          0,
+          "short pickup"
+        ],
+        [
+          1,
+          [
+            "K"
+          ],
+          0,
+          "peak close"
+        ],
+        [
+          1.5,
+          [
+            "D",
+            "J"
+          ],
+          0,
+          "stage hit chord"
+        ],
+        [
+          2,
+          [
+            "F"
+          ],
+          0,
+          "second phrase"
+        ],
+        [
+          2.25,
+          [
+            "J"
+          ],
+          0,
+          "quick lift"
+        ],
+        [
+          2.5,
+          [
+            "K"
+          ],
+          0,
+          "right answer"
+        ],
+        [
+          3,
+          [
+            "F",
+            "K"
+          ],
+          0,
+          "bright chord"
+        ],
+        [
+          3.5,
+          [
+            "D"
+          ],
+          0,
+          "turnaround"
+        ]
+      ]
+    },
+    "hard_high_B": {
+      "description": "Peak reverse riff with quick pickups and F+K hit.",
+      "events": [
+        [
+          0,
+          [
+            "K"
+          ],
+          0,
+          "peak reverse riff"
+        ],
+        [
+          0.5,
+          [
+            "J"
+          ],
+          0,
+          "peak reverse riff"
+        ],
+        [
+          0.75,
+          [
+            "F"
+          ],
+          0,
+          "short pickup"
+        ],
+        [
+          1,
+          [
+            "D"
+          ],
+          0,
+          "peak close"
+        ],
+        [
+          1.5,
+          [
+            "F",
+            "K"
+          ],
+          0,
+          "stage hit chord"
+        ],
+        [
+          2,
+          [
+            "J"
+          ],
+          0,
+          "second phrase"
+        ],
+        [
+          2.25,
+          [
+            "F"
+          ],
+          0,
+          "quick lift"
+        ],
+        [
+          2.5,
+          [
+            "D"
+          ],
+          0,
+          "left answer"
+        ],
+        [
+          3,
+          [
+            "D",
+            "J"
+          ],
+          0,
+          "bright chord"
+        ],
+        [
+          3.5,
+          [
+            "K"
+          ],
+          0,
+          "turnaround"
+        ]
+      ]
+    },
+    "hard_high_riff": {
+      "description": "Concert-style call-answer burst with inner and outer chord colors.",
+      "events": [
+        [
+          0,
+          [
+            "D"
+          ],
+          0,
+          "riff call"
+        ],
+        [
+          0.25,
+          [
+            "F"
+          ],
+          0,
+          "riff pickup"
+        ],
+        [
+          0.5,
+          [
+            "J"
+          ],
+          0,
+          "riff answer"
+        ],
+        [
+          1,
+          [
+            "K"
+          ],
+          0,
+          "right close"
+        ],
+        [
+          1.5,
+          [
+            "F",
+            "J"
+          ],
+          0,
+          "inner color hit"
+        ],
+        [
+          2,
+          [
+            "K"
+          ],
+          0,
+          "reverse call"
+        ],
+        [
+          2.25,
+          [
+            "J"
+          ],
+          0,
+          "reverse pickup"
+        ],
+        [
+          2.5,
+          [
+            "F"
+          ],
+          0,
+          "reverse answer"
+        ],
+        [
+          3,
+          [
+            "D",
+            "K"
+          ],
+          0,
+          "outer color hit"
+        ],
+        [
+          3.5,
+          [
+            "F"
+          ],
+          0,
+          "turnaround"
+        ]
+      ]
+    },
+    "hard_high_hold": {
+      "description": "Highlight hold phrase with taps underneath and chord release.",
+      "events": [
+        [
+          0,
+          [
+            "D"
+          ],
+          1.5,
+          "left sustain performance"
+        ],
+        [
+          0.5,
+          [
+            "J"
+          ],
+          0,
+          "right tap over sustain"
+        ],
+        [
+          1,
+          [
+            "K"
+          ],
+          0,
+          "right tap over sustain"
+        ],
+        [
+          1.75,
+          [
+            "F"
+          ],
+          0,
+          "release lift"
+        ],
+        [
+          2,
+          [
+            "K"
+          ],
+          1,
+          "right sustain answer"
+        ],
+        [
+          2.5,
+          [
+            "D"
+          ],
+          0,
+          "left tap under right hold"
+        ],
+        [
+          3,
+          [
+            "D",
+            "J"
+          ],
+          0,
+          "release chord"
+        ],
+        [
+          3.5,
+          [
+            "F"
+          ],
+          0,
+          "pickup"
+        ]
+      ]
+    },
+    "hard_drive_A": {
+      "description": "Post-highlight DFJK drive with fewer peak chords.",
+      "events": [
+        [
+          0,
+          [
+            "D"
+          ],
+          0,
+          "drive anchor"
+        ],
+        [
+          0.5,
+          [
+            "F"
+          ],
+          0,
+          "drive lift"
+        ],
+        [
+          1,
+          [
+            "J"
+          ],
+          0,
+          "drive answer"
+        ],
+        [
+          1.5,
+          [
+            "K"
+          ],
+          0,
+          "drive close"
+        ],
+        [
+          2.25,
+          [
+            "D"
+          ],
+          0,
+          "sync pickup"
+        ],
+        [
+          2.5,
+          [
+            "F"
+          ],
+          0,
+          "sync pickup"
+        ],
+        [
+          3,
+          [
+            "D",
+            "J"
+          ],
+          0,
+          "drive chord"
+        ],
+        [
+          3.5,
+          [
+            "K"
+          ],
+          0,
+          "turnaround"
+        ]
+      ]
+    },
+    "hard_drive_B": {
+      "description": "Post-highlight reverse drive.",
+      "events": [
+        [
+          0,
+          [
+            "K"
+          ],
+          0,
+          "reverse drive anchor"
+        ],
+        [
+          0.5,
+          [
+            "J"
+          ],
+          0,
+          "reverse drive lift"
+        ],
+        [
+          1,
+          [
+            "F"
+          ],
+          0,
+          "reverse drive answer"
+        ],
+        [
+          1.5,
+          [
+            "D"
+          ],
+          0,
+          "reverse drive close"
+        ],
+        [
+          2.25,
+          [
+            "K"
+          ],
+          0,
+          "sync pickup"
+        ],
+        [
+          2.5,
+          [
+            "J"
+          ],
+          0,
+          "sync pickup"
+        ],
+        [
+          3,
+          [
+            "F",
+            "K"
+          ],
+          0,
+          "drive chord"
+        ],
+        [
+          3.5,
+          [
+            "D"
+          ],
+          0,
+          "turnaround"
+        ]
+      ]
+    },
+    "hard_drive_sync": {
+      "description": "Syncopated drive phrase for groove checking.",
+      "events": [
+        [
+          0,
+          [
+            "D",
+            "K"
+          ],
+          0,
+          "outer sync hit"
+        ],
+        [
+          0.75,
+          [
+            "F"
+          ],
+          0,
+          "offbeat lift"
+        ],
+        [
+          1.25,
+          [
+            "J"
+          ],
+          0,
+          "offbeat answer"
+        ],
+        [
+          2,
+          [
+            "F",
+            "J"
+          ],
+          0,
+          "inner sync hit"
+        ],
+        [
+          2.75,
+          [
+            "K"
+          ],
+          0,
+          "late right"
+        ],
+        [
+          3.25,
+          [
+            "D"
+          ],
+          0,
+          "late left"
+        ]
+      ]
+    },
+    "hard_drive_hold": {
+      "description": "Drive hold recovery with chord finish.",
+      "events": [
+        [
+          0,
+          [
+            "F"
+          ],
+          1,
+          "inner hold"
+        ],
+        [
+          0.5,
+          [
+            "K"
+          ],
+          0,
+          "tap over hold"
+        ],
+        [
+          1.5,
+          [
+            "D"
+          ],
+          0,
+          "left answer"
+        ],
+        [
+          2,
+          [
+            "J"
+          ],
+          1,
+          "right hold"
+        ],
+        [
+          2.5,
+          [
+            "F"
+          ],
+          0,
+          "tap under hold"
+        ],
+        [
+          3,
+          [
+            "F",
+            "K"
+          ],
+          0,
+          "finish chord"
+        ]
+      ]
+    },
+    "hard_release_A": {
+      "description": "Expressive cooldown hold with a harder answer shape.",
+      "events": [
+        [
+          0,
+          [
+            "D"
+          ],
+          1.5,
+          "cooldown sustain"
+        ],
+        [
+          1,
+          [
+            "K"
+          ],
+          0,
+          "wide tap over sustain"
+        ],
+        [
+          2.25,
+          [
+            "F"
+          ],
+          0,
+          "late answer"
+        ],
+        [
+          2.75,
+          [
+            "J"
+          ],
+          0,
+          "late answer"
+        ],
+        [
+          3.25,
+          [
+            "D",
+            "J"
+          ],
+          0,
+          "soft story-impact chord"
+        ]
+      ]
+    },
+    "hard_release_B": {
+      "description": "Reverse expressive cooldown hold.",
+      "events": [
+        [
+          0,
+          [
+            "K"
+          ],
+          1.5,
+          "reverse cooldown sustain"
+        ],
+        [
+          1,
+          [
+            "D"
+          ],
+          0,
+          "wide tap over sustain"
+        ],
+        [
+          2.25,
+          [
+            "J"
+          ],
+          0,
+          "late answer"
+        ],
+        [
+          2.75,
+          [
+            "F"
+          ],
+          0,
+          "late answer"
+        ],
+        [
+          3.25,
+          [
+            "F",
+            "K"
+          ],
+          0,
+          "soft story-impact chord"
+        ]
+      ]
+    },
+    "hard_outro_A": {
+      "description": "Encore cadence with compact flourish.",
+      "events": [
+        [
+          0,
+          [
+            "D"
+          ],
+          0,
+          "final anchor"
+        ],
+        [
+          0.5,
+          [
+            "F"
+          ],
+          0,
+          "final lift"
+        ],
+        [
+          1,
+          [
+            "J"
+          ],
+          0,
+          "final answer"
+        ],
+        [
+          1.5,
+          [
+            "K"
+          ],
+          0,
+          "final close"
+        ],
+        [
+          2.25,
+          [
+            "D",
+            "J"
+          ],
+          0,
+          "encore chord"
+        ],
+        [
+          3,
+          [
+            "F"
+          ],
+          0,
+          "pickup"
+        ]
+      ]
+    },
+    "hard_outro_B": {
+      "description": "Final hold and last chord.",
+      "events": [
+        [
+          0,
+          [
+            "F"
+          ],
+          1,
+          "final sustain"
+        ],
+        [
+          0.75,
+          [
+            "K"
+          ],
+          0,
+          "tap over sustain"
+        ],
+        [
+          1.5,
+          [
+            "D"
+          ],
+          0,
+          "last left answer"
+        ],
+        [
+          2.25,
+          [
+            "F",
+            "K"
+          ],
+          0,
+          "last bright chord"
+        ],
+        [
+          3,
+          [
+            "D",
+            "K"
+          ],
+          0,
+          "final outer hit"
+        ]
+      ]
+    }
+  },
+  "notes": [
+    {
+      "timeMs": 1200,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_A",
+      "intent": "Opening left-to-right riff with a small chord lift. opening riff anchor",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 1500,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_A",
+      "intent": "Opening left-to-right riff with a small chord lift. quick hand lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 2100,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_A",
+      "intent": "Opening left-to-right riff with a small chord lift. right response",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 2400,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_A",
+      "intent": "Opening left-to-right riff with a small chord lift. right cadence",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 3000,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_A",
+      "intent": "Opening left-to-right riff with a small chord lift. first performance chord",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 3300,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_A",
+      "intent": "Opening left-to-right riff with a small chord lift. pickup",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 3600,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_B",
+      "intent": "Reverse riff with a short right hold check. reverse riff anchor",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 3900,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_B",
+      "intent": "Reverse riff with a short right hold check. quick reverse lift",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 4500,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_B",
+      "intent": "Reverse riff with a short right hold check. left response",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 4800,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_B",
+      "intent": "Reverse riff with a short right hold check. left cadence",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 5100,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_B",
+      "intent": "Reverse riff with a short right hold check. short right hold",
+      "lanes": [
+        "K"
+      ],
+      "durationMs": 600
+    },
+    {
+      "timeMs": 5700,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_B",
+      "intent": "Reverse riff with a short right hold check. hold release pickup",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 6000,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_fill",
+      "intent": "Compact call-answer fill without overloading the intro. call start",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 6300,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_fill",
+      "intent": "Compact call-answer fill without overloading the intro. call continuation",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 6600,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_fill",
+      "intent": "Compact call-answer fill without overloading the intro. answer start",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 6900,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_fill",
+      "intent": "Compact call-answer fill without overloading the intro. answer continuation",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 7500,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_fill",
+      "intent": "Compact call-answer fill without overloading the intro. bright chord accent",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 7950,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_fill",
+      "intent": "Compact call-answer fill without overloading the intro. late pickup",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 8400,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_A",
+      "intent": "Opening left-to-right riff with a small chord lift. opening riff anchor",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 8700,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_A",
+      "intent": "Opening left-to-right riff with a small chord lift. quick hand lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 9300,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_A",
+      "intent": "Opening left-to-right riff with a small chord lift. right response",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 9600,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_A",
+      "intent": "Opening left-to-right riff with a small chord lift. right cadence",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 10200,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_A",
+      "intent": "Opening left-to-right riff with a small chord lift. first performance chord",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 10500,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_A",
+      "intent": "Opening left-to-right riff with a small chord lift. pickup",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 10800,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_B",
+      "intent": "Reverse riff with a short right hold check. reverse riff anchor",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 11100,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_B",
+      "intent": "Reverse riff with a short right hold check. quick reverse lift",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 11700,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_B",
+      "intent": "Reverse riff with a short right hold check. left response",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 12000,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_B",
+      "intent": "Reverse riff with a short right hold check. left cadence",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 12300,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_B",
+      "intent": "Reverse riff with a short right hold check. short right hold",
+      "lanes": [
+        "K"
+      ],
+      "durationMs": 600
+    },
+    {
+      "timeMs": 12900,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_B",
+      "intent": "Reverse riff with a short right hold check. hold release pickup",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 13200,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_fill",
+      "intent": "Compact call-answer fill without overloading the intro. call start",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 13500,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_fill",
+      "intent": "Compact call-answer fill without overloading the intro. call continuation",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 13800,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_fill",
+      "intent": "Compact call-answer fill without overloading the intro. answer start",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 14100,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_fill",
+      "intent": "Compact call-answer fill without overloading the intro. answer continuation",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 14700,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_fill",
+      "intent": "Compact call-answer fill without overloading the intro. bright chord accent",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 15150,
+      "section": "opening rehearsal",
+      "pattern": "hard_intro_fill",
+      "intent": "Compact call-answer fill without overloading the intro. late pickup",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 16800,
+      "section": "verse performance",
+      "pattern": "hard_verse_A",
+      "intent": "DFJK 8th loop with a clear D+J accent. DFJK run",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 17100,
+      "section": "verse performance",
+      "pattern": "hard_verse_A",
+      "intent": "DFJK 8th loop with a clear D+J accent. DFJK run",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 17400,
+      "section": "verse performance",
+      "pattern": "hard_verse_A",
+      "intent": "DFJK 8th loop with a clear D+J accent. DFJK run",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 17700,
+      "section": "verse performance",
+      "pattern": "hard_verse_A",
+      "intent": "DFJK 8th loop with a clear D+J accent. DFJK run",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 18000,
+      "section": "verse performance",
+      "pattern": "hard_verse_A",
+      "intent": "DFJK 8th loop with a clear D+J accent. left reset",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 18300,
+      "section": "verse performance",
+      "pattern": "hard_verse_A",
+      "intent": "DFJK 8th loop with a clear D+J accent. left lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 18600,
+      "section": "verse performance",
+      "pattern": "hard_verse_A",
+      "intent": "DFJK 8th loop with a clear D+J accent. chord accent",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 18900,
+      "section": "verse performance",
+      "pattern": "hard_verse_A",
+      "intent": "DFJK 8th loop with a clear D+J accent. right pickup",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 19200,
+      "section": "verse performance",
+      "pattern": "hard_verse_B",
+      "intent": "KJFD reverse 8th loop with F+K accent. KJFD reverse run",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 19500,
+      "section": "verse performance",
+      "pattern": "hard_verse_B",
+      "intent": "KJFD reverse 8th loop with F+K accent. KJFD reverse run",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 19800,
+      "section": "verse performance",
+      "pattern": "hard_verse_B",
+      "intent": "KJFD reverse 8th loop with F+K accent. KJFD reverse run",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 20100,
+      "section": "verse performance",
+      "pattern": "hard_verse_B",
+      "intent": "KJFD reverse 8th loop with F+K accent. KJFD reverse run",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 20400,
+      "section": "verse performance",
+      "pattern": "hard_verse_B",
+      "intent": "KJFD reverse 8th loop with F+K accent. right reset",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 20700,
+      "section": "verse performance",
+      "pattern": "hard_verse_B",
+      "intent": "KJFD reverse 8th loop with F+K accent. right lift",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 21000,
+      "section": "verse performance",
+      "pattern": "hard_verse_B",
+      "intent": "KJFD reverse 8th loop with F+K accent. chord accent",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 21300,
+      "section": "verse performance",
+      "pattern": "hard_verse_B",
+      "intent": "KJFD reverse 8th loop with F+K accent. left pickup",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 21600,
+      "section": "verse performance",
+      "pattern": "hard_verse_call",
+      "intent": "D F to J K call-answer with a short 16th-feel pickup. call anchor",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 21900,
+      "section": "verse performance",
+      "pattern": "hard_verse_call",
+      "intent": "D F to J K call-answer with a short 16th-feel pickup. call lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 22500,
+      "section": "verse performance",
+      "pattern": "hard_verse_call",
+      "intent": "D F to J K call-answer with a short 16th-feel pickup. answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 22800,
+      "section": "verse performance",
+      "pattern": "hard_verse_call",
+      "intent": "D F to J K call-answer with a short 16th-feel pickup. answer close",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 22950,
+      "section": "verse performance",
+      "pattern": "hard_verse_call",
+      "intent": "D F to J K call-answer with a short 16th-feel pickup. short pickup",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 23100,
+      "section": "verse performance",
+      "pattern": "hard_verse_call",
+      "intent": "D F to J K call-answer with a short 16th-feel pickup. pickup answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 23400,
+      "section": "verse performance",
+      "pattern": "hard_verse_call",
+      "intent": "D F to J K call-answer with a short 16th-feel pickup. inner color chord",
+      "lanes": [
+        "F",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 23700,
+      "section": "verse performance",
+      "pattern": "hard_verse_call",
+      "intent": "D F to J K call-answer with a short 16th-feel pickup. turnaround",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 24000,
+      "section": "verse performance",
+      "pattern": "hard_verse_A",
+      "intent": "DFJK 8th loop with a clear D+J accent. DFJK run",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 24300,
+      "section": "verse performance",
+      "pattern": "hard_verse_A",
+      "intent": "DFJK 8th loop with a clear D+J accent. DFJK run",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 24600,
+      "section": "verse performance",
+      "pattern": "hard_verse_A",
+      "intent": "DFJK 8th loop with a clear D+J accent. DFJK run",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 24900,
+      "section": "verse performance",
+      "pattern": "hard_verse_A",
+      "intent": "DFJK 8th loop with a clear D+J accent. DFJK run",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 25200,
+      "section": "verse performance",
+      "pattern": "hard_verse_A",
+      "intent": "DFJK 8th loop with a clear D+J accent. left reset",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 25500,
+      "section": "verse performance",
+      "pattern": "hard_verse_A",
+      "intent": "DFJK 8th loop with a clear D+J accent. left lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 25800,
+      "section": "verse performance",
+      "pattern": "hard_verse_A",
+      "intent": "DFJK 8th loop with a clear D+J accent. chord accent",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 26100,
+      "section": "verse performance",
+      "pattern": "hard_verse_A",
+      "intent": "DFJK 8th loop with a clear D+J accent. right pickup",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 26400,
+      "section": "verse performance",
+      "pattern": "hard_verse_B",
+      "intent": "KJFD reverse 8th loop with F+K accent. KJFD reverse run",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 26700,
+      "section": "verse performance",
+      "pattern": "hard_verse_B",
+      "intent": "KJFD reverse 8th loop with F+K accent. KJFD reverse run",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 27000,
+      "section": "verse performance",
+      "pattern": "hard_verse_B",
+      "intent": "KJFD reverse 8th loop with F+K accent. KJFD reverse run",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 27300,
+      "section": "verse performance",
+      "pattern": "hard_verse_B",
+      "intent": "KJFD reverse 8th loop with F+K accent. KJFD reverse run",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 27600,
+      "section": "verse performance",
+      "pattern": "hard_verse_B",
+      "intent": "KJFD reverse 8th loop with F+K accent. right reset",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 27900,
+      "section": "verse performance",
+      "pattern": "hard_verse_B",
+      "intent": "KJFD reverse 8th loop with F+K accent. right lift",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 28200,
+      "section": "verse performance",
+      "pattern": "hard_verse_B",
+      "intent": "KJFD reverse 8th loop with F+K accent. chord accent",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 28500,
+      "section": "verse performance",
+      "pattern": "hard_verse_B",
+      "intent": "KJFD reverse 8th loop with F+K accent. left pickup",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 28800,
+      "section": "verse performance",
+      "pattern": "hard_verse_call",
+      "intent": "D F to J K call-answer with a short 16th-feel pickup. call anchor",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 29100,
+      "section": "verse performance",
+      "pattern": "hard_verse_call",
+      "intent": "D F to J K call-answer with a short 16th-feel pickup. call lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 29700,
+      "section": "verse performance",
+      "pattern": "hard_verse_call",
+      "intent": "D F to J K call-answer with a short 16th-feel pickup. answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 30000,
+      "section": "verse performance",
+      "pattern": "hard_verse_call",
+      "intent": "D F to J K call-answer with a short 16th-feel pickup. answer close",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 30150,
+      "section": "verse performance",
+      "pattern": "hard_verse_call",
+      "intent": "D F to J K call-answer with a short 16th-feel pickup. short pickup",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 30300,
+      "section": "verse performance",
+      "pattern": "hard_verse_call",
+      "intent": "D F to J K call-answer with a short 16th-feel pickup. pickup answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 30600,
+      "section": "verse performance",
+      "pattern": "hard_verse_call",
+      "intent": "D F to J K call-answer with a short 16th-feel pickup. inner color chord",
+      "lanes": [
+        "F",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 30900,
+      "section": "verse performance",
+      "pattern": "hard_verse_call",
+      "intent": "D F to J K call-answer with a short 16th-feel pickup. turnaround",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 31200,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. build run",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 31500,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. build run",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 31800,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. build run",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 32100,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. build run",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 32400,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. second phrase",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 32550,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. tight lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 32700,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. tight answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 33000,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. outer chord punctuation",
+      "lanes": [
+        "D",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 33300,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. pickup",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 33600,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. reverse build run",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 33900,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. reverse build run",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 34200,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. reverse build run",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 34500,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. reverse build run",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 34800,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. second phrase",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 34950,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. tight lift",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 35100,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. tight answer",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 35400,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. inner chord punctuation",
+      "lanes": [
+        "F",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 35700,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. pickup",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 36000,
+      "section": "build up",
+      "pattern": "hard_build_call",
+      "intent": "Call-answer phrase that feels like a rehearsal riff tightening up. call chord",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 36300,
+      "section": "build up",
+      "pattern": "hard_build_call",
+      "intent": "Call-answer phrase that feels like a rehearsal riff tightening up. single recovery",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 36600,
+      "section": "build up",
+      "pattern": "hard_build_call",
+      "intent": "Call-answer phrase that feels like a rehearsal riff tightening up. right lift",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 36900,
+      "section": "build up",
+      "pattern": "hard_build_call",
+      "intent": "Call-answer phrase that feels like a rehearsal riff tightening up. right close",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 37200,
+      "section": "build up",
+      "pattern": "hard_build_call",
+      "intent": "Call-answer phrase that feels like a rehearsal riff tightening up. answer chord",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 37500,
+      "section": "build up",
+      "pattern": "hard_build_call",
+      "intent": "Call-answer phrase that feels like a rehearsal riff tightening up. single recovery",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 37800,
+      "section": "build up",
+      "pattern": "hard_build_call",
+      "intent": "Call-answer phrase that feels like a rehearsal riff tightening up. left reset",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 38100,
+      "section": "build up",
+      "pattern": "hard_build_call",
+      "intent": "Call-answer phrase that feels like a rehearsal riff tightening up. pickup",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 38400,
+      "section": "build up",
+      "pattern": "hard_build_hold",
+      "intent": "Short hold under alternating taps for band-performance control. left hold under riff",
+      "lanes": [
+        "D"
+      ],
+      "durationMs": 600
+    },
+    {
+      "timeMs": 38700,
+      "section": "build up",
+      "pattern": "hard_build_hold",
+      "intent": "Short hold under alternating taps for band-performance control. tap over hold",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 39150,
+      "section": "build up",
+      "pattern": "hard_build_hold",
+      "intent": "Short hold under alternating taps for band-performance control. release-side lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 39450,
+      "section": "build up",
+      "pattern": "hard_build_hold",
+      "intent": "Short hold under alternating taps for band-performance control. right answer",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 39900,
+      "section": "build up",
+      "pattern": "hard_build_hold",
+      "intent": "Short hold under alternating taps for band-performance control. release chord",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 40350,
+      "section": "build up",
+      "pattern": "hard_build_hold",
+      "intent": "Short hold under alternating taps for band-performance control. late turnaround",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 40800,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. build run",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 41100,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. build run",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 41400,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. build run",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 41700,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. build run",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 42000,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. second phrase",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 42150,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. tight lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 42300,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. tight answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 42600,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. outer chord punctuation",
+      "lanes": [
+        "D",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 42900,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. pickup",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 43200,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. reverse build run",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 43500,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. reverse build run",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 43800,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. reverse build run",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 44100,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. reverse build run",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 44400,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. second phrase",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 44550,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. tight lift",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 44700,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. tight answer",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 45000,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. inner chord punctuation",
+      "lanes": [
+        "F",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 45300,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. pickup",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 45600,
+      "section": "build up",
+      "pattern": "hard_build_call",
+      "intent": "Call-answer phrase that feels like a rehearsal riff tightening up. call chord",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 45900,
+      "section": "build up",
+      "pattern": "hard_build_call",
+      "intent": "Call-answer phrase that feels like a rehearsal riff tightening up. single recovery",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 46200,
+      "section": "build up",
+      "pattern": "hard_build_call",
+      "intent": "Call-answer phrase that feels like a rehearsal riff tightening up. right lift",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 46500,
+      "section": "build up",
+      "pattern": "hard_build_call",
+      "intent": "Call-answer phrase that feels like a rehearsal riff tightening up. right close",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 46800,
+      "section": "build up",
+      "pattern": "hard_build_call",
+      "intent": "Call-answer phrase that feels like a rehearsal riff tightening up. answer chord",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 47100,
+      "section": "build up",
+      "pattern": "hard_build_call",
+      "intent": "Call-answer phrase that feels like a rehearsal riff tightening up. single recovery",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 47400,
+      "section": "build up",
+      "pattern": "hard_build_call",
+      "intent": "Call-answer phrase that feels like a rehearsal riff tightening up. left reset",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 47700,
+      "section": "build up",
+      "pattern": "hard_build_call",
+      "intent": "Call-answer phrase that feels like a rehearsal riff tightening up. pickup",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 48000,
+      "section": "build up",
+      "pattern": "hard_build_hold",
+      "intent": "Short hold under alternating taps for band-performance control. left hold under riff",
+      "lanes": [
+        "D"
+      ],
+      "durationMs": 600
+    },
+    {
+      "timeMs": 48300,
+      "section": "build up",
+      "pattern": "hard_build_hold",
+      "intent": "Short hold under alternating taps for band-performance control. tap over hold",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 48750,
+      "section": "build up",
+      "pattern": "hard_build_hold",
+      "intent": "Short hold under alternating taps for band-performance control. release-side lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 49050,
+      "section": "build up",
+      "pattern": "hard_build_hold",
+      "intent": "Short hold under alternating taps for band-performance control. right answer",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 49500,
+      "section": "build up",
+      "pattern": "hard_build_hold",
+      "intent": "Short hold under alternating taps for band-performance control. release chord",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 49950,
+      "section": "build up",
+      "pattern": "hard_build_hold",
+      "intent": "Short hold under alternating taps for band-performance control. late turnaround",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 50400,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. build run",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 50700,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. build run",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 51000,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. build run",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 51300,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. build run",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 51600,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. second phrase",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 51750,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. tight lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 51900,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. tight answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 52200,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. outer chord punctuation",
+      "lanes": [
+        "D",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 52500,
+      "section": "build up",
+      "pattern": "hard_build_A",
+      "intent": "Build-up alternating run with outer chord punctuation. pickup",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 52800,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. reverse build run",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 53100,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. reverse build run",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 53400,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. reverse build run",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 53700,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. reverse build run",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 54000,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. second phrase",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 54150,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. tight lift",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 54300,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. tight answer",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 54600,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. inner chord punctuation",
+      "lanes": [
+        "F",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 54900,
+      "section": "build up",
+      "pattern": "hard_build_B",
+      "intent": "Reverse build-up alternating run with inner chord punctuation. pickup",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 55200,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. peak riff",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 55500,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. peak riff",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 55650,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. short pickup",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 55800,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. peak close",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 56100,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. stage hit chord",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 56400,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. second phrase",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 56550,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. quick lift",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 56700,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. right answer",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 57000,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. bright chord",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 57300,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. turnaround",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 57600,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. peak reverse riff",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 57900,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. peak reverse riff",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 58050,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. short pickup",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 58200,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. peak close",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 58500,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. stage hit chord",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 58800,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. second phrase",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 58950,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. quick lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 59100,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. left answer",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 59400,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. bright chord",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 59700,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. turnaround",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 60000,
+      "section": "highlight live",
+      "pattern": "hard_high_riff",
+      "intent": "Concert-style call-answer burst with inner and outer chord colors. riff call",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 60150,
+      "section": "highlight live",
+      "pattern": "hard_high_riff",
+      "intent": "Concert-style call-answer burst with inner and outer chord colors. riff pickup",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 60300,
+      "section": "highlight live",
+      "pattern": "hard_high_riff",
+      "intent": "Concert-style call-answer burst with inner and outer chord colors. riff answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 60600,
+      "section": "highlight live",
+      "pattern": "hard_high_riff",
+      "intent": "Concert-style call-answer burst with inner and outer chord colors. right close",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 60900,
+      "section": "highlight live",
+      "pattern": "hard_high_riff",
+      "intent": "Concert-style call-answer burst with inner and outer chord colors. inner color hit",
+      "lanes": [
+        "F",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 61200,
+      "section": "highlight live",
+      "pattern": "hard_high_riff",
+      "intent": "Concert-style call-answer burst with inner and outer chord colors. reverse call",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 61350,
+      "section": "highlight live",
+      "pattern": "hard_high_riff",
+      "intent": "Concert-style call-answer burst with inner and outer chord colors. reverse pickup",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 61500,
+      "section": "highlight live",
+      "pattern": "hard_high_riff",
+      "intent": "Concert-style call-answer burst with inner and outer chord colors. reverse answer",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 61800,
+      "section": "highlight live",
+      "pattern": "hard_high_riff",
+      "intent": "Concert-style call-answer burst with inner and outer chord colors. outer color hit",
+      "lanes": [
+        "D",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 62100,
+      "section": "highlight live",
+      "pattern": "hard_high_riff",
+      "intent": "Concert-style call-answer burst with inner and outer chord colors. turnaround",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 62400,
+      "section": "highlight live",
+      "pattern": "hard_high_hold",
+      "intent": "Highlight hold phrase with taps underneath and chord release. left sustain performance",
+      "lanes": [
+        "D"
+      ],
+      "durationMs": 900
+    },
+    {
+      "timeMs": 62700,
+      "section": "highlight live",
+      "pattern": "hard_high_hold",
+      "intent": "Highlight hold phrase with taps underneath and chord release. right tap over sustain",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 63000,
+      "section": "highlight live",
+      "pattern": "hard_high_hold",
+      "intent": "Highlight hold phrase with taps underneath and chord release. right tap over sustain",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 63450,
+      "section": "highlight live",
+      "pattern": "hard_high_hold",
+      "intent": "Highlight hold phrase with taps underneath and chord release. release lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 63600,
+      "section": "highlight live",
+      "pattern": "hard_high_hold",
+      "intent": "Highlight hold phrase with taps underneath and chord release. right sustain answer",
+      "lanes": [
+        "K"
+      ],
+      "durationMs": 600
+    },
+    {
+      "timeMs": 63900,
+      "section": "highlight live",
+      "pattern": "hard_high_hold",
+      "intent": "Highlight hold phrase with taps underneath and chord release. left tap under right hold",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 64200,
+      "section": "highlight live",
+      "pattern": "hard_high_hold",
+      "intent": "Highlight hold phrase with taps underneath and chord release. release chord",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 64500,
+      "section": "highlight live",
+      "pattern": "hard_high_hold",
+      "intent": "Highlight hold phrase with taps underneath and chord release. pickup",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 64800,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. peak riff",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 65100,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. peak riff",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 65250,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. short pickup",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 65400,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. peak close",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 65700,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. stage hit chord",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 66000,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. second phrase",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 66150,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. quick lift",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 66300,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. right answer",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 66600,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. bright chord",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 66900,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. turnaround",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 67200,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. peak reverse riff",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 67500,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. peak reverse riff",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 67650,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. short pickup",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 67800,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. peak close",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 68100,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. stage hit chord",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 68400,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. second phrase",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 68550,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. quick lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 68700,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. left answer",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 69000,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. bright chord",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 69300,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. turnaround",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 69600,
+      "section": "highlight live",
+      "pattern": "hard_high_riff",
+      "intent": "Concert-style call-answer burst with inner and outer chord colors. riff call",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 69750,
+      "section": "highlight live",
+      "pattern": "hard_high_riff",
+      "intent": "Concert-style call-answer burst with inner and outer chord colors. riff pickup",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 69900,
+      "section": "highlight live",
+      "pattern": "hard_high_riff",
+      "intent": "Concert-style call-answer burst with inner and outer chord colors. riff answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 70200,
+      "section": "highlight live",
+      "pattern": "hard_high_riff",
+      "intent": "Concert-style call-answer burst with inner and outer chord colors. right close",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 70500,
+      "section": "highlight live",
+      "pattern": "hard_high_riff",
+      "intent": "Concert-style call-answer burst with inner and outer chord colors. inner color hit",
+      "lanes": [
+        "F",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 70800,
+      "section": "highlight live",
+      "pattern": "hard_high_riff",
+      "intent": "Concert-style call-answer burst with inner and outer chord colors. reverse call",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 70950,
+      "section": "highlight live",
+      "pattern": "hard_high_riff",
+      "intent": "Concert-style call-answer burst with inner and outer chord colors. reverse pickup",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 71100,
+      "section": "highlight live",
+      "pattern": "hard_high_riff",
+      "intent": "Concert-style call-answer burst with inner and outer chord colors. reverse answer",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 71400,
+      "section": "highlight live",
+      "pattern": "hard_high_riff",
+      "intent": "Concert-style call-answer burst with inner and outer chord colors. outer color hit",
+      "lanes": [
+        "D",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 71700,
+      "section": "highlight live",
+      "pattern": "hard_high_riff",
+      "intent": "Concert-style call-answer burst with inner and outer chord colors. turnaround",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 72000,
+      "section": "highlight live",
+      "pattern": "hard_high_hold",
+      "intent": "Highlight hold phrase with taps underneath and chord release. left sustain performance",
+      "lanes": [
+        "D"
+      ],
+      "durationMs": 900
+    },
+    {
+      "timeMs": 72300,
+      "section": "highlight live",
+      "pattern": "hard_high_hold",
+      "intent": "Highlight hold phrase with taps underneath and chord release. right tap over sustain",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 72600,
+      "section": "highlight live",
+      "pattern": "hard_high_hold",
+      "intent": "Highlight hold phrase with taps underneath and chord release. right tap over sustain",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 73050,
+      "section": "highlight live",
+      "pattern": "hard_high_hold",
+      "intent": "Highlight hold phrase with taps underneath and chord release. release lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 73200,
+      "section": "highlight live",
+      "pattern": "hard_high_hold",
+      "intent": "Highlight hold phrase with taps underneath and chord release. right sustain answer",
+      "lanes": [
+        "K"
+      ],
+      "durationMs": 600
+    },
+    {
+      "timeMs": 73500,
+      "section": "highlight live",
+      "pattern": "hard_high_hold",
+      "intent": "Highlight hold phrase with taps underneath and chord release. left tap under right hold",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 73800,
+      "section": "highlight live",
+      "pattern": "hard_high_hold",
+      "intent": "Highlight hold phrase with taps underneath and chord release. release chord",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 74100,
+      "section": "highlight live",
+      "pattern": "hard_high_hold",
+      "intent": "Highlight hold phrase with taps underneath and chord release. pickup",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 74400,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. peak riff",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 74700,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. peak riff",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 74850,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. short pickup",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 75000,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. peak close",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 75300,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. stage hit chord",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 75600,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. second phrase",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 75750,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. quick lift",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 75900,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. right answer",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 76200,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. bright chord",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 76500,
+      "section": "highlight live",
+      "pattern": "hard_high_A",
+      "intent": "Peak DFJK riff with quick pickups and D+J hit. turnaround",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 76800,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. peak reverse riff",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 77100,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. peak reverse riff",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 77250,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. short pickup",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 77400,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. peak close",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 77700,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. stage hit chord",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 78000,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. second phrase",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 78150,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. quick lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 78300,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. left answer",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 78600,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. bright chord",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 78900,
+      "section": "highlight live",
+      "pattern": "hard_high_B",
+      "intent": "Peak reverse riff with quick pickups and F+K hit. turnaround",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 79200,
+      "section": "steady drive",
+      "pattern": "hard_drive_A",
+      "intent": "Post-highlight DFJK drive with fewer peak chords. drive anchor",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 79500,
+      "section": "steady drive",
+      "pattern": "hard_drive_A",
+      "intent": "Post-highlight DFJK drive with fewer peak chords. drive lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 79800,
+      "section": "steady drive",
+      "pattern": "hard_drive_A",
+      "intent": "Post-highlight DFJK drive with fewer peak chords. drive answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 80100,
+      "section": "steady drive",
+      "pattern": "hard_drive_A",
+      "intent": "Post-highlight DFJK drive with fewer peak chords. drive close",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 80550,
+      "section": "steady drive",
+      "pattern": "hard_drive_A",
+      "intent": "Post-highlight DFJK drive with fewer peak chords. sync pickup",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 80700,
+      "section": "steady drive",
+      "pattern": "hard_drive_A",
+      "intent": "Post-highlight DFJK drive with fewer peak chords. sync pickup",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 81000,
+      "section": "steady drive",
+      "pattern": "hard_drive_A",
+      "intent": "Post-highlight DFJK drive with fewer peak chords. drive chord",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 81300,
+      "section": "steady drive",
+      "pattern": "hard_drive_A",
+      "intent": "Post-highlight DFJK drive with fewer peak chords. turnaround",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 81600,
+      "section": "steady drive",
+      "pattern": "hard_drive_B",
+      "intent": "Post-highlight reverse drive. reverse drive anchor",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 81900,
+      "section": "steady drive",
+      "pattern": "hard_drive_B",
+      "intent": "Post-highlight reverse drive. reverse drive lift",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 82200,
+      "section": "steady drive",
+      "pattern": "hard_drive_B",
+      "intent": "Post-highlight reverse drive. reverse drive answer",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 82500,
+      "section": "steady drive",
+      "pattern": "hard_drive_B",
+      "intent": "Post-highlight reverse drive. reverse drive close",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 82950,
+      "section": "steady drive",
+      "pattern": "hard_drive_B",
+      "intent": "Post-highlight reverse drive. sync pickup",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 83100,
+      "section": "steady drive",
+      "pattern": "hard_drive_B",
+      "intent": "Post-highlight reverse drive. sync pickup",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 83400,
+      "section": "steady drive",
+      "pattern": "hard_drive_B",
+      "intent": "Post-highlight reverse drive. drive chord",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 83700,
+      "section": "steady drive",
+      "pattern": "hard_drive_B",
+      "intent": "Post-highlight reverse drive. turnaround",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 84000,
+      "section": "steady drive",
+      "pattern": "hard_drive_sync",
+      "intent": "Syncopated drive phrase for groove checking. outer sync hit",
+      "lanes": [
+        "D",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 84450,
+      "section": "steady drive",
+      "pattern": "hard_drive_sync",
+      "intent": "Syncopated drive phrase for groove checking. offbeat lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 84750,
+      "section": "steady drive",
+      "pattern": "hard_drive_sync",
+      "intent": "Syncopated drive phrase for groove checking. offbeat answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 85200,
+      "section": "steady drive",
+      "pattern": "hard_drive_sync",
+      "intent": "Syncopated drive phrase for groove checking. inner sync hit",
+      "lanes": [
+        "F",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 85650,
+      "section": "steady drive",
+      "pattern": "hard_drive_sync",
+      "intent": "Syncopated drive phrase for groove checking. late right",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 85950,
+      "section": "steady drive",
+      "pattern": "hard_drive_sync",
+      "intent": "Syncopated drive phrase for groove checking. late left",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 86400,
+      "section": "steady drive",
+      "pattern": "hard_drive_hold",
+      "intent": "Drive hold recovery with chord finish. inner hold",
+      "lanes": [
+        "F"
+      ],
+      "durationMs": 600
+    },
+    {
+      "timeMs": 86700,
+      "section": "steady drive",
+      "pattern": "hard_drive_hold",
+      "intent": "Drive hold recovery with chord finish. tap over hold",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 87300,
+      "section": "steady drive",
+      "pattern": "hard_drive_hold",
+      "intent": "Drive hold recovery with chord finish. left answer",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 87600,
+      "section": "steady drive",
+      "pattern": "hard_drive_hold",
+      "intent": "Drive hold recovery with chord finish. right hold",
+      "lanes": [
+        "J"
+      ],
+      "durationMs": 600
+    },
+    {
+      "timeMs": 87900,
+      "section": "steady drive",
+      "pattern": "hard_drive_hold",
+      "intent": "Drive hold recovery with chord finish. tap under hold",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 88200,
+      "section": "steady drive",
+      "pattern": "hard_drive_hold",
+      "intent": "Drive hold recovery with chord finish. finish chord",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 88800,
+      "section": "steady drive",
+      "pattern": "hard_drive_A",
+      "intent": "Post-highlight DFJK drive with fewer peak chords. drive anchor",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 89100,
+      "section": "steady drive",
+      "pattern": "hard_drive_A",
+      "intent": "Post-highlight DFJK drive with fewer peak chords. drive lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 89400,
+      "section": "steady drive",
+      "pattern": "hard_drive_A",
+      "intent": "Post-highlight DFJK drive with fewer peak chords. drive answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 89700,
+      "section": "steady drive",
+      "pattern": "hard_drive_A",
+      "intent": "Post-highlight DFJK drive with fewer peak chords. drive close",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 90150,
+      "section": "steady drive",
+      "pattern": "hard_drive_A",
+      "intent": "Post-highlight DFJK drive with fewer peak chords. sync pickup",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 90300,
+      "section": "steady drive",
+      "pattern": "hard_drive_A",
+      "intent": "Post-highlight DFJK drive with fewer peak chords. sync pickup",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 90600,
+      "section": "steady drive",
+      "pattern": "hard_drive_A",
+      "intent": "Post-highlight DFJK drive with fewer peak chords. drive chord",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 90900,
+      "section": "steady drive",
+      "pattern": "hard_drive_A",
+      "intent": "Post-highlight DFJK drive with fewer peak chords. turnaround",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 91200,
+      "section": "steady drive",
+      "pattern": "hard_drive_B",
+      "intent": "Post-highlight reverse drive. reverse drive anchor",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 91500,
+      "section": "steady drive",
+      "pattern": "hard_drive_B",
+      "intent": "Post-highlight reverse drive. reverse drive lift",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 91800,
+      "section": "steady drive",
+      "pattern": "hard_drive_B",
+      "intent": "Post-highlight reverse drive. reverse drive answer",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 92100,
+      "section": "steady drive",
+      "pattern": "hard_drive_B",
+      "intent": "Post-highlight reverse drive. reverse drive close",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 92550,
+      "section": "steady drive",
+      "pattern": "hard_drive_B",
+      "intent": "Post-highlight reverse drive. sync pickup",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 92700,
+      "section": "steady drive",
+      "pattern": "hard_drive_B",
+      "intent": "Post-highlight reverse drive. sync pickup",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 93000,
+      "section": "steady drive",
+      "pattern": "hard_drive_B",
+      "intent": "Post-highlight reverse drive. drive chord",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 93300,
+      "section": "steady drive",
+      "pattern": "hard_drive_B",
+      "intent": "Post-highlight reverse drive. turnaround",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 93600,
+      "section": "steady drive",
+      "pattern": "hard_drive_sync",
+      "intent": "Syncopated drive phrase for groove checking. outer sync hit",
+      "lanes": [
+        "D",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 94050,
+      "section": "steady drive",
+      "pattern": "hard_drive_sync",
+      "intent": "Syncopated drive phrase for groove checking. offbeat lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 94350,
+      "section": "steady drive",
+      "pattern": "hard_drive_sync",
+      "intent": "Syncopated drive phrase for groove checking. offbeat answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 94800,
+      "section": "steady drive",
+      "pattern": "hard_drive_sync",
+      "intent": "Syncopated drive phrase for groove checking. inner sync hit",
+      "lanes": [
+        "F",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 95250,
+      "section": "steady drive",
+      "pattern": "hard_drive_sync",
+      "intent": "Syncopated drive phrase for groove checking. late right",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 95550,
+      "section": "steady drive",
+      "pattern": "hard_drive_sync",
+      "intent": "Syncopated drive phrase for groove checking. late left",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 96000,
+      "section": "steady drive",
+      "pattern": "hard_drive_hold",
+      "intent": "Drive hold recovery with chord finish. inner hold",
+      "lanes": [
+        "F"
+      ],
+      "durationMs": 600
+    },
+    {
+      "timeMs": 96300,
+      "section": "steady drive",
+      "pattern": "hard_drive_hold",
+      "intent": "Drive hold recovery with chord finish. tap over hold",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 96900,
+      "section": "steady drive",
+      "pattern": "hard_drive_hold",
+      "intent": "Drive hold recovery with chord finish. left answer",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 97200,
+      "section": "steady drive",
+      "pattern": "hard_drive_hold",
+      "intent": "Drive hold recovery with chord finish. right hold",
+      "lanes": [
+        "J"
+      ],
+      "durationMs": 600
+    },
+    {
+      "timeMs": 97500,
+      "section": "steady drive",
+      "pattern": "hard_drive_hold",
+      "intent": "Drive hold recovery with chord finish. tap under hold",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 97800,
+      "section": "steady drive",
+      "pattern": "hard_drive_hold",
+      "intent": "Drive hold recovery with chord finish. finish chord",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 98400,
+      "section": "steady drive",
+      "pattern": "hard_drive_A",
+      "intent": "Post-highlight DFJK drive with fewer peak chords. drive anchor",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 98700,
+      "section": "steady drive",
+      "pattern": "hard_drive_A",
+      "intent": "Post-highlight DFJK drive with fewer peak chords. drive lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 99000,
+      "section": "steady drive",
+      "pattern": "hard_drive_A",
+      "intent": "Post-highlight DFJK drive with fewer peak chords. drive answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 99300,
+      "section": "steady drive",
+      "pattern": "hard_drive_A",
+      "intent": "Post-highlight DFJK drive with fewer peak chords. drive close",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 99750,
+      "section": "steady drive",
+      "pattern": "hard_drive_A",
+      "intent": "Post-highlight DFJK drive with fewer peak chords. sync pickup",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 99900,
+      "section": "steady drive",
+      "pattern": "hard_drive_A",
+      "intent": "Post-highlight DFJK drive with fewer peak chords. sync pickup",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 100200,
+      "section": "steady drive",
+      "pattern": "hard_drive_A",
+      "intent": "Post-highlight DFJK drive with fewer peak chords. drive chord",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 100500,
+      "section": "steady drive",
+      "pattern": "hard_drive_A",
+      "intent": "Post-highlight DFJK drive with fewer peak chords. turnaround",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 100800,
+      "section": "steady drive",
+      "pattern": "hard_drive_B",
+      "intent": "Post-highlight reverse drive. reverse drive anchor",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 101100,
+      "section": "steady drive",
+      "pattern": "hard_drive_B",
+      "intent": "Post-highlight reverse drive. reverse drive lift",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 101400,
+      "section": "steady drive",
+      "pattern": "hard_drive_B",
+      "intent": "Post-highlight reverse drive. reverse drive answer",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 101700,
+      "section": "steady drive",
+      "pattern": "hard_drive_B",
+      "intent": "Post-highlight reverse drive. reverse drive close",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 102150,
+      "section": "steady drive",
+      "pattern": "hard_drive_B",
+      "intent": "Post-highlight reverse drive. sync pickup",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 102300,
+      "section": "steady drive",
+      "pattern": "hard_drive_B",
+      "intent": "Post-highlight reverse drive. sync pickup",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 102600,
+      "section": "steady drive",
+      "pattern": "hard_drive_B",
+      "intent": "Post-highlight reverse drive. drive chord",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 102900,
+      "section": "steady drive",
+      "pattern": "hard_drive_B",
+      "intent": "Post-highlight reverse drive. turnaround",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 103200,
+      "section": "release",
+      "pattern": "hard_release_A",
+      "intent": "Expressive cooldown hold with a harder answer shape. cooldown sustain",
+      "lanes": [
+        "D"
+      ],
+      "durationMs": 900
+    },
+    {
+      "timeMs": 103800,
+      "section": "release",
+      "pattern": "hard_release_A",
+      "intent": "Expressive cooldown hold with a harder answer shape. wide tap over sustain",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 104550,
+      "section": "release",
+      "pattern": "hard_release_A",
+      "intent": "Expressive cooldown hold with a harder answer shape. late answer",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 104850,
+      "section": "release",
+      "pattern": "hard_release_A",
+      "intent": "Expressive cooldown hold with a harder answer shape. late answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 105150,
+      "section": "release",
+      "pattern": "hard_release_A",
+      "intent": "Expressive cooldown hold with a harder answer shape. soft story-impact chord",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 105600,
+      "section": "release",
+      "pattern": "hard_release_B",
+      "intent": "Reverse expressive cooldown hold. reverse cooldown sustain",
+      "lanes": [
+        "K"
+      ],
+      "durationMs": 900
+    },
+    {
+      "timeMs": 106200,
+      "section": "release",
+      "pattern": "hard_release_B",
+      "intent": "Reverse expressive cooldown hold. wide tap over sustain",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 106950,
+      "section": "release",
+      "pattern": "hard_release_B",
+      "intent": "Reverse expressive cooldown hold. late answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 107250,
+      "section": "release",
+      "pattern": "hard_release_B",
+      "intent": "Reverse expressive cooldown hold. late answer",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 107550,
+      "section": "release",
+      "pattern": "hard_release_B",
+      "intent": "Reverse expressive cooldown hold. soft story-impact chord",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 108000,
+      "section": "release",
+      "pattern": "hard_release_A",
+      "intent": "Expressive cooldown hold with a harder answer shape. cooldown sustain",
+      "lanes": [
+        "D"
+      ],
+      "durationMs": 900
+    },
+    {
+      "timeMs": 108600,
+      "section": "release",
+      "pattern": "hard_release_A",
+      "intent": "Expressive cooldown hold with a harder answer shape. wide tap over sustain",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 109350,
+      "section": "release",
+      "pattern": "hard_release_A",
+      "intent": "Expressive cooldown hold with a harder answer shape. late answer",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 109650,
+      "section": "release",
+      "pattern": "hard_release_A",
+      "intent": "Expressive cooldown hold with a harder answer shape. late answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 109950,
+      "section": "release",
+      "pattern": "hard_release_A",
+      "intent": "Expressive cooldown hold with a harder answer shape. soft story-impact chord",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 110400,
+      "section": "release",
+      "pattern": "hard_release_B",
+      "intent": "Reverse expressive cooldown hold. reverse cooldown sustain",
+      "lanes": [
+        "K"
+      ],
+      "durationMs": 900
+    },
+    {
+      "timeMs": 111000,
+      "section": "release",
+      "pattern": "hard_release_B",
+      "intent": "Reverse expressive cooldown hold. wide tap over sustain",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 111750,
+      "section": "release",
+      "pattern": "hard_release_B",
+      "intent": "Reverse expressive cooldown hold. late answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 112050,
+      "section": "release",
+      "pattern": "hard_release_B",
+      "intent": "Reverse expressive cooldown hold. late answer",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 112350,
+      "section": "release",
+      "pattern": "hard_release_B",
+      "intent": "Reverse expressive cooldown hold. soft story-impact chord",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 112800,
+      "section": "encore outro",
+      "pattern": "hard_outro_A",
+      "intent": "Encore cadence with compact flourish. final anchor",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 113100,
+      "section": "encore outro",
+      "pattern": "hard_outro_A",
+      "intent": "Encore cadence with compact flourish. final lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 113400,
+      "section": "encore outro",
+      "pattern": "hard_outro_A",
+      "intent": "Encore cadence with compact flourish. final answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 113700,
+      "section": "encore outro",
+      "pattern": "hard_outro_A",
+      "intent": "Encore cadence with compact flourish. final close",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 114150,
+      "section": "encore outro",
+      "pattern": "hard_outro_A",
+      "intent": "Encore cadence with compact flourish. encore chord",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 114600,
+      "section": "encore outro",
+      "pattern": "hard_outro_A",
+      "intent": "Encore cadence with compact flourish. pickup",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 115200,
+      "section": "encore outro",
+      "pattern": "hard_outro_B",
+      "intent": "Final hold and last chord. final sustain",
+      "lanes": [
+        "F"
+      ],
+      "durationMs": 600
+    },
+    {
+      "timeMs": 115650,
+      "section": "encore outro",
+      "pattern": "hard_outro_B",
+      "intent": "Final hold and last chord. tap over sustain",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 116100,
+      "section": "encore outro",
+      "pattern": "hard_outro_B",
+      "intent": "Final hold and last chord. last left answer",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 116550,
+      "section": "encore outro",
+      "pattern": "hard_outro_B",
+      "intent": "Final hold and last chord. last bright chord",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 117000,
+      "section": "encore outro",
+      "pattern": "hard_outro_B",
+      "intent": "Final hold and last chord. final outer hit",
+      "lanes": [
+        "D",
+        "K"
+      ]
+    }
+  ],
+  "features": {
+    "longNotes": true,
+    "fever": true,
+    "feverAutoActivate": true,
+    "feverDurationMs": 10000,
+    "stageSync": true,
+    "storyImpact": true
+  }
+}
