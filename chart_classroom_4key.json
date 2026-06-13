@@ -1,0 +1,984 @@
+{
+  "title": "ClassRoom 4-key second song chart",
+  "songId": "classroom",
+  "songTitle": "ClassRoom",
+  "audio": "ClassRoom.wav",
+  "difficulty": "ClassRoom",
+  "keys": [
+    "D",
+    "F",
+    "J",
+    "K"
+  ],
+  "bpm": 105,
+  "offsetMs": 0,
+  "approachMs": 2050,
+  "durationMs": 87996,
+  "judgementWindowsMs": {
+    "perfect": 60,
+    "great": 110,
+    "good": 180
+  },
+  "purpose": "Second-song chart after Tutorial: easier, more musical, and stopped before the final three seconds of ClassRoom.",
+  "patternDesign": "Re-analyzed at 105 BPM with the grid phase around 4.48s. The revision follows higher-energy bars such as 6.77s, 25.05s, 27.34s, 50.19s, 77.62s, and 79.91s, reduces density so Classroom is easier than Recruitment, and leaves the final three seconds clear.",
+  "sections": [
+    {
+      "startMs": 0,
+      "endMs": 4000,
+      "name": "prepare silence",
+      "intent": "no notes for the first four seconds so the player can get ready",
+      "loop": [],
+      "patternIntent": "4-second no-note preparation window"
+    },
+    {
+      "startMs": 4480,
+      "endMs": 13623,
+      "name": "ready intro",
+      "intent": "low-pressure warm-up locked to the first audible pulses",
+      "loop": [
+        "classroom_soft_call",
+        "classroom_hold_breath",
+        "classroom_walk"
+      ],
+      "patternIntent": "second-song warm-up with wide spacing"
+    },
+    {
+      "startMs": 13623,
+      "endMs": 29623,
+      "name": "classroom groove",
+      "intent": "recognizable D F J K loops with fewer notes than before",
+      "loop": [
+        "classroom_walk",
+        "classroom_answer_chord",
+        "classroom_hold_breath"
+      ],
+      "patternIntent": "readable groove that follows the phrase accents"
+    },
+    {
+      "startMs": 29623,
+      "endMs": 43337,
+      "name": "after-school build",
+      "intent": "gentle build that rises without making the second song too hard",
+      "loop": [
+        "classroom_build_step",
+        "classroom_answer_chord",
+        "classroom_hold_breath"
+      ],
+      "patternIntent": "soft ramp-up with breathing room"
+    },
+    {
+      "startMs": 43337,
+      "endMs": 54766,
+      "name": "clubroom highlight",
+      "intent": "fun highlight using modest chord rewards and a clean hold phrase",
+      "loop": [
+        "classroom_highlight_soft",
+        "classroom_highlight_hold"
+      ],
+      "patternIntent": "small highlight, not a main-song difficulty spike"
+    },
+    {
+      "startMs": 54766,
+      "endMs": 61623,
+      "name": "quiet reset",
+      "intent": "brief recovery after the highlight",
+      "loop": [
+        "classroom_reset"
+      ],
+      "patternIntent": "low-density reset"
+    },
+    {
+      "startMs": 61623,
+      "endMs": 68480,
+      "name": "return groove",
+      "intent": "return to the core motif before the final phrase",
+      "loop": [
+        "classroom_walk",
+        "classroom_answer_chord",
+        "classroom_hold_breath"
+      ],
+      "patternIntent": "simple return groove"
+    },
+    {
+      "startMs": 68480,
+      "endMs": 84996,
+      "name": "final bell",
+      "intent": "final phrase follows the last audible energy and then leaves silence before the song ends",
+      "loop": [
+        "classroom_final_cadence",
+        "classroom_reset"
+      ],
+      "patternIntent": "musical ending with no notes in the final three seconds"
+    }
+  ],
+  "patterns": {
+    "classroom_soft_call": {
+      "description": "Two-note call placed on stronger classroom vocal/melody pulses.",
+      "type": "tap loop"
+    },
+    "classroom_walk": {
+      "description": "Slow D F J K or K J F D walk with a missing beat for breath.",
+      "type": "tap loop"
+    },
+    "classroom_answer_chord": {
+      "description": "Small split-hand answer chord on an emphasized beat, followed by recovery.",
+      "type": "chord accent"
+    },
+    "classroom_hold_breath": {
+      "description": "Friendly hold phrase that leaves empty space around the sustain.",
+      "type": "hold"
+    },
+    "classroom_build_step": {
+      "description": "Gentle build with three to four notes, avoiding fast beginner-hostile runs.",
+      "type": "build"
+    },
+    "classroom_highlight_soft": {
+      "description": "Main fun motif: D F to J K with a light chord payoff.",
+      "type": "highlight"
+    },
+    "classroom_highlight_hold": {
+      "description": "Short highlight hold; K hold resolves into F+J to avoid awkward K overlap.",
+      "type": "hold highlight"
+    },
+    "classroom_reset": {
+      "description": "Sparse recovery phrase used when the song drops in intensity.",
+      "type": "recovery"
+    },
+    "classroom_final_cadence": {
+      "description": "Final cadence locks to the last audible classroom phrase and stops before the final three seconds.",
+      "type": "ending"
+    }
+  },
+  "notes": [
+    {
+      "timeMs": 4480,
+      "section": "ready intro",
+      "pattern": "classroom_soft_call",
+      "intent": "first classroom downbeat after the four-second preparation",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 5909,
+      "section": "ready intro",
+      "pattern": "classroom_soft_call",
+      "intent": "left-hand answer on the stronger late pulse",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 6766,
+      "section": "ready intro",
+      "pattern": "classroom_soft_call",
+      "intent": "right-side call matching the brighter answer",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 8051,
+      "section": "ready intro",
+      "pattern": "classroom_soft_call",
+      "intent": "soft reply instead of a full run",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 9051,
+      "section": "ready intro",
+      "pattern": "classroom_hold_breath",
+      "intent": "first friendly sustain on a strong classroom accent",
+      "lanes": [
+        "D"
+      ],
+      "durationMs": 714
+    },
+    {
+      "timeMs": 10480,
+      "section": "ready intro",
+      "pattern": "classroom_hold_breath",
+      "intent": "clean tap after the sustain ends",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 11337,
+      "section": "ready intro",
+      "pattern": "classroom_walk",
+      "intent": "short pickup into the groove",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 12766,
+      "section": "ready intro",
+      "pattern": "classroom_walk",
+      "intent": "right-hand answer before the groove begins",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 13623,
+      "section": "classroom groove",
+      "pattern": "classroom_walk",
+      "intent": "D F call begins the second-song groove",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 14194,
+      "section": "classroom groove",
+      "pattern": "classroom_walk",
+      "intent": "left lift on the beat",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 15051,
+      "section": "classroom groove",
+      "pattern": "classroom_walk",
+      "intent": "right answer follows the melodic lift",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 15909,
+      "section": "classroom groove",
+      "pattern": "classroom_walk",
+      "intent": "reverse call starts",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 16480,
+      "section": "classroom groove",
+      "pattern": "classroom_walk",
+      "intent": "reverse lift",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 17337,
+      "section": "classroom groove",
+      "pattern": "classroom_walk",
+      "intent": "left answer with breathing room",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 18194,
+      "section": "classroom groove",
+      "pattern": "classroom_answer_chord",
+      "intent": "single lead-in before a friendly split-hand hit",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 19051,
+      "section": "classroom groove",
+      "pattern": "classroom_answer_chord",
+      "intent": "pickup into chord",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 19623,
+      "section": "classroom groove",
+      "pattern": "classroom_answer_chord",
+      "intent": "split-hand reward on the stronger phrase ending",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 20480,
+      "section": "classroom groove",
+      "pattern": "classroom_hold_breath",
+      "intent": "short inner hold in a less dense bar",
+      "lanes": [
+        "F"
+      ],
+      "durationMs": 714
+    },
+    {
+      "timeMs": 21909,
+      "section": "classroom groove",
+      "pattern": "classroom_hold_breath",
+      "intent": "right answer after hold",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 22766,
+      "section": "classroom groove",
+      "pattern": "classroom_walk",
+      "intent": "return to D F J K motif",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 23337,
+      "section": "classroom groove",
+      "pattern": "classroom_walk",
+      "intent": "steady beat support",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 24194,
+      "section": "classroom groove",
+      "pattern": "classroom_walk",
+      "intent": "melody-side answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 25051,
+      "section": "classroom groove",
+      "pattern": "classroom_answer_chord",
+      "intent": "reverse motif lead-in",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 25623,
+      "section": "classroom groove",
+      "pattern": "classroom_answer_chord",
+      "intent": "right-side lift",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 26480,
+      "section": "classroom groove",
+      "pattern": "classroom_answer_chord",
+      "intent": "bright chord on the stronger bar-9 pulse",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 27337,
+      "section": "classroom groove",
+      "pattern": "classroom_soft_call",
+      "intent": "strong bar-10 downbeat anchor",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 28480,
+      "section": "classroom groove",
+      "pattern": "classroom_soft_call",
+      "intent": "answer to the late pulse",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 29623,
+      "section": "after-school build",
+      "pattern": "classroom_build_step",
+      "intent": "build starts with a clear left anchor",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 30051,
+      "section": "after-school build",
+      "pattern": "classroom_build_step",
+      "intent": "small pickup, not a fast run",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 30766,
+      "section": "after-school build",
+      "pattern": "classroom_build_step",
+      "intent": "right answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 31337,
+      "section": "after-school build",
+      "pattern": "classroom_build_step",
+      "intent": "close the phrase",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 31909,
+      "section": "after-school build",
+      "pattern": "classroom_build_step",
+      "intent": "reverse build anchor",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 32480,
+      "section": "after-school build",
+      "pattern": "classroom_build_step",
+      "intent": "reverse lift",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 33337,
+      "section": "after-school build",
+      "pattern": "classroom_build_step",
+      "intent": "left answer",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 34194,
+      "section": "after-school build",
+      "pattern": "classroom_answer_chord",
+      "intent": "bar-13 downbeat anchor",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 35051,
+      "section": "after-school build",
+      "pattern": "classroom_answer_chord",
+      "intent": "soft pickup",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 35623,
+      "section": "after-school build",
+      "pattern": "classroom_answer_chord",
+      "intent": "split-hand accent on the phrase lift",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 36480,
+      "section": "after-school build",
+      "pattern": "classroom_hold_breath",
+      "intent": "right-side sustain for a calmer build bar",
+      "lanes": [
+        "J"
+      ],
+      "durationMs": 714
+    },
+    {
+      "timeMs": 37909,
+      "section": "after-school build",
+      "pattern": "classroom_hold_breath",
+      "intent": "soft answer after sustain",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 38766,
+      "section": "after-school build",
+      "pattern": "classroom_build_step",
+      "intent": "return build anchor",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 39337,
+      "section": "after-school build",
+      "pattern": "classroom_build_step",
+      "intent": "left lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 40194,
+      "section": "after-school build",
+      "pattern": "classroom_build_step",
+      "intent": "right answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 41051,
+      "section": "after-school build",
+      "pattern": "classroom_soft_call",
+      "intent": "breath before highlight",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 42480,
+      "section": "after-school build",
+      "pattern": "classroom_soft_call",
+      "intent": "left-side setup for the high section",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 43337,
+      "section": "clubroom highlight",
+      "pattern": "classroom_highlight_soft",
+      "intent": "highlight motif starts on strong audio energy",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 43766,
+      "section": "clubroom highlight",
+      "pattern": "classroom_highlight_soft",
+      "intent": "small lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 44337,
+      "section": "clubroom highlight",
+      "pattern": "classroom_highlight_soft",
+      "intent": "right answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 44909,
+      "section": "clubroom highlight",
+      "pattern": "classroom_highlight_soft",
+      "intent": "friendly payoff chord",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 45623,
+      "section": "clubroom highlight",
+      "pattern": "classroom_highlight_soft",
+      "intent": "reverse highlight anchor",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 46051,
+      "section": "clubroom highlight",
+      "pattern": "classroom_highlight_soft",
+      "intent": "reverse lift",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 46623,
+      "section": "clubroom highlight",
+      "pattern": "classroom_highlight_soft",
+      "intent": "left answer",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 47194,
+      "section": "clubroom highlight",
+      "pattern": "classroom_highlight_soft",
+      "intent": "bright payoff chord",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 47909,
+      "section": "clubroom highlight",
+      "pattern": "classroom_highlight_hold",
+      "intent": "left sustain on the energetic phrase",
+      "lanes": [
+        "D"
+      ],
+      "durationMs": 714
+    },
+    {
+      "timeMs": 49051,
+      "section": "clubroom highlight",
+      "pattern": "classroom_highlight_hold",
+      "intent": "single tap after the sustain",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 50194,
+      "section": "clubroom highlight",
+      "pattern": "classroom_highlight_hold",
+      "intent": "short K sustain follows the bar-20 sound",
+      "lanes": [
+        "K"
+      ],
+      "durationMs": 571
+    },
+    {
+      "timeMs": 51623,
+      "section": "clubroom highlight",
+      "pattern": "classroom_highlight_hold",
+      "intent": "K hold resolves into F+J, avoiding awkward K overlap",
+      "lanes": [
+        "F",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 52480,
+      "section": "clubroom highlight",
+      "pattern": "classroom_highlight_soft",
+      "intent": "lighter high-section recovery",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 53337,
+      "section": "clubroom highlight",
+      "pattern": "classroom_highlight_soft",
+      "intent": "answer on the melody side",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 54051,
+      "section": "clubroom highlight",
+      "pattern": "classroom_highlight_soft",
+      "intent": "outer-lane accent without adding a fast run",
+      "lanes": [
+        "D",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 54766,
+      "section": "quiet reset",
+      "pattern": "classroom_reset",
+      "intent": "post-highlight recovery downbeat",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 55909,
+      "section": "quiet reset",
+      "pattern": "classroom_reset",
+      "intent": "late answer on the stronger pulse",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 57051,
+      "section": "quiet reset",
+      "pattern": "classroom_reset",
+      "intent": "right-side recovery anchor",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 58480,
+      "section": "quiet reset",
+      "pattern": "classroom_reset",
+      "intent": "soft left answer",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 59337,
+      "section": "return groove",
+      "pattern": "classroom_walk",
+      "intent": "return groove anchor",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 59909,
+      "section": "return groove",
+      "pattern": "classroom_walk",
+      "intent": "return groove lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 60766,
+      "section": "return groove",
+      "pattern": "classroom_walk",
+      "intent": "return answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 61623,
+      "section": "return groove",
+      "pattern": "classroom_walk",
+      "intent": "reverse return anchor",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 62480,
+      "section": "return groove",
+      "pattern": "classroom_walk",
+      "intent": "reverse answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 63194,
+      "section": "return groove",
+      "pattern": "classroom_answer_chord",
+      "intent": "small chord on the phrase end",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 63909,
+      "section": "return groove",
+      "pattern": "classroom_soft_call",
+      "intent": "lower-density continuation",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 65337,
+      "section": "return groove",
+      "pattern": "classroom_soft_call",
+      "intent": "late response",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 66194,
+      "section": "return groove",
+      "pattern": "classroom_hold_breath",
+      "intent": "brief sustain before final phrase",
+      "lanes": [
+        "F"
+      ],
+      "durationMs": 714
+    },
+    {
+      "timeMs": 67623,
+      "section": "return groove",
+      "pattern": "classroom_hold_breath",
+      "intent": "clean tap after sustain",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 68480,
+      "section": "final bell",
+      "pattern": "classroom_final_cadence",
+      "intent": "final phrase begins with a clear left anchor",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 69337,
+      "section": "final bell",
+      "pattern": "classroom_final_cadence",
+      "intent": "gentle lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 70051,
+      "section": "final bell",
+      "pattern": "classroom_final_cadence",
+      "intent": "right answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 70766,
+      "section": "final bell",
+      "pattern": "classroom_final_cadence",
+      "intent": "bar-29 final-energy anchor",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 71623,
+      "section": "final bell",
+      "pattern": "classroom_final_cadence",
+      "intent": "answer to the stronger late pulse",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 72194,
+      "section": "final bell",
+      "pattern": "classroom_final_cadence",
+      "intent": "small final chord payoff",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 73051,
+      "section": "final bell",
+      "pattern": "classroom_reset",
+      "intent": "low-energy bar gets only a small tap",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 75337,
+      "section": "final bell",
+      "pattern": "classroom_final_cadence",
+      "intent": "late pickup after the soft bar",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 76766,
+      "section": "final bell",
+      "pattern": "classroom_final_cadence",
+      "intent": "right-side answer",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 77623,
+      "section": "final bell",
+      "pattern": "classroom_final_cadence",
+      "intent": "strong final bar downbeat",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 78194,
+      "section": "final bell",
+      "pattern": "classroom_final_cadence",
+      "intent": "final lift",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 79051,
+      "section": "final bell",
+      "pattern": "classroom_final_cadence",
+      "intent": "melody-side hit",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 79909,
+      "section": "final bell",
+      "pattern": "classroom_final_cadence",
+      "intent": "last audible phrase anchor",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 81337,
+      "section": "final bell",
+      "pattern": "classroom_final_cadence",
+      "intent": "last split-hand agreement before the ending silence",
+      "lanes": [
+        "F",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 82194,
+      "section": "final bell",
+      "pattern": "classroom_final_cadence",
+      "intent": "soft closing tap before the final silent tail",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 83337,
+      "section": "final bell",
+      "pattern": "classroom_final_cadence",
+      "intent": "final outer chord, safely before the last three seconds",
+      "lanes": [
+        "D",
+        "K"
+      ]
+    }
+  ],
+  "features": {
+    "longNotes": true,
+    "fever": true,
+    "feverAutoActivate": true,
+    "feverDurationMs": 10000,
+    "stageSync": true,
+    "storyImpact": true,
+    "classroomSong": true,
+    "audioAlignedRevision": true,
+    "endingSilenceMs": 3000,
+    "easierSecondSong": true
+  }
+}

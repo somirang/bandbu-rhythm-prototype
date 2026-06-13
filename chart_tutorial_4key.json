@@ -1,0 +1,531 @@
+{
+  "title": "tutorial 4-key staged learning chart",
+  "songId": "tutorial",
+  "songTitle": "Tutorial Song",
+  "audio": "tutorial.wav",
+  "difficulty": "Tutorial",
+  "keys": [
+    "D",
+    "F",
+    "J",
+    "K"
+  ],
+  "bpm": 93,
+  "offsetMs": 0,
+  "approachMs": 2200,
+  "durationMs": 105216,
+  "judgementWindowsMs": {
+    "perfect": 60,
+    "great": 110,
+    "good": 180
+  },
+  "purpose": "First-song tutorial chart that keeps the staged learning goals while aligning note timing more closely to the song groove.",
+  "patternDesign": "Re-analyzed around 93 BPM with the strongest grid phase at 4.00s. Learning structure is preserved: first 4s silence, first quarter single taps only, second quarter holds only, third quarter two-key chords only, final quarter gentle mixed review. Notes now land mostly on audible downbeats and phrase pulses instead of fixed arbitrary spacing.",
+  "sections": [
+    {
+      "startMs": 0,
+      "endMs": 4000,
+      "name": "listen first",
+      "intent": "first four seconds contain no notes so new players can hear the groove before acting",
+      "loop": [],
+      "patternIntent": "no-note onboarding pause"
+    },
+    {
+      "startMs": 4000,
+      "endMs": 26304,
+      "name": "single notes only",
+      "intent": "teach one-button timing with musical downbeat and late-beat taps, no holds or chords",
+      "loop": [
+        "single_intro_DF",
+        "single_intro_JK",
+        "single_full_walk",
+        "single_lesson_cadence"
+      ],
+      "patternIntent": "tap-only first quarter, now song-aligned"
+    },
+    {
+      "startMs": 26304,
+      "endMs": 52608,
+      "name": "hold notes only",
+      "intent": "teach pressing and holding one lane at a time, with starts on strong phrase beats",
+      "loop": [
+        "hold_basic_left",
+        "hold_basic_right"
+      ],
+      "patternIntent": "hold-only second quarter, rhythm-aligned"
+    },
+    {
+      "startMs": 52608,
+      "endMs": 78912,
+      "name": "two key notes only",
+      "intent": "teach simple two-key hits on clear phrase pulses after taps and holds are understood",
+      "loop": [
+        "chord_basic_split",
+        "chord_basic_color"
+      ],
+      "patternIntent": "chord-only third quarter, sparse and musical"
+    },
+    {
+      "startMs": 78912,
+      "endMs": 105216,
+      "name": "gentle review",
+      "intent": "finish with a calm mix of single taps, long notes, and two-key notes that follows the ending energy",
+      "loop": [
+        "review_single",
+        "review_hold",
+        "review_chord"
+      ],
+      "patternIntent": "mixed final-quarter review"
+    }
+  ],
+  "patterns": {
+    "single_intro_DF": {
+      "description": "First silent-gap single-note lesson using only D and F on the song pulse.",
+      "type": "tap"
+    },
+    "single_intro_JK": {
+      "description": "Single-note lesson for J and K as a right-hand answer phrase.",
+      "type": "tap"
+    },
+    "single_full_walk": {
+      "description": "Slow D F J K / K J F D walk with missing beats for beginner breathing room.",
+      "type": "tap"
+    },
+    "single_lesson_cadence": {
+      "description": "Single tap cadence before hold notes begin.",
+      "type": "tap"
+    },
+    "hold_basic_left": {
+      "description": "Long-note lesson on the left side with starts on phrase downbeats.",
+      "type": "hold"
+    },
+    "hold_basic_right": {
+      "description": "Long-note lesson on the right side with starts on phrase downbeats.",
+      "type": "hold"
+    },
+    "chord_basic_split": {
+      "description": "Two-key lesson using separated left-right pairs on strong pulses.",
+      "type": "chord"
+    },
+    "chord_basic_color": {
+      "description": "Two-key lesson using outer and inner alternate pairs.",
+      "type": "chord"
+    },
+    "review_single": {
+      "description": "Final review single taps placed on the ending phrase.",
+      "type": "tap"
+    },
+    "review_hold": {
+      "description": "Final review long notes with empty space around them.",
+      "type": "hold"
+    },
+    "review_chord": {
+      "description": "Final review two-key hits used as soft musical rewards.",
+      "type": "chord"
+    }
+  },
+  "notes": [
+    {
+      "timeMs": 4000,
+      "section": "single notes only",
+      "pattern": "single_intro_DF",
+      "intent": "first D lands exactly on the first strong tutorial pulse after silence",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 4645,
+      "section": "single notes only",
+      "pattern": "single_intro_DF",
+      "intent": "second left-hand tap follows the next audible pulse",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 6581,
+      "section": "single notes only",
+      "pattern": "single_intro_JK",
+      "intent": "first right-hand tap starts the answer phrase",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 7226,
+      "section": "single notes only",
+      "pattern": "single_intro_JK",
+      "intent": "second right-hand tap follows the phrase pulse",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 9161,
+      "section": "single notes only",
+      "pattern": "single_full_walk",
+      "intent": "slow walk restarts on a downbeat",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 11097,
+      "section": "single notes only",
+      "pattern": "single_full_walk",
+      "intent": "late beat answer leaves space for beginners",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 11742,
+      "section": "single notes only",
+      "pattern": "single_full_walk",
+      "intent": "right-side downbeat answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 13677,
+      "section": "single notes only",
+      "pattern": "single_full_walk",
+      "intent": "late beat close",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 14323,
+      "section": "single notes only",
+      "pattern": "single_full_walk",
+      "intent": "musical D F pickup starts on the bar accent",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 14968,
+      "section": "single notes only",
+      "pattern": "single_full_walk",
+      "intent": "pickup follows the audible beat",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 16903,
+      "section": "single notes only",
+      "pattern": "single_full_walk",
+      "intent": "reverse walk begins on the next phrase",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 17548,
+      "section": "single notes only",
+      "pattern": "single_full_walk",
+      "intent": "reverse pickup",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 19484,
+      "section": "single notes only",
+      "pattern": "single_full_walk",
+      "intent": "left answer after the reverse pair",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 21419,
+      "section": "single notes only",
+      "pattern": "single_full_walk",
+      "intent": "late beat close before the lesson changes",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 24645,
+      "section": "single notes only",
+      "pattern": "single_lesson_cadence",
+      "intent": "single-note cadence on the final strong beat of the first lesson",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 27226,
+      "section": "hold notes only",
+      "pattern": "hold_basic_left",
+      "intent": "first hold begins on a strong phrase downbeat",
+      "lanes": [
+        "D"
+      ],
+      "durationMs": 1452
+    },
+    {
+      "timeMs": 32387,
+      "section": "hold notes only",
+      "pattern": "hold_basic_left",
+      "intent": "second hold follows the next stable phrase",
+      "lanes": [
+        "F"
+      ],
+      "durationMs": 1452
+    },
+    {
+      "timeMs": 37548,
+      "section": "hold notes only",
+      "pattern": "hold_basic_right",
+      "intent": "third hold moves to the right hand on a downbeat",
+      "lanes": [
+        "J"
+      ],
+      "durationMs": 1452
+    },
+    {
+      "timeMs": 42710,
+      "section": "hold notes only",
+      "pattern": "hold_basic_right",
+      "intent": "fourth hold teaches the far-right lane with space after it",
+      "lanes": [
+        "K"
+      ],
+      "durationMs": 1290
+    },
+    {
+      "timeMs": 47871,
+      "section": "hold notes only",
+      "pattern": "hold_basic_left",
+      "intent": "shorter review hold matches the later phrase pulse",
+      "lanes": [
+        "F"
+      ],
+      "durationMs": 1290
+    },
+    {
+      "timeMs": 51742,
+      "section": "hold notes only",
+      "pattern": "hold_basic_right",
+      "intent": "final hold starts on a late phrase accent before chords begin",
+      "lanes": [
+        "J"
+      ],
+      "durationMs": 968
+    },
+    {
+      "timeMs": 54968,
+      "section": "two key notes only",
+      "pattern": "chord_basic_split",
+      "intent": "first split-hand chord arrives after a clear setup gap",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 56258,
+      "section": "two key notes only",
+      "pattern": "chord_basic_split",
+      "intent": "second split-hand chord follows the next strong pulse",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 60774,
+      "section": "two key notes only",
+      "pattern": "chord_basic_color",
+      "intent": "outer-lane chord on a high-energy bar",
+      "lanes": [
+        "D",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 63355,
+      "section": "two key notes only",
+      "pattern": "chord_basic_color",
+      "intent": "inner-lane chord answers the previous bar",
+      "lanes": [
+        "F",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 66581,
+      "section": "two key notes only",
+      "pattern": "chord_basic_split",
+      "intent": "repeat split chord on a clear beat",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 69161,
+      "section": "two key notes only",
+      "pattern": "chord_basic_split",
+      "intent": "repeat opposite split chord with wide spacing",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 73677,
+      "section": "two key notes only",
+      "pattern": "chord_basic_color",
+      "intent": "late chord locks to the stronger bar-27 pulse",
+      "lanes": [
+        "D",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 76258,
+      "section": "two key notes only",
+      "pattern": "chord_basic_color",
+      "intent": "final chord-only lesson lands before mixed review",
+      "lanes": [
+        "F",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 81419,
+      "section": "gentle review",
+      "pattern": "review_single",
+      "intent": "mixed review starts with a single downbeat tap",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 82065,
+      "section": "gentle review",
+      "pattern": "review_single",
+      "intent": "second single tap follows the phrase",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 84000,
+      "section": "gentle review",
+      "pattern": "review_hold",
+      "intent": "review hold begins on a strong ending pulse",
+      "lanes": [
+        "K"
+      ],
+      "durationMs": 1290
+    },
+    {
+      "timeMs": 86581,
+      "section": "gentle review",
+      "pattern": "review_chord",
+      "intent": "split chord checks simultaneous input after a hold",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 89161,
+      "section": "gentle review",
+      "pattern": "review_hold",
+      "intent": "second hold uses the inner-left lane",
+      "lanes": [
+        "F"
+      ],
+      "durationMs": 1290
+    },
+    {
+      "timeMs": 91742,
+      "section": "gentle review",
+      "pattern": "review_chord",
+      "intent": "bright chord lands on a high-energy late bar",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 92387,
+      "section": "gentle review",
+      "pattern": "review_single",
+      "intent": "single tap recovery after the chord",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 94323,
+      "section": "gentle review",
+      "pattern": "review_chord",
+      "intent": "outer chord follows the song accent without a fast run",
+      "lanes": [
+        "D",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 96903,
+      "section": "gentle review",
+      "pattern": "review_hold",
+      "intent": "final short hold on the right-hand lane",
+      "lanes": [
+        "J"
+      ],
+      "durationMs": 1129
+    },
+    {
+      "timeMs": 99484,
+      "section": "gentle review",
+      "pattern": "review_chord",
+      "intent": "inner chord checks the last learned shape",
+      "lanes": [
+        "F",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 102065,
+      "section": "gentle review",
+      "pattern": "review_single",
+      "intent": "final single anchor near the ending phrase",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 104000,
+      "section": "gentle review",
+      "pattern": "review_chord",
+      "intent": "soft final two-key finish on the late phrase pulse",
+      "lanes": [
+        "D",
+        "K"
+      ]
+    }
+  ],
+  "features": {
+    "longNotes": true,
+    "fever": true,
+    "feverAutoActivate": true,
+    "feverDurationMs": 9000,
+    "stageSync": true,
+    "storyImpact": true,
+    "tutorialSong": true,
+    "stagedLearning": true,
+    "audioAlignedRevision": true
+  }
+}

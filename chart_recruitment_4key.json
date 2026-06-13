@@ -1,0 +1,1430 @@
+{
+  "title": "Recruitment 4-key negotiation chart",
+  "songId": "recruitment",
+  "songTitle": "Recruitment",
+  "audio": "Recruitment.wav",
+  "difficulty": "Recruitment",
+  "keys": [
+    "D",
+    "F",
+    "J",
+    "K"
+  ],
+  "bpm": 92,
+  "offsetMs": 0,
+  "approachMs": 2050,
+  "durationMs": 111863,
+  "judgementWindowsMs": {
+    "perfect": 60,
+    "great": 110,
+    "good": 180
+  },
+  "purpose": "Recruitment standoff chart: a fun post-ClassRoom song with clearer musical call-and-response and the existing clean ending preserved.",
+  "patternDesign": "Re-analyzed at 92 BPM with the grid phase around 4.33s. The revision puts stronger accents near high-energy bars such as 17.37s, 53.90s, 61.72s, 64.33s, 72.16s, 95.63s, 98.24s, 100.85s, and 103.46s, while keeping first four and last four seconds clear.",
+  "sections": [
+    {
+      "startMs": 0,
+      "endMs": 4000,
+      "name": "prepare silence",
+      "intent": "no notes for the first four seconds so the player can prepare for the standoff",
+      "loop": [],
+      "patternIntent": "4-second no-note preparation window"
+    },
+    {
+      "startMs": 4330,
+      "endMs": 17373,
+      "name": "opening stare",
+      "intent": "sparse question-answer notes introduce the recruitment standoff",
+      "loop": [
+        "recruit_contact",
+        "recruit_hold_suspense",
+        "recruit_offer_chord"
+      ],
+      "patternIntent": "opening call-and-response"
+    },
+    {
+      "startMs": 17373,
+      "endMs": 38243,
+      "name": "push and pull",
+      "intent": "recognizable left-right persuasion and resistance loops",
+      "loop": [
+        "recruit_push",
+        "recruit_answer",
+        "recruit_offer_chord",
+        "recruit_hold_suspense"
+      ],
+      "patternIntent": "push-pull conversation"
+    },
+    {
+      "startMs": 38243,
+      "endMs": 56504,
+      "name": "rising tension",
+      "intent": "tension rises with readable pressure steps",
+      "loop": [
+        "recruit_push",
+        "recruit_answer",
+        "recruit_offer_chord"
+      ],
+      "patternIntent": "rising standoff"
+    },
+    {
+      "startMs": 56504,
+      "endMs": 72156,
+      "name": "negotiation duel",
+      "intent": "the strongest negotiation moment gets chords and a clean suspense hold",
+      "loop": [
+        "recruit_duel",
+        "recruit_hold_suspense",
+        "recruit_offer_chord"
+      ],
+      "patternIntent": "duel highlight"
+    },
+    {
+      "startMs": 72156,
+      "endMs": 79982,
+      "name": "cooling glance",
+      "intent": "brief lower-density recovery after the duel",
+      "loop": [
+        "recruit_reset",
+        "recruit_offer_chord"
+      ],
+      "patternIntent": "cooling recovery"
+    },
+    {
+      "startMs": 79982,
+      "endMs": 95634,
+      "name": "last persuasion",
+      "intent": "final persuasion returns to the familiar loop with slightly stronger accents",
+      "loop": [
+        "recruit_push",
+        "recruit_answer",
+        "recruit_offer_chord"
+      ],
+      "patternIntent": "late-song push"
+    },
+    {
+      "startMs": 95634,
+      "endMs": 107863,
+      "name": "decision moment",
+      "intent": "decision cadence reaches the ending and then leaves the required silence",
+      "loop": [
+        "recruit_decision",
+        "recruit_offer_chord"
+      ],
+      "patternIntent": "clean final answer"
+    }
+  ],
+  "patterns": {
+    "recruit_contact": {
+      "description": "Sparse question-answer taps for the opening standoff.",
+      "type": "tap loop"
+    },
+    "recruit_push": {
+      "description": "D F to J K persuasion loop, with clear call and response.",
+      "type": "tap loop"
+    },
+    "recruit_answer": {
+      "description": "Reverse K J to F D answer loop.",
+      "type": "tap loop"
+    },
+    "recruit_offer_chord": {
+      "description": "Split-hand chord used when the argument lands.",
+      "type": "chord accent"
+    },
+    "recruit_hold_suspense": {
+      "description": "Short suspense hold; K hold never resolves into a K chord.",
+      "type": "hold"
+    },
+    "recruit_duel": {
+      "description": "Negotiation duel motif with quicker but still readable steps.",
+      "type": "highlight"
+    },
+    "recruit_reset": {
+      "description": "Lower-density thinking-space phrase.",
+      "type": "recovery"
+    },
+    "recruit_decision": {
+      "description": "Final decision cadence that keeps the existing clean ending.",
+      "type": "ending"
+    }
+  },
+  "notes": [
+    {
+      "timeMs": 4330,
+      "section": "opening stare",
+      "pattern": "recruit_contact",
+      "intent": "first question after preparation silence",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 5634,
+      "section": "opening stare",
+      "pattern": "recruit_contact",
+      "intent": "right-side answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 6939,
+      "section": "opening stare",
+      "pattern": "recruit_contact",
+      "intent": "counter-question on the next phrase",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 8569,
+      "section": "opening stare",
+      "pattern": "recruit_contact",
+      "intent": "soft left reply to the counter",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 9547,
+      "section": "opening stare",
+      "pattern": "recruit_hold_suspense",
+      "intent": "short offer sustain",
+      "lanes": [
+        "D"
+      ],
+      "durationMs": 815
+    },
+    {
+      "timeMs": 11178,
+      "section": "opening stare",
+      "pattern": "recruit_hold_suspense",
+      "intent": "reply after the offer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 12156,
+      "section": "opening stare",
+      "pattern": "recruit_contact",
+      "intent": "small nudge before the groove",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 13134,
+      "section": "opening stare",
+      "pattern": "recruit_contact",
+      "intent": "answer on a mid-bar pulse",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 14765,
+      "section": "opening stare",
+      "pattern": "recruit_contact",
+      "intent": "opening final anchor",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 16395,
+      "section": "opening stare",
+      "pattern": "recruit_offer_chord",
+      "intent": "first agreement-like split chord",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 17373,
+      "section": "push and pull",
+      "pattern": "recruit_push",
+      "intent": "left question begins the persuasion loop",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 18026,
+      "section": "push and pull",
+      "pattern": "recruit_push",
+      "intent": "left nudge",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 18841,
+      "section": "push and pull",
+      "pattern": "recruit_push",
+      "intent": "right answer follows the music phrase",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 19493,
+      "section": "push and pull",
+      "pattern": "recruit_push",
+      "intent": "right close",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 19982,
+      "section": "push and pull",
+      "pattern": "recruit_answer",
+      "intent": "right counter-question",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 20634,
+      "section": "push and pull",
+      "pattern": "recruit_answer",
+      "intent": "counter nudge",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 21450,
+      "section": "push and pull",
+      "pattern": "recruit_answer",
+      "intent": "left answer",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 22102,
+      "section": "push and pull",
+      "pattern": "recruit_answer",
+      "intent": "left close",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 22591,
+      "section": "push and pull",
+      "pattern": "recruit_push",
+      "intent": "left question begins the persuasion loop",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 23243,
+      "section": "push and pull",
+      "pattern": "recruit_push",
+      "intent": "left nudge",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 24058,
+      "section": "push and pull",
+      "pattern": "recruit_push",
+      "intent": "right answer follows the music phrase",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 24710,
+      "section": "push and pull",
+      "pattern": "recruit_offer_chord",
+      "intent": "split-hand agreement accent",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 25200,
+      "section": "push and pull",
+      "pattern": "recruit_answer",
+      "intent": "right counter-question",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 25852,
+      "section": "push and pull",
+      "pattern": "recruit_answer",
+      "intent": "counter nudge",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 26667,
+      "section": "push and pull",
+      "pattern": "recruit_answer",
+      "intent": "left answer",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 27319,
+      "section": "push and pull",
+      "pattern": "recruit_answer",
+      "intent": "left close",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 27808,
+      "section": "push and pull",
+      "pattern": "recruit_push",
+      "intent": "left question begins the persuasion loop",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 28460,
+      "section": "push and pull",
+      "pattern": "recruit_push",
+      "intent": "left nudge",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 29276,
+      "section": "push and pull",
+      "pattern": "recruit_push",
+      "intent": "right answer follows the music phrase",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 29928,
+      "section": "push and pull",
+      "pattern": "recruit_offer_chord",
+      "intent": "split-hand agreement accent",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 30417,
+      "section": "push and pull",
+      "pattern": "recruit_answer",
+      "intent": "right counter-question",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 31069,
+      "section": "push and pull",
+      "pattern": "recruit_answer",
+      "intent": "counter nudge",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 31884,
+      "section": "push and pull",
+      "pattern": "recruit_answer",
+      "intent": "left answer",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 32537,
+      "section": "push and pull",
+      "pattern": "recruit_answer",
+      "intent": "left close",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 33026,
+      "section": "push and pull",
+      "pattern": "recruit_push",
+      "intent": "left question begins the persuasion loop",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 33678,
+      "section": "push and pull",
+      "pattern": "recruit_push",
+      "intent": "left nudge",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 34493,
+      "section": "push and pull",
+      "pattern": "recruit_push",
+      "intent": "right answer follows the music phrase",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 35145,
+      "section": "push and pull",
+      "pattern": "recruit_push",
+      "intent": "right close",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 35634,
+      "section": "push and pull",
+      "pattern": "recruit_answer",
+      "intent": "right counter-question",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 36287,
+      "section": "push and pull",
+      "pattern": "recruit_answer",
+      "intent": "counter nudge",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 37102,
+      "section": "push and pull",
+      "pattern": "recruit_answer",
+      "intent": "left answer",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 37754,
+      "section": "push and pull",
+      "pattern": "recruit_offer_chord",
+      "intent": "bright counter-accent",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 38243,
+      "section": "push and pull",
+      "pattern": "recruit_hold_suspense",
+      "intent": "brief hesitation sustain",
+      "lanes": [
+        "F"
+      ],
+      "durationMs": 815
+    },
+    {
+      "timeMs": 39873,
+      "section": "push and pull",
+      "pattern": "recruit_hold_suspense",
+      "intent": "right-side reply after hesitation",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 40852,
+      "section": "rising tension",
+      "pattern": "recruit_push",
+      "intent": "tension phrase anchor follows a strong bar pulse",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 41341,
+      "section": "rising tension",
+      "pattern": "recruit_push",
+      "intent": "quick but readable pressure step",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 41993,
+      "section": "rising tension",
+      "pattern": "recruit_push",
+      "intent": "answer step",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 42645,
+      "section": "rising tension",
+      "pattern": "recruit_push",
+      "intent": "phrase close",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 43460,
+      "section": "rising tension",
+      "pattern": "recruit_answer",
+      "intent": "tension phrase anchor follows a strong bar pulse",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 43950,
+      "section": "rising tension",
+      "pattern": "recruit_answer",
+      "intent": "quick but readable pressure step",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 44602,
+      "section": "rising tension",
+      "pattern": "recruit_answer",
+      "intent": "answer step",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 45254,
+      "section": "rising tension",
+      "pattern": "recruit_answer",
+      "intent": "phrase close",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 46069,
+      "section": "rising tension",
+      "pattern": "recruit_push",
+      "intent": "tension phrase anchor follows a strong bar pulse",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 46558,
+      "section": "rising tension",
+      "pattern": "recruit_push",
+      "intent": "quick but readable pressure step",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 47210,
+      "section": "rising tension",
+      "pattern": "recruit_push",
+      "intent": "answer step",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 47863,
+      "section": "rising tension",
+      "pattern": "recruit_push",
+      "intent": "phrase close",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 48352,
+      "section": "rising tension",
+      "pattern": "recruit_offer_chord",
+      "intent": "argument lands on a late phrase accent",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 48678,
+      "section": "rising tension",
+      "pattern": "recruit_answer",
+      "intent": "tension phrase anchor follows a strong bar pulse",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 49167,
+      "section": "rising tension",
+      "pattern": "recruit_answer",
+      "intent": "quick but readable pressure step",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 49819,
+      "section": "rising tension",
+      "pattern": "recruit_answer",
+      "intent": "answer step",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 50471,
+      "section": "rising tension",
+      "pattern": "recruit_answer",
+      "intent": "phrase close",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 51287,
+      "section": "rising tension",
+      "pattern": "recruit_push",
+      "intent": "tension phrase anchor follows a strong bar pulse",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 51776,
+      "section": "rising tension",
+      "pattern": "recruit_push",
+      "intent": "quick but readable pressure step",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 52428,
+      "section": "rising tension",
+      "pattern": "recruit_push",
+      "intent": "answer step",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 53080,
+      "section": "rising tension",
+      "pattern": "recruit_push",
+      "intent": "phrase close",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 53895,
+      "section": "rising tension",
+      "pattern": "recruit_answer",
+      "intent": "tension phrase anchor follows a strong bar pulse",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 54384,
+      "section": "rising tension",
+      "pattern": "recruit_answer",
+      "intent": "quick but readable pressure step",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 55037,
+      "section": "rising tension",
+      "pattern": "recruit_answer",
+      "intent": "answer step",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 55689,
+      "section": "rising tension",
+      "pattern": "recruit_answer",
+      "intent": "phrase close",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 56178,
+      "section": "rising tension",
+      "pattern": "recruit_offer_chord",
+      "intent": "argument lands on a late phrase accent",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 56504,
+      "section": "rising tension",
+      "pattern": "recruit_push",
+      "intent": "tension phrase anchor follows a strong bar pulse",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 56993,
+      "section": "rising tension",
+      "pattern": "recruit_push",
+      "intent": "quick but readable pressure step",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 57645,
+      "section": "rising tension",
+      "pattern": "recruit_push",
+      "intent": "answer step",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 58297,
+      "section": "rising tension",
+      "pattern": "recruit_push",
+      "intent": "phrase close",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 59113,
+      "section": "negotiation duel",
+      "pattern": "recruit_duel",
+      "intent": "duel starts on the energetic negotiation section",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 59602,
+      "section": "negotiation duel",
+      "pattern": "recruit_duel",
+      "intent": "pressure pickup",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 60254,
+      "section": "negotiation duel",
+      "pattern": "recruit_duel",
+      "intent": "answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 60906,
+      "section": "negotiation duel",
+      "pattern": "recruit_duel",
+      "intent": "duel payoff chord",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 61721,
+      "section": "negotiation duel",
+      "pattern": "recruit_duel",
+      "intent": "counter-duel begins",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 62210,
+      "section": "negotiation duel",
+      "pattern": "recruit_duel",
+      "intent": "counter pressure",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 62863,
+      "section": "negotiation duel",
+      "pattern": "recruit_duel",
+      "intent": "left answer",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 63515,
+      "section": "negotiation duel",
+      "pattern": "recruit_duel",
+      "intent": "counter payoff chord",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 64330,
+      "section": "negotiation duel",
+      "pattern": "recruit_hold_suspense",
+      "intent": "offer hold in the central duel",
+      "lanes": [
+        "D"
+      ],
+      "durationMs": 815
+    },
+    {
+      "timeMs": 65471,
+      "section": "negotiation duel",
+      "pattern": "recruit_hold_suspense",
+      "intent": "tap answer under tension",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 65960,
+      "section": "negotiation duel",
+      "pattern": "recruit_hold_suspense",
+      "intent": "K hesitation hold",
+      "lanes": [
+        "K"
+      ],
+      "durationMs": 652
+    },
+    {
+      "timeMs": 66613,
+      "section": "negotiation duel",
+      "pattern": "recruit_hold_suspense",
+      "intent": "K hold resolves into F+J for clean playability",
+      "lanes": [
+        "F",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 66939,
+      "section": "negotiation duel",
+      "pattern": "recruit_duel",
+      "intent": "color shift into the next question",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 67591,
+      "section": "negotiation duel",
+      "pattern": "recruit_duel",
+      "intent": "teasing answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 68406,
+      "section": "negotiation duel",
+      "pattern": "recruit_offer_chord",
+      "intent": "inner-lane spark matching the phrase color",
+      "lanes": [
+        "F",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 69547,
+      "section": "negotiation duel",
+      "pattern": "recruit_duel",
+      "intent": "right-side push resumes",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 70037,
+      "section": "negotiation duel",
+      "pattern": "recruit_duel",
+      "intent": "counter pickup",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 70689,
+      "section": "negotiation duel",
+      "pattern": "recruit_duel",
+      "intent": "left answer",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 71341,
+      "section": "negotiation duel",
+      "pattern": "recruit_duel",
+      "intent": "single recovery before chord",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 72156,
+      "section": "negotiation duel",
+      "pattern": "recruit_offer_chord",
+      "intent": "outer-lane standoff accent",
+      "lanes": [
+        "D",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 73134,
+      "section": "negotiation duel",
+      "pattern": "recruit_duel",
+      "intent": "brief recovery",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 73787,
+      "section": "negotiation duel",
+      "pattern": "recruit_duel",
+      "intent": "answer before cooling",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 74765,
+      "section": "cooling glance",
+      "pattern": "recruit_reset",
+      "intent": "cooling glance right anchor",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 75743,
+      "section": "cooling glance",
+      "pattern": "recruit_reset",
+      "intent": "soft thought",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 76395,
+      "section": "cooling glance",
+      "pattern": "recruit_reset",
+      "intent": "brief hold as the argument cools",
+      "lanes": [
+        "F"
+      ],
+      "durationMs": 652
+    },
+    {
+      "timeMs": 77373,
+      "section": "cooling glance",
+      "pattern": "recruit_reset",
+      "intent": "calm left anchor",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 78678,
+      "section": "cooling glance",
+      "pattern": "recruit_reset",
+      "intent": "late answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 79982,
+      "section": "cooling glance",
+      "pattern": "recruit_reset",
+      "intent": "bar-29 energy gets a light tap instead of a spike",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 80960,
+      "section": "cooling glance",
+      "pattern": "recruit_reset",
+      "intent": "soft nudge",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 81613,
+      "section": "cooling glance",
+      "pattern": "recruit_offer_chord",
+      "intent": "small agreement accent before final persuasion",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 82591,
+      "section": "last persuasion",
+      "pattern": "recruit_push",
+      "intent": "final persuasion anchor follows the steady late-song pulse",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 83243,
+      "section": "last persuasion",
+      "pattern": "recruit_push",
+      "intent": "second step in the recognizable loop",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 84058,
+      "section": "last persuasion",
+      "pattern": "recruit_push",
+      "intent": "answering step",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 84710,
+      "section": "last persuasion",
+      "pattern": "recruit_push",
+      "intent": "single close keeps the phrase readable",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 85200,
+      "section": "last persuasion",
+      "pattern": "recruit_answer",
+      "intent": "final persuasion anchor follows the steady late-song pulse",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 85852,
+      "section": "last persuasion",
+      "pattern": "recruit_answer",
+      "intent": "second step in the recognizable loop",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 86667,
+      "section": "last persuasion",
+      "pattern": "recruit_answer",
+      "intent": "answering step",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 87319,
+      "section": "last persuasion",
+      "pattern": "recruit_answer",
+      "intent": "single close keeps the phrase readable",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 87808,
+      "section": "last persuasion",
+      "pattern": "recruit_push",
+      "intent": "final persuasion anchor follows the steady late-song pulse",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 88460,
+      "section": "last persuasion",
+      "pattern": "recruit_push",
+      "intent": "second step in the recognizable loop",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 89276,
+      "section": "last persuasion",
+      "pattern": "recruit_push",
+      "intent": "answering step",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 89928,
+      "section": "last persuasion",
+      "pattern": "recruit_offer_chord",
+      "intent": "late phrase chord reward",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 90417,
+      "section": "last persuasion",
+      "pattern": "recruit_answer",
+      "intent": "final persuasion anchor follows the steady late-song pulse",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 91069,
+      "section": "last persuasion",
+      "pattern": "recruit_answer",
+      "intent": "second step in the recognizable loop",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 91884,
+      "section": "last persuasion",
+      "pattern": "recruit_answer",
+      "intent": "answering step",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 92537,
+      "section": "last persuasion",
+      "pattern": "recruit_answer",
+      "intent": "single close keeps the phrase readable",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 93026,
+      "section": "decision moment",
+      "pattern": "recruit_push",
+      "intent": "final persuasion anchor follows the steady late-song pulse",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 93678,
+      "section": "decision moment",
+      "pattern": "recruit_push",
+      "intent": "second step in the recognizable loop",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 94493,
+      "section": "decision moment",
+      "pattern": "recruit_push",
+      "intent": "answering step",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 95145,
+      "section": "decision moment",
+      "pattern": "recruit_offer_chord",
+      "intent": "late phrase chord reward",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 95634,
+      "section": "decision moment",
+      "pattern": "recruit_answer",
+      "intent": "final persuasion anchor follows the steady late-song pulse",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 96287,
+      "section": "decision moment",
+      "pattern": "recruit_answer",
+      "intent": "second step in the recognizable loop",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 97102,
+      "section": "decision moment",
+      "pattern": "recruit_answer",
+      "intent": "answering step",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 97754,
+      "section": "decision moment",
+      "pattern": "recruit_offer_chord",
+      "intent": "late phrase chord reward",
+      "lanes": [
+        "F",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 98243,
+      "section": "decision moment",
+      "pattern": "recruit_decision",
+      "intent": "decision section begins with a clear anchor",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 99221,
+      "section": "decision moment",
+      "pattern": "recruit_decision",
+      "intent": "answer on the phrase",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 99873,
+      "section": "decision moment",
+      "pattern": "recruit_decision",
+      "intent": "outer agreement chord",
+      "lanes": [
+        "D",
+        "K"
+      ]
+    },
+    {
+      "timeMs": 100852,
+      "section": "decision moment",
+      "pattern": "recruit_decision",
+      "intent": "late final anchor",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 101830,
+      "section": "decision moment",
+      "pattern": "recruit_decision",
+      "intent": "late final answer",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 102645,
+      "section": "decision moment",
+      "pattern": "recruit_decision",
+      "intent": "split agreement before the ending tail",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 103460,
+      "section": "decision moment",
+      "pattern": "recruit_decision",
+      "intent": "late persuasion tap, preserving the good ending timing",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 104276,
+      "section": "decision moment",
+      "pattern": "recruit_decision",
+      "intent": "late agreement chord before the required silence",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    },
+    {
+      "timeMs": 106069,
+      "section": "decision moment",
+      "pattern": "recruit_decision",
+      "intent": "last audible final tap",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 106721,
+      "section": "decision moment",
+      "pattern": "recruit_decision",
+      "intent": "last chord, matching the existing clean finish before silence",
+      "lanes": [
+        "D",
+        "J"
+      ]
+    }
+  ],
+  "features": {
+    "longNotes": true,
+    "fever": true,
+    "feverAutoActivate": true,
+    "feverDurationMs": 10000,
+    "stageSync": true,
+    "storyImpact": true,
+    "recruitmentSong": true,
+    "audioAlignedRevision": true,
+    "endingSilenceMs": 4000
+  }
+}
