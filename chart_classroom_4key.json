@@ -10,7 +10,7 @@
     "J",
     "K"
   ],
-  "bpm": 105,
+  "bpm": 103,
   "offsetMs": 0,
   "approachMs": 2050,
   "durationMs": 87996,
@@ -19,8 +19,8 @@
     "great": 110,
     "good": 180
   },
-  "purpose": "Second-song chart after Tutorial: easier, more musical, and stopped before the final three seconds of ClassRoom.",
-  "patternDesign": "Re-analyzed at 105 BPM with the grid phase around 4.48s. The revision follows higher-energy bars such as 6.77s, 25.05s, 27.34s, 50.19s, 77.62s, and 79.91s, reduces density so Classroom is easier than Recruitment, and leaves the final three seconds clear.",
+  "purpose": "Second-song chart rebuilt on a stable 103 BPM quarter-beat grid, easier than Recruitment and clear for new players.",
+  "patternDesign": "103 BPM straight-beat revision with the first playable beat at 4.001s. All note starts are snapped to integer quarter beats; syncopated 0.5/0.75-beat placements were removed while preserving section density and pattern intent.",
   "sections": [
     {
       "startMs": 0,
@@ -28,7 +28,7 @@
       "name": "prepare silence",
       "intent": "no notes for the first four seconds so the player can get ready",
       "loop": [],
-      "patternIntent": "4-second no-note preparation window"
+      "patternIntent": "4-second no-note preparation window; integer quarter-beat starts only"
     },
     {
       "startMs": 4480,
@@ -40,7 +40,7 @@
         "classroom_hold_breath",
         "classroom_walk"
       ],
-      "patternIntent": "second-song warm-up with wide spacing"
+      "patternIntent": "second-song warm-up with wide spacing; integer quarter-beat starts only"
     },
     {
       "startMs": 13623,
@@ -52,7 +52,7 @@
         "classroom_answer_chord",
         "classroom_hold_breath"
       ],
-      "patternIntent": "readable groove that follows the phrase accents"
+      "patternIntent": "readable groove that follows the phrase accents; integer quarter-beat starts only"
     },
     {
       "startMs": 29623,
@@ -64,7 +64,7 @@
         "classroom_answer_chord",
         "classroom_hold_breath"
       ],
-      "patternIntent": "soft ramp-up with breathing room"
+      "patternIntent": "soft ramp-up with breathing room; integer quarter-beat starts only"
     },
     {
       "startMs": 43337,
@@ -75,7 +75,7 @@
         "classroom_highlight_soft",
         "classroom_highlight_hold"
       ],
-      "patternIntent": "small highlight, not a main-song difficulty spike"
+      "patternIntent": "small highlight, not a main-song difficulty spike; integer quarter-beat starts only"
     },
     {
       "startMs": 54766,
@@ -85,7 +85,7 @@
       "loop": [
         "classroom_reset"
       ],
-      "patternIntent": "low-density reset"
+      "patternIntent": "low-density reset; integer quarter-beat starts only"
     },
     {
       "startMs": 61623,
@@ -97,7 +97,7 @@
         "classroom_answer_chord",
         "classroom_hold_breath"
       ],
-      "patternIntent": "simple return groove"
+      "patternIntent": "simple return groove; integer quarter-beat starts only"
     },
     {
       "startMs": 68480,
@@ -108,7 +108,7 @@
         "classroom_final_cadence",
         "classroom_reset"
       ],
-      "patternIntent": "musical ending with no notes in the final three seconds"
+      "patternIntent": "musical ending with no notes in the final three seconds; integer quarter-beat starts only"
     }
   ],
   "patterns": {
@@ -151,818 +151,818 @@
   },
   "notes": [
     {
-      "timeMs": 4480,
+      "timeMs": 4584,
       "section": "ready intro",
       "pattern": "classroom_soft_call",
-      "intent": "first classroom downbeat after the four-second preparation",
+      "intent": "first classroom downbeat after the four-second preparation Straight-beat revision: snapped to quarter-beat 1.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 5909,
+      "timeMs": 5749,
       "section": "ready intro",
       "pattern": "classroom_soft_call",
-      "intent": "left-hand answer on the stronger late pulse",
+      "intent": "left-hand answer on the stronger late pulse Straight-beat revision: snapped to quarter-beat 3.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 6766,
+      "timeMs": 6914,
       "section": "ready intro",
       "pattern": "classroom_soft_call",
-      "intent": "right-side call matching the brighter answer",
+      "intent": "right-side call matching the brighter answer Straight-beat revision: snapped to quarter-beat 5.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 8051,
+      "timeMs": 8079,
       "section": "ready intro",
       "pattern": "classroom_soft_call",
-      "intent": "soft reply instead of a full run",
+      "intent": "soft reply instead of a full run Straight-beat revision: snapped to quarter-beat 7.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 9051,
+      "timeMs": 9244,
       "section": "ready intro",
       "pattern": "classroom_hold_breath",
-      "intent": "first friendly sustain on a strong classroom accent",
+      "intent": "first friendly sustain on a strong classroom accent Straight-beat revision: snapped to quarter-beat 9.",
       "lanes": [
         "D"
       ],
-      "durationMs": 714
+      "durationMs": 583
     },
     {
-      "timeMs": 10480,
+      "timeMs": 10409,
       "section": "ready intro",
       "pattern": "classroom_hold_breath",
-      "intent": "clean tap after the sustain ends",
+      "intent": "clean tap after the sustain ends Straight-beat revision: snapped to quarter-beat 11.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 11337,
+      "timeMs": 11574,
       "section": "ready intro",
       "pattern": "classroom_walk",
-      "intent": "short pickup into the groove",
+      "intent": "short pickup into the groove Straight-beat revision: snapped to quarter-beat 13.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 12766,
+      "timeMs": 12739,
       "section": "ready intro",
       "pattern": "classroom_walk",
-      "intent": "right-hand answer before the groove begins",
+      "intent": "right-hand answer before the groove begins Straight-beat revision: snapped to quarter-beat 15.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 13623,
+      "timeMs": 13904,
       "section": "classroom groove",
       "pattern": "classroom_walk",
-      "intent": "D F call begins the second-song groove",
+      "intent": "D F call begins the second-song groove Straight-beat revision: snapped to quarter-beat 17.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 14194,
+      "timeMs": 14486,
       "section": "classroom groove",
       "pattern": "classroom_walk",
-      "intent": "left lift on the beat",
+      "intent": "left lift on the beat Straight-beat revision: snapped to quarter-beat 18.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 15051,
+      "timeMs": 15069,
       "section": "classroom groove",
       "pattern": "classroom_walk",
-      "intent": "right answer follows the melodic lift",
+      "intent": "right answer follows the melodic lift Straight-beat revision: snapped to quarter-beat 19.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 15909,
+      "timeMs": 15651,
       "section": "classroom groove",
       "pattern": "classroom_walk",
-      "intent": "reverse call starts",
+      "intent": "reverse call starts Straight-beat revision: snapped to quarter-beat 20.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 16480,
+      "timeMs": 16234,
       "section": "classroom groove",
       "pattern": "classroom_walk",
-      "intent": "reverse lift",
+      "intent": "reverse lift Straight-beat revision: snapped to quarter-beat 21.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 17337,
+      "timeMs": 17399,
       "section": "classroom groove",
       "pattern": "classroom_walk",
-      "intent": "left answer with breathing room",
+      "intent": "left answer with breathing room Straight-beat revision: snapped to quarter-beat 23.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 18194,
+      "timeMs": 17982,
       "section": "classroom groove",
       "pattern": "classroom_answer_chord",
-      "intent": "single lead-in before a friendly split-hand hit",
+      "intent": "single lead-in before a friendly split-hand hit Straight-beat revision: snapped to quarter-beat 24.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 19051,
+      "timeMs": 19147,
       "section": "classroom groove",
       "pattern": "classroom_answer_chord",
-      "intent": "pickup into chord",
+      "intent": "pickup into chord Straight-beat revision: snapped to quarter-beat 26.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 19623,
+      "timeMs": 19729,
       "section": "classroom groove",
       "pattern": "classroom_answer_chord",
-      "intent": "split-hand reward on the stronger phrase ending",
+      "intent": "split-hand reward on the stronger phrase ending Straight-beat revision: snapped to quarter-beat 27.",
       "lanes": [
         "D",
         "J"
       ]
     },
     {
-      "timeMs": 20480,
+      "timeMs": 20312,
       "section": "classroom groove",
       "pattern": "classroom_hold_breath",
-      "intent": "short inner hold in a less dense bar",
+      "intent": "short inner hold in a less dense bar Straight-beat revision: snapped to quarter-beat 28.",
       "lanes": [
         "F"
       ],
-      "durationMs": 714
+      "durationMs": 583
     },
     {
-      "timeMs": 21909,
+      "timeMs": 22059,
       "section": "classroom groove",
       "pattern": "classroom_hold_breath",
-      "intent": "right answer after hold",
+      "intent": "right answer after hold Straight-beat revision: snapped to quarter-beat 31.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 22766,
+      "timeMs": 22642,
       "section": "classroom groove",
       "pattern": "classroom_walk",
-      "intent": "return to D F J K motif",
+      "intent": "return to D F J K motif Straight-beat revision: snapped to quarter-beat 32.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 23337,
+      "timeMs": 23224,
       "section": "classroom groove",
       "pattern": "classroom_walk",
-      "intent": "steady beat support",
+      "intent": "steady beat support Straight-beat revision: snapped to quarter-beat 33.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 24194,
+      "timeMs": 24389,
       "section": "classroom groove",
       "pattern": "classroom_walk",
-      "intent": "melody-side answer",
+      "intent": "melody-side answer Straight-beat revision: snapped to quarter-beat 35.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 25051,
+      "timeMs": 24972,
       "section": "classroom groove",
       "pattern": "classroom_answer_chord",
-      "intent": "reverse motif lead-in",
+      "intent": "reverse motif lead-in Straight-beat revision: snapped to quarter-beat 36.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 25623,
+      "timeMs": 25554,
       "section": "classroom groove",
       "pattern": "classroom_answer_chord",
-      "intent": "right-side lift",
+      "intent": "right-side lift Straight-beat revision: snapped to quarter-beat 37.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 26480,
+      "timeMs": 26719,
       "section": "classroom groove",
       "pattern": "classroom_answer_chord",
-      "intent": "bright chord on the stronger bar-9 pulse",
+      "intent": "bright chord on the stronger bar-9 pulse Straight-beat revision: snapped to quarter-beat 39.",
       "lanes": [
         "F",
         "K"
       ]
     },
     {
-      "timeMs": 27337,
+      "timeMs": 27302,
       "section": "classroom groove",
       "pattern": "classroom_soft_call",
-      "intent": "strong bar-10 downbeat anchor",
+      "intent": "strong bar-10 downbeat anchor Straight-beat revision: snapped to quarter-beat 40.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 28480,
+      "timeMs": 28467,
       "section": "classroom groove",
       "pattern": "classroom_soft_call",
-      "intent": "answer to the late pulse",
+      "intent": "answer to the late pulse Straight-beat revision: snapped to quarter-beat 42.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 29623,
+      "timeMs": 29632,
       "section": "after-school build",
       "pattern": "classroom_build_step",
-      "intent": "build starts with a clear left anchor",
+      "intent": "build starts with a clear left anchor Straight-beat revision: snapped to quarter-beat 44.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 30051,
+      "timeMs": 30215,
       "section": "after-school build",
       "pattern": "classroom_build_step",
-      "intent": "small pickup, not a fast run",
+      "intent": "small pickup, not a fast run Straight-beat revision: snapped to quarter-beat 45.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 30766,
+      "timeMs": 30797,
       "section": "after-school build",
       "pattern": "classroom_build_step",
-      "intent": "right answer",
+      "intent": "right answer Straight-beat revision: snapped to quarter-beat 46.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 31337,
+      "timeMs": 31380,
       "section": "after-school build",
       "pattern": "classroom_build_step",
-      "intent": "close the phrase",
+      "intent": "close the phrase Straight-beat revision: snapped to quarter-beat 47.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 31909,
+      "timeMs": 31962,
       "section": "after-school build",
       "pattern": "classroom_build_step",
-      "intent": "reverse build anchor",
+      "intent": "reverse build anchor Straight-beat revision: snapped to quarter-beat 48.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 32480,
+      "timeMs": 32545,
       "section": "after-school build",
       "pattern": "classroom_build_step",
-      "intent": "reverse lift",
+      "intent": "reverse lift Straight-beat revision: snapped to quarter-beat 49.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 33337,
+      "timeMs": 33127,
       "section": "after-school build",
       "pattern": "classroom_build_step",
-      "intent": "left answer",
+      "intent": "left answer Straight-beat revision: snapped to quarter-beat 50.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 34194,
+      "timeMs": 34292,
       "section": "after-school build",
       "pattern": "classroom_answer_chord",
-      "intent": "bar-13 downbeat anchor",
+      "intent": "bar-13 downbeat anchor Straight-beat revision: snapped to quarter-beat 52.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 35051,
+      "timeMs": 34875,
       "section": "after-school build",
       "pattern": "classroom_answer_chord",
-      "intent": "soft pickup",
+      "intent": "soft pickup Straight-beat revision: snapped to quarter-beat 53.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 35623,
+      "timeMs": 35457,
       "section": "after-school build",
       "pattern": "classroom_answer_chord",
-      "intent": "split-hand accent on the phrase lift",
+      "intent": "split-hand accent on the phrase lift Straight-beat revision: snapped to quarter-beat 54.",
       "lanes": [
         "D",
         "J"
       ]
     },
     {
-      "timeMs": 36480,
+      "timeMs": 36622,
       "section": "after-school build",
       "pattern": "classroom_hold_breath",
-      "intent": "right-side sustain for a calmer build bar",
+      "intent": "right-side sustain for a calmer build bar Straight-beat revision: snapped to quarter-beat 56.",
       "lanes": [
         "J"
       ],
-      "durationMs": 714
+      "durationMs": 583
     },
     {
-      "timeMs": 37909,
+      "timeMs": 37787,
       "section": "after-school build",
       "pattern": "classroom_hold_breath",
-      "intent": "soft answer after sustain",
+      "intent": "soft answer after sustain Straight-beat revision: snapped to quarter-beat 58.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 38766,
+      "timeMs": 38952,
       "section": "after-school build",
       "pattern": "classroom_build_step",
-      "intent": "return build anchor",
+      "intent": "return build anchor Straight-beat revision: snapped to quarter-beat 60.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 39337,
+      "timeMs": 39535,
       "section": "after-school build",
       "pattern": "classroom_build_step",
-      "intent": "left lift",
+      "intent": "left lift Straight-beat revision: snapped to quarter-beat 61.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 40194,
+      "timeMs": 40118,
       "section": "after-school build",
       "pattern": "classroom_build_step",
-      "intent": "right answer",
+      "intent": "right answer Straight-beat revision: snapped to quarter-beat 62.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 41051,
+      "timeMs": 41283,
       "section": "after-school build",
       "pattern": "classroom_soft_call",
-      "intent": "breath before highlight",
+      "intent": "breath before highlight Straight-beat revision: snapped to quarter-beat 64.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 42480,
+      "timeMs": 42448,
       "section": "after-school build",
       "pattern": "classroom_soft_call",
-      "intent": "left-side setup for the high section",
+      "intent": "left-side setup for the high section Straight-beat revision: snapped to quarter-beat 66.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 43337,
+      "timeMs": 43613,
       "section": "clubroom highlight",
       "pattern": "classroom_highlight_soft",
-      "intent": "highlight motif starts on strong audio energy",
+      "intent": "highlight motif starts on strong audio energy Straight-beat revision: snapped to quarter-beat 68.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 43766,
+      "timeMs": 44195,
       "section": "clubroom highlight",
       "pattern": "classroom_highlight_soft",
-      "intent": "small lift",
+      "intent": "small lift Straight-beat revision: snapped to quarter-beat 69.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 44337,
+      "timeMs": 44778,
       "section": "clubroom highlight",
       "pattern": "classroom_highlight_soft",
-      "intent": "right answer",
+      "intent": "right answer Straight-beat revision: snapped to quarter-beat 70.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 44909,
+      "timeMs": 45360,
       "section": "clubroom highlight",
       "pattern": "classroom_highlight_soft",
-      "intent": "friendly payoff chord",
+      "intent": "friendly payoff chord Straight-beat revision: snapped to quarter-beat 71.",
       "lanes": [
         "D",
         "J"
       ]
     },
     {
-      "timeMs": 45623,
+      "timeMs": 45943,
       "section": "clubroom highlight",
       "pattern": "classroom_highlight_soft",
-      "intent": "reverse highlight anchor",
+      "intent": "reverse highlight anchor Straight-beat revision: snapped to quarter-beat 72.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 46051,
+      "timeMs": 46525,
       "section": "clubroom highlight",
       "pattern": "classroom_highlight_soft",
-      "intent": "reverse lift",
+      "intent": "reverse lift Straight-beat revision: snapped to quarter-beat 73.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 46623,
+      "timeMs": 47108,
       "section": "clubroom highlight",
       "pattern": "classroom_highlight_soft",
-      "intent": "left answer",
+      "intent": "left answer Straight-beat revision: snapped to quarter-beat 74.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 47194,
+      "timeMs": 47690,
       "section": "clubroom highlight",
       "pattern": "classroom_highlight_soft",
-      "intent": "bright payoff chord",
+      "intent": "bright payoff chord Straight-beat revision: snapped to quarter-beat 75.",
       "lanes": [
         "F",
         "K"
       ]
     },
     {
-      "timeMs": 47909,
+      "timeMs": 48273,
       "section": "clubroom highlight",
       "pattern": "classroom_highlight_hold",
-      "intent": "left sustain on the energetic phrase",
+      "intent": "left sustain on the energetic phrase Straight-beat revision: snapped to quarter-beat 76.",
       "lanes": [
         "D"
       ],
-      "durationMs": 714
+      "durationMs": 583
     },
     {
-      "timeMs": 49051,
+      "timeMs": 48855,
       "section": "clubroom highlight",
       "pattern": "classroom_highlight_hold",
-      "intent": "single tap after the sustain",
+      "intent": "single tap after the sustain Straight-beat revision: snapped to quarter-beat 77.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 50194,
+      "timeMs": 50020,
       "section": "clubroom highlight",
       "pattern": "classroom_highlight_hold",
-      "intent": "short K sustain follows the bar-20 sound",
+      "intent": "short K sustain follows the bar-20 sound Straight-beat revision: snapped to quarter-beat 79.",
       "lanes": [
         "K"
       ],
-      "durationMs": 571
+      "durationMs": 583
     },
     {
-      "timeMs": 51623,
+      "timeMs": 51768,
       "section": "clubroom highlight",
       "pattern": "classroom_highlight_hold",
-      "intent": "K hold resolves into F+J, avoiding awkward K overlap",
+      "intent": "K hold resolves into F+J, avoiding awkward K overlap Straight-beat revision: snapped to quarter-beat 82.",
       "lanes": [
         "F",
         "J"
       ]
     },
     {
-      "timeMs": 52480,
+      "timeMs": 52351,
       "section": "clubroom highlight",
       "pattern": "classroom_highlight_soft",
-      "intent": "lighter high-section recovery",
+      "intent": "lighter high-section recovery Straight-beat revision: snapped to quarter-beat 83.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 53337,
+      "timeMs": 53516,
       "section": "clubroom highlight",
       "pattern": "classroom_highlight_soft",
-      "intent": "answer on the melody side",
+      "intent": "answer on the melody side Straight-beat revision: snapped to quarter-beat 85.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 54051,
+      "timeMs": 54098,
       "section": "clubroom highlight",
       "pattern": "classroom_highlight_soft",
-      "intent": "outer-lane accent without adding a fast run",
+      "intent": "outer-lane accent without adding a fast run Straight-beat revision: snapped to quarter-beat 86.",
       "lanes": [
         "D",
         "K"
       ]
     },
     {
-      "timeMs": 54766,
+      "timeMs": 54681,
       "section": "quiet reset",
       "pattern": "classroom_reset",
-      "intent": "post-highlight recovery downbeat",
+      "intent": "post-highlight recovery downbeat Straight-beat revision: snapped to quarter-beat 87.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 55909,
+      "timeMs": 55846,
       "section": "quiet reset",
       "pattern": "classroom_reset",
-      "intent": "late answer on the stronger pulse",
+      "intent": "late answer on the stronger pulse Straight-beat revision: snapped to quarter-beat 89.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 57051,
+      "timeMs": 57011,
       "section": "quiet reset",
       "pattern": "classroom_reset",
-      "intent": "right-side recovery anchor",
+      "intent": "right-side recovery anchor Straight-beat revision: snapped to quarter-beat 91.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 58480,
+      "timeMs": 58758,
       "section": "quiet reset",
       "pattern": "classroom_reset",
-      "intent": "soft left answer",
+      "intent": "soft left answer Straight-beat revision: snapped to quarter-beat 94.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 59337,
+      "timeMs": 59341,
       "section": "return groove",
       "pattern": "classroom_walk",
-      "intent": "return groove anchor",
+      "intent": "return groove anchor Straight-beat revision: snapped to quarter-beat 95.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 59909,
+      "timeMs": 59923,
       "section": "return groove",
       "pattern": "classroom_walk",
-      "intent": "return groove lift",
+      "intent": "return groove lift Straight-beat revision: snapped to quarter-beat 96.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 60766,
+      "timeMs": 60506,
       "section": "return groove",
       "pattern": "classroom_walk",
-      "intent": "return answer",
+      "intent": "return answer Straight-beat revision: snapped to quarter-beat 97.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 61623,
+      "timeMs": 61671,
       "section": "return groove",
       "pattern": "classroom_walk",
-      "intent": "reverse return anchor",
+      "intent": "reverse return anchor Straight-beat revision: snapped to quarter-beat 99.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 62480,
+      "timeMs": 62253,
       "section": "return groove",
       "pattern": "classroom_walk",
-      "intent": "reverse answer",
+      "intent": "reverse answer Straight-beat revision: snapped to quarter-beat 100.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 63194,
+      "timeMs": 63418,
       "section": "return groove",
       "pattern": "classroom_answer_chord",
-      "intent": "small chord on the phrase end",
+      "intent": "small chord on the phrase end Straight-beat revision: snapped to quarter-beat 102.",
       "lanes": [
         "F",
         "K"
       ]
     },
     {
-      "timeMs": 63909,
+      "timeMs": 64001,
       "section": "return groove",
       "pattern": "classroom_soft_call",
-      "intent": "lower-density continuation",
+      "intent": "lower-density continuation Straight-beat revision: snapped to quarter-beat 103.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 65337,
+      "timeMs": 65166,
       "section": "return groove",
       "pattern": "classroom_soft_call",
-      "intent": "late response",
+      "intent": "late response Straight-beat revision: snapped to quarter-beat 105.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 66194,
+      "timeMs": 66331,
       "section": "return groove",
       "pattern": "classroom_hold_breath",
-      "intent": "brief sustain before final phrase",
+      "intent": "brief sustain before final phrase Straight-beat revision: snapped to quarter-beat 107.",
       "lanes": [
         "F"
       ],
-      "durationMs": 714
+      "durationMs": 583
     },
     {
-      "timeMs": 67623,
+      "timeMs": 67496,
       "section": "return groove",
       "pattern": "classroom_hold_breath",
-      "intent": "clean tap after sustain",
+      "intent": "clean tap after sustain Straight-beat revision: snapped to quarter-beat 109.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 68480,
+      "timeMs": 68661,
       "section": "final bell",
       "pattern": "classroom_final_cadence",
-      "intent": "final phrase begins with a clear left anchor",
+      "intent": "final phrase begins with a clear left anchor Straight-beat revision: snapped to quarter-beat 111.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 69337,
+      "timeMs": 69244,
       "section": "final bell",
       "pattern": "classroom_final_cadence",
-      "intent": "gentle lift",
+      "intent": "gentle lift Straight-beat revision: snapped to quarter-beat 112.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 70051,
+      "timeMs": 69826,
       "section": "final bell",
       "pattern": "classroom_final_cadence",
-      "intent": "right answer",
+      "intent": "right answer Straight-beat revision: snapped to quarter-beat 113.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 70766,
+      "timeMs": 70991,
       "section": "final bell",
       "pattern": "classroom_final_cadence",
-      "intent": "bar-29 final-energy anchor",
+      "intent": "bar-29 final-energy anchor Straight-beat revision: snapped to quarter-beat 115.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 71623,
+      "timeMs": 71574,
       "section": "final bell",
       "pattern": "classroom_final_cadence",
-      "intent": "answer to the stronger late pulse",
+      "intent": "answer to the stronger late pulse Straight-beat revision: snapped to quarter-beat 116.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 72194,
+      "timeMs": 72156,
       "section": "final bell",
       "pattern": "classroom_final_cadence",
-      "intent": "small final chord payoff",
+      "intent": "small final chord payoff Straight-beat revision: snapped to quarter-beat 117.",
       "lanes": [
         "D",
         "J"
       ]
     },
     {
-      "timeMs": 73051,
+      "timeMs": 73321,
       "section": "final bell",
       "pattern": "classroom_reset",
-      "intent": "low-energy bar gets only a small tap",
+      "intent": "low-energy bar gets only a small tap Straight-beat revision: snapped to quarter-beat 119.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 75337,
+      "timeMs": 75069,
       "section": "final bell",
       "pattern": "classroom_final_cadence",
-      "intent": "late pickup after the soft bar",
+      "intent": "late pickup after the soft bar Straight-beat revision: snapped to quarter-beat 122.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 76766,
+      "timeMs": 76817,
       "section": "final bell",
       "pattern": "classroom_final_cadence",
-      "intent": "right-side answer",
+      "intent": "right-side answer Straight-beat revision: snapped to quarter-beat 125.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 77623,
+      "timeMs": 77399,
       "section": "final bell",
       "pattern": "classroom_final_cadence",
-      "intent": "strong final bar downbeat",
+      "intent": "strong final bar downbeat Straight-beat revision: snapped to quarter-beat 126.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 78194,
+      "timeMs": 77982,
       "section": "final bell",
       "pattern": "classroom_final_cadence",
-      "intent": "final lift",
+      "intent": "final lift Straight-beat revision: snapped to quarter-beat 127.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 79051,
+      "timeMs": 79147,
       "section": "final bell",
       "pattern": "classroom_final_cadence",
-      "intent": "melody-side hit",
+      "intent": "melody-side hit Straight-beat revision: snapped to quarter-beat 129.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 79909,
+      "timeMs": 79729,
       "section": "final bell",
       "pattern": "classroom_final_cadence",
-      "intent": "last audible phrase anchor",
+      "intent": "last audible phrase anchor Straight-beat revision: snapped to quarter-beat 130.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 81337,
+      "timeMs": 81477,
       "section": "final bell",
       "pattern": "classroom_final_cadence",
-      "intent": "last split-hand agreement before the ending silence",
+      "intent": "last split-hand agreement before the ending silence Straight-beat revision: snapped to quarter-beat 133.",
       "lanes": [
         "F",
         "J"
       ]
     },
     {
-      "timeMs": 82194,
+      "timeMs": 82059,
       "section": "final bell",
       "pattern": "classroom_final_cadence",
-      "intent": "soft closing tap before the final silent tail",
+      "intent": "soft closing tap before the final silent tail Straight-beat revision: snapped to quarter-beat 134.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 83337,
+      "timeMs": 83224,
       "section": "final bell",
       "pattern": "classroom_final_cadence",
-      "intent": "final outer chord, safely before the last three seconds",
+      "intent": "final outer chord, safely before the last three seconds Straight-beat revision: snapped to quarter-beat 136.",
       "lanes": [
         "D",
         "K"
@@ -979,6 +979,9 @@
     "classroomSong": true,
     "audioAlignedRevision": true,
     "endingSilenceMs": 3000,
-    "easierSecondSong": true
-  }
+    "easierSecondSong": true,
+    "straightBeatRevision": true
+  },
+  "beatPhaseMs": 4001,
+  "firstPlayableBeatMs": 4001
 }

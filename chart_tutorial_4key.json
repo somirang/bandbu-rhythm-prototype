@@ -12,6 +12,8 @@
   ],
   "bpm": 93,
   "offsetMs": 0,
+  "beatPhaseMs": 100,
+  "firstPlayableBeatMs": 4616,
   "approachMs": 2200,
   "durationMs": 105216,
   "judgementWindowsMs": {
@@ -19,14 +21,14 @@
     "great": 110,
     "good": 180
   },
-  "purpose": "First-song tutorial chart that keeps the staged learning goals while aligning note timing more closely to the song groove.",
-  "patternDesign": "Re-analyzed around 93 BPM with the strongest grid phase at 4.00s. Learning structure is preserved: first 4s silence, first quarter single taps only, second quarter holds only, third quarter two-key chords only, final quarter gentle mixed review. Notes now land mostly on audible downbeats and phrase pulses instead of fixed arbitrary spacing.",
+  "purpose": "First-song tutorial chart with the original staged learning goals, rebuilt entirely on straight quarter-beat timing.",
+  "patternDesign": "93 BPM straight-beat revision. First playable beat is 4.616s after the four-second listening window. Every note start is an integer beat: single taps only, holds only, two-key chords only, then a gentle mixed review.",
   "sections": [
     {
       "startMs": 0,
       "endMs": 4000,
       "name": "listen first",
-      "intent": "first four seconds contain no notes so new players can hear the groove before acting",
+      "intent": "first four seconds contain no notes",
       "loop": [],
       "patternIntent": "no-note onboarding pause"
     },
@@ -34,483 +36,472 @@
       "startMs": 4000,
       "endMs": 26304,
       "name": "single notes only",
-      "intent": "teach one-button timing with musical downbeat and late-beat taps, no holds or chords",
+      "intent": "teach one-button timing without syncopation",
       "loop": [
-        "single_intro_DF",
-        "single_intro_JK",
-        "single_full_walk",
-        "single_lesson_cadence"
+        "single_intro",
+        "single_straight_walk"
       ],
-      "patternIntent": "tap-only first quarter, now song-aligned"
+      "patternIntent": "single notes on integer beats only"
     },
     {
       "startMs": 26304,
       "endMs": 52608,
       "name": "hold notes only",
-      "intent": "teach pressing and holding one lane at a time, with starts on strong phrase beats",
+      "intent": "teach holding from clear quarter beats",
       "loop": [
-        "hold_basic_left",
-        "hold_basic_right"
+        "hold_straight"
       ],
-      "patternIntent": "hold-only second quarter, rhythm-aligned"
+      "patternIntent": "single-lane holds only"
     },
     {
       "startMs": 52608,
       "endMs": 78912,
       "name": "two key notes only",
-      "intent": "teach simple two-key hits on clear phrase pulses after taps and holds are understood",
+      "intent": "teach simultaneous two-key hits on downbeats",
       "loop": [
-        "chord_basic_split",
-        "chord_basic_color"
+        "chord_straight"
       ],
-      "patternIntent": "chord-only third quarter, sparse and musical"
+      "patternIntent": "two-key chords only"
     },
     {
       "startMs": 78912,
       "endMs": 105216,
       "name": "gentle review",
-      "intent": "finish with a calm mix of single taps, long notes, and two-key notes that follows the ending energy",
+      "intent": "combine learned inputs without offbeat placements",
       "loop": [
         "review_single",
         "review_hold",
         "review_chord"
       ],
-      "patternIntent": "mixed final-quarter review"
+      "patternIntent": "straight-beat mixed review"
     }
   ],
   "patterns": {
-    "single_intro_DF": {
-      "description": "First silent-gap single-note lesson using only D and F on the song pulse.",
+    "single_intro": {
+      "description": "D F J K introduction on evenly spaced quarter beats.",
       "type": "tap"
     },
-    "single_intro_JK": {
-      "description": "Single-note lesson for J and K as a right-hand answer phrase.",
+    "single_straight_walk": {
+      "description": "Simple forward and reverse single-note walk without syncopation.",
       "type": "tap"
     },
-    "single_full_walk": {
-      "description": "Slow D F J K / K J F D walk with missing beats for beginner breathing room.",
-      "type": "tap"
-    },
-    "single_lesson_cadence": {
-      "description": "Single tap cadence before hold notes begin.",
-      "type": "tap"
-    },
-    "hold_basic_left": {
-      "description": "Long-note lesson on the left side with starts on phrase downbeats.",
+    "hold_straight": {
+      "description": "Two-beat holds beginning on quarter beats.",
       "type": "hold"
     },
-    "hold_basic_right": {
-      "description": "Long-note lesson on the right side with starts on phrase downbeats.",
-      "type": "hold"
-    },
-    "chord_basic_split": {
-      "description": "Two-key lesson using separated left-right pairs on strong pulses.",
-      "type": "chord"
-    },
-    "chord_basic_color": {
-      "description": "Two-key lesson using outer and inner alternate pairs.",
+    "chord_straight": {
+      "description": "Two-key hits placed only on clear beats.",
       "type": "chord"
     },
     "review_single": {
-      "description": "Final review single taps placed on the ending phrase.",
+      "description": "Single-note recap on the steady grid.",
       "type": "tap"
     },
     "review_hold": {
-      "description": "Final review long notes with empty space around them.",
+      "description": "Two-beat hold recap.",
       "type": "hold"
     },
     "review_chord": {
-      "description": "Final review two-key hits used as soft musical rewards.",
+      "description": "Two-key recap on downbeats.",
       "type": "chord"
     }
   },
   "notes": [
     {
-      "timeMs": 4000,
+      "timeMs": 4616,
       "section": "single notes only",
-      "pattern": "single_intro_DF",
-      "intent": "first D lands exactly on the first strong tutorial pulse after silence",
+      "pattern": "single_intro",
+      "intent": "quarter-beat training note on the stable 93 BPM grid",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 4645,
+      "timeMs": 5906,
       "section": "single notes only",
-      "pattern": "single_intro_DF",
-      "intent": "second left-hand tap follows the next audible pulse",
+      "pattern": "single_intro",
+      "intent": "quarter-beat training note on the stable 93 BPM grid",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 6581,
+      "timeMs": 7197,
       "section": "single notes only",
-      "pattern": "single_intro_JK",
-      "intent": "first right-hand tap starts the answer phrase",
+      "pattern": "single_intro",
+      "intent": "quarter-beat training note on the stable 93 BPM grid",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 7226,
+      "timeMs": 8487,
       "section": "single notes only",
-      "pattern": "single_intro_JK",
-      "intent": "second right-hand tap follows the phrase pulse",
+      "pattern": "single_intro",
+      "intent": "quarter-beat training note on the stable 93 BPM grid",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 9161,
+      "timeMs": 9777,
       "section": "single notes only",
-      "pattern": "single_full_walk",
-      "intent": "slow walk restarts on a downbeat",
+      "pattern": "single_straight_walk",
+      "intent": "quarter-beat training note on the stable 93 BPM grid",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 11097,
+      "timeMs": 10422,
       "section": "single notes only",
-      "pattern": "single_full_walk",
-      "intent": "late beat answer leaves space for beginners",
+      "pattern": "single_straight_walk",
+      "intent": "quarter-beat training note on the stable 93 BPM grid",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 11742,
+      "timeMs": 12358,
       "section": "single notes only",
-      "pattern": "single_full_walk",
-      "intent": "right-side downbeat answer",
+      "pattern": "single_straight_walk",
+      "intent": "quarter-beat training note on the stable 93 BPM grid",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 13677,
+      "timeMs": 13003,
       "section": "single notes only",
-      "pattern": "single_full_walk",
-      "intent": "late beat close",
+      "pattern": "single_straight_walk",
+      "intent": "quarter-beat training note on the stable 93 BPM grid",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 14323,
+      "timeMs": 14939,
       "section": "single notes only",
-      "pattern": "single_full_walk",
-      "intent": "musical D F pickup starts on the bar accent",
+      "pattern": "single_straight_walk",
+      "intent": "quarter-beat training note on the stable 93 BPM grid",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 14968,
+      "timeMs": 16229,
       "section": "single notes only",
-      "pattern": "single_full_walk",
-      "intent": "pickup follows the audible beat",
+      "pattern": "single_straight_walk",
+      "intent": "quarter-beat training note on the stable 93 BPM grid",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 16903,
+      "timeMs": 17519,
       "section": "single notes only",
-      "pattern": "single_full_walk",
-      "intent": "reverse walk begins on the next phrase",
+      "pattern": "single_straight_walk",
+      "intent": "quarter-beat training note on the stable 93 BPM grid",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 18810,
+      "section": "single notes only",
+      "pattern": "single_straight_walk",
+      "intent": "quarter-beat training note on the stable 93 BPM grid",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 17548,
+      "timeMs": 21390,
       "section": "single notes only",
-      "pattern": "single_full_walk",
-      "intent": "reverse pickup",
-      "lanes": [
-        "J"
-      ]
-    },
-    {
-      "timeMs": 19484,
-      "section": "single notes only",
-      "pattern": "single_full_walk",
-      "intent": "left answer after the reverse pair",
-      "lanes": [
-        "F"
-      ]
-    },
-    {
-      "timeMs": 21419,
-      "section": "single notes only",
-      "pattern": "single_full_walk",
-      "intent": "late beat close before the lesson changes",
-      "lanes": [
-        "D"
-      ]
-    },
-    {
-      "timeMs": 24645,
-      "section": "single notes only",
-      "pattern": "single_lesson_cadence",
-      "intent": "single-note cadence on the final strong beat of the first lesson",
-      "lanes": [
-        "J"
-      ]
-    },
-    {
-      "timeMs": 27226,
-      "section": "hold notes only",
-      "pattern": "hold_basic_left",
-      "intent": "first hold begins on a strong phrase downbeat",
-      "lanes": [
-        "D"
-      ],
-      "durationMs": 1452
-    },
-    {
-      "timeMs": 32387,
-      "section": "hold notes only",
-      "pattern": "hold_basic_left",
-      "intent": "second hold follows the next stable phrase",
-      "lanes": [
-        "F"
-      ],
-      "durationMs": 1452
-    },
-    {
-      "timeMs": 37548,
-      "section": "hold notes only",
-      "pattern": "hold_basic_right",
-      "intent": "third hold moves to the right hand on a downbeat",
-      "lanes": [
-        "J"
-      ],
-      "durationMs": 1452
-    },
-    {
-      "timeMs": 42710,
-      "section": "hold notes only",
-      "pattern": "hold_basic_right",
-      "intent": "fourth hold teaches the far-right lane with space after it",
+      "pattern": "single_straight_walk",
+      "intent": "quarter-beat training note on the stable 93 BPM grid",
       "lanes": [
         "K"
+      ]
+    },
+    {
+      "timeMs": 22681,
+      "section": "single notes only",
+      "pattern": "single_straight_walk",
+      "intent": "quarter-beat training note on the stable 93 BPM grid",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 23971,
+      "section": "single notes only",
+      "pattern": "single_straight_walk",
+      "intent": "quarter-beat training note on the stable 93 BPM grid",
+      "lanes": [
+        "F"
+      ]
+    },
+    {
+      "timeMs": 25261,
+      "section": "single notes only",
+      "pattern": "single_straight_walk",
+      "intent": "quarter-beat training note on the stable 93 BPM grid",
+      "lanes": [
+        "D"
+      ]
+    },
+    {
+      "timeMs": 26551,
+      "section": "hold notes only",
+      "pattern": "hold_straight",
+      "intent": "two-beat hold starting exactly on a quarter beat",
+      "lanes": [
+        "D"
       ],
       "durationMs": 1290
     },
     {
-      "timeMs": 47871,
+      "timeMs": 31713,
       "section": "hold notes only",
-      "pattern": "hold_basic_left",
-      "intent": "shorter review hold matches the later phrase pulse",
+      "pattern": "hold_straight",
+      "intent": "two-beat hold starting exactly on a quarter beat",
       "lanes": [
         "F"
       ],
       "durationMs": 1290
     },
     {
-      "timeMs": 51742,
+      "timeMs": 36874,
       "section": "hold notes only",
-      "pattern": "hold_basic_right",
-      "intent": "final hold starts on a late phrase accent before chords begin",
+      "pattern": "hold_straight",
+      "intent": "two-beat hold starting exactly on a quarter beat",
       "lanes": [
         "J"
       ],
-      "durationMs": 968
+      "durationMs": 1290
     },
     {
-      "timeMs": 54968,
+      "timeMs": 42035,
+      "section": "hold notes only",
+      "pattern": "hold_straight",
+      "intent": "two-beat hold starting exactly on a quarter beat",
+      "lanes": [
+        "K"
+      ],
+      "durationMs": 1290
+    },
+    {
+      "timeMs": 47197,
+      "section": "hold notes only",
+      "pattern": "hold_straight",
+      "intent": "two-beat hold starting exactly on a quarter beat",
+      "lanes": [
+        "F"
+      ],
+      "durationMs": 1290
+    },
+    {
+      "timeMs": 51068,
+      "section": "hold notes only",
+      "pattern": "hold_straight",
+      "intent": "two-beat hold starting exactly on a quarter beat",
+      "lanes": [
+        "J"
+      ],
+      "durationMs": 1290
+    },
+    {
+      "timeMs": 53648,
       "section": "two key notes only",
-      "pattern": "chord_basic_split",
-      "intent": "first split-hand chord arrives after a clear setup gap",
+      "pattern": "chord_straight",
+      "intent": "two-key lesson placed on a clear quarter beat",
       "lanes": [
         "D",
         "J"
       ]
     },
     {
-      "timeMs": 56258,
+      "timeMs": 57519,
       "section": "two key notes only",
-      "pattern": "chord_basic_split",
-      "intent": "second split-hand chord follows the next strong pulse",
+      "pattern": "chord_straight",
+      "intent": "two-key lesson placed on a clear quarter beat",
       "lanes": [
         "F",
         "K"
       ]
     },
     {
-      "timeMs": 60774,
+      "timeMs": 61390,
       "section": "two key notes only",
-      "pattern": "chord_basic_color",
-      "intent": "outer-lane chord on a high-energy bar",
+      "pattern": "chord_straight",
+      "intent": "two-key lesson placed on a clear quarter beat",
       "lanes": [
         "D",
         "K"
       ]
     },
     {
-      "timeMs": 63355,
+      "timeMs": 65261,
       "section": "two key notes only",
-      "pattern": "chord_basic_color",
-      "intent": "inner-lane chord answers the previous bar",
+      "pattern": "chord_straight",
+      "intent": "two-key lesson placed on a clear quarter beat",
       "lanes": [
         "F",
         "J"
       ]
     },
     {
-      "timeMs": 66581,
+      "timeMs": 69132,
       "section": "two key notes only",
-      "pattern": "chord_basic_split",
-      "intent": "repeat split chord on a clear beat",
+      "pattern": "chord_straight",
+      "intent": "two-key lesson placed on a clear quarter beat",
       "lanes": [
         "D",
         "J"
       ]
     },
     {
-      "timeMs": 69161,
+      "timeMs": 73003,
       "section": "two key notes only",
-      "pattern": "chord_basic_split",
-      "intent": "repeat opposite split chord with wide spacing",
+      "pattern": "chord_straight",
+      "intent": "two-key lesson placed on a clear quarter beat",
       "lanes": [
         "F",
         "K"
       ]
     },
     {
-      "timeMs": 73677,
+      "timeMs": 76874,
       "section": "two key notes only",
-      "pattern": "chord_basic_color",
-      "intent": "late chord locks to the stronger bar-27 pulse",
+      "pattern": "chord_straight",
+      "intent": "two-key lesson placed on a clear quarter beat",
       "lanes": [
         "D",
         "K"
       ]
     },
     {
-      "timeMs": 76258,
+      "timeMs": 78164,
       "section": "two key notes only",
-      "pattern": "chord_basic_color",
-      "intent": "final chord-only lesson lands before mixed review",
+      "pattern": "chord_straight",
+      "intent": "two-key lesson placed on a clear quarter beat",
       "lanes": [
         "F",
         "J"
       ]
     },
     {
-      "timeMs": 81419,
+      "timeMs": 79455,
       "section": "gentle review",
       "pattern": "review_single",
-      "intent": "mixed review starts with a single downbeat tap",
+      "intent": "mixed review starts on a downbeat",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 82065,
+      "timeMs": 80745,
       "section": "gentle review",
       "pattern": "review_single",
-      "intent": "second single tap follows the phrase",
+      "intent": "single-note answer two beats later",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 84000,
+      "timeMs": 82035,
       "section": "gentle review",
       "pattern": "review_hold",
-      "intent": "review hold begins on a strong ending pulse",
+      "intent": "two-beat review hold",
       "lanes": [
-        "K"
+        "J"
       ],
       "durationMs": 1290
     },
     {
-      "timeMs": 86581,
+      "timeMs": 84616,
       "section": "gentle review",
       "pattern": "review_chord",
-      "intent": "split chord checks simultaneous input after a hold",
+      "intent": "split chord on a downbeat",
       "lanes": [
         "D",
         "J"
       ]
     },
     {
-      "timeMs": 89161,
+      "timeMs": 87197,
+      "section": "gentle review",
+      "pattern": "review_single",
+      "intent": "single recovery note",
+      "lanes": [
+        "K"
+      ]
+    },
+    {
+      "timeMs": 88487,
       "section": "gentle review",
       "pattern": "review_hold",
-      "intent": "second hold uses the inner-left lane",
+      "intent": "second two-beat review hold",
       "lanes": [
         "F"
       ],
       "durationMs": 1290
     },
     {
-      "timeMs": 91742,
+      "timeMs": 91068,
       "section": "gentle review",
       "pattern": "review_chord",
-      "intent": "bright chord lands on a high-energy late bar",
+      "intent": "bright split chord",
       "lanes": [
         "F",
         "K"
       ]
     },
     {
-      "timeMs": 92387,
+      "timeMs": 93648,
       "section": "gentle review",
       "pattern": "review_single",
-      "intent": "single tap recovery after the chord",
+      "intent": "single answer",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 94323,
+      "timeMs": 96229,
       "section": "gentle review",
       "pattern": "review_chord",
-      "intent": "outer chord follows the song accent without a fast run",
+      "intent": "outer chord on the steady grid",
       "lanes": [
         "D",
         "K"
       ]
     },
     {
-      "timeMs": 96903,
+      "timeMs": 98810,
       "section": "gentle review",
       "pattern": "review_hold",
-      "intent": "final short hold on the right-hand lane",
+      "intent": "final hold review",
       "lanes": [
         "J"
       ],
-      "durationMs": 1129
+      "durationMs": 1290
     },
     {
-      "timeMs": 99484,
+      "timeMs": 101390,
       "section": "gentle review",
       "pattern": "review_chord",
-      "intent": "inner chord checks the last learned shape",
+      "intent": "inner chord recap",
       "lanes": [
         "F",
         "J"
       ]
     },
     {
-      "timeMs": 102065,
-      "section": "gentle review",
-      "pattern": "review_single",
-      "intent": "final single anchor near the ending phrase",
-      "lanes": [
-        "D"
-      ]
-    },
-    {
-      "timeMs": 104000,
+      "timeMs": 103971,
       "section": "gentle review",
       "pattern": "review_chord",
-      "intent": "soft final two-key finish on the late phrase pulse",
+      "intent": "final straight-beat chord",
       "lanes": [
         "D",
         "K"
@@ -526,6 +517,7 @@
     "storyImpact": true,
     "tutorialSong": true,
     "stagedLearning": true,
-    "audioAlignedRevision": true
+    "audioAlignedRevision": true,
+    "straightBeatRevision": true
   }
 }

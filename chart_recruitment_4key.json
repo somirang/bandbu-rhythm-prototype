@@ -10,7 +10,7 @@
     "J",
     "K"
   ],
-  "bpm": 92,
+  "bpm": 136,
   "offsetMs": 0,
   "approachMs": 2050,
   "durationMs": 111863,
@@ -19,8 +19,8 @@
     "great": 110,
     "good": 180
   },
-  "purpose": "Recruitment standoff chart: a fun post-ClassRoom song with clearer musical call-and-response and the existing clean ending preserved.",
-  "patternDesign": "Re-analyzed at 92 BPM with the grid phase around 4.33s. The revision puts stronger accents near high-energy bars such as 17.37s, 53.90s, 61.72s, 64.33s, 72.16s, 95.63s, 98.24s, 100.85s, and 103.46s, while keeping first four and last four seconds clear.",
+  "purpose": "Recruitment standoff chart rebuilt on the detected 136 BPM quarter-beat grid, preserving the clean ending while removing the old 92 BPM drift.",
+  "patternDesign": "136 BPM straight-beat revision with the first playable beat at 4.008s. All note starts are snapped to integer quarter beats; syncopated 0.5/0.75-beat placements were removed while preserving section density and pattern intent.",
   "sections": [
     {
       "startMs": 0,
@@ -28,7 +28,7 @@
       "name": "prepare silence",
       "intent": "no notes for the first four seconds so the player can prepare for the standoff",
       "loop": [],
-      "patternIntent": "4-second no-note preparation window"
+      "patternIntent": "4-second no-note preparation window; integer quarter-beat starts only"
     },
     {
       "startMs": 4330,
@@ -40,7 +40,7 @@
         "recruit_hold_suspense",
         "recruit_offer_chord"
       ],
-      "patternIntent": "opening call-and-response"
+      "patternIntent": "opening call-and-response; integer quarter-beat starts only"
     },
     {
       "startMs": 17373,
@@ -53,7 +53,7 @@
         "recruit_offer_chord",
         "recruit_hold_suspense"
       ],
-      "patternIntent": "push-pull conversation"
+      "patternIntent": "push-pull conversation; integer quarter-beat starts only"
     },
     {
       "startMs": 38243,
@@ -65,7 +65,7 @@
         "recruit_answer",
         "recruit_offer_chord"
       ],
-      "patternIntent": "rising standoff"
+      "patternIntent": "rising standoff; integer quarter-beat starts only"
     },
     {
       "startMs": 56504,
@@ -77,7 +77,7 @@
         "recruit_hold_suspense",
         "recruit_offer_chord"
       ],
-      "patternIntent": "duel highlight"
+      "patternIntent": "duel highlight; integer quarter-beat starts only"
     },
     {
       "startMs": 72156,
@@ -88,7 +88,7 @@
         "recruit_reset",
         "recruit_offer_chord"
       ],
-      "patternIntent": "cooling recovery"
+      "patternIntent": "cooling recovery; integer quarter-beat starts only"
     },
     {
       "startMs": 79982,
@@ -100,7 +100,7 @@
         "recruit_answer",
         "recruit_offer_chord"
       ],
-      "patternIntent": "late-song push"
+      "patternIntent": "late-song push; integer quarter-beat starts only"
     },
     {
       "startMs": 95634,
@@ -111,7 +111,7 @@
         "recruit_decision",
         "recruit_offer_chord"
       ],
-      "patternIntent": "clean final answer"
+      "patternIntent": "clean final answer; integer quarter-beat starts only"
     }
   ],
   "patterns": {
@@ -150,1266 +150,1266 @@
   },
   "notes": [
     {
-      "timeMs": 4330,
+      "timeMs": 4449,
       "section": "opening stare",
       "pattern": "recruit_contact",
-      "intent": "first question after preparation silence",
+      "intent": "first question after preparation silence Straight-beat revision: snapped to quarter-beat 1.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 5634,
+      "timeMs": 5773,
       "section": "opening stare",
       "pattern": "recruit_contact",
-      "intent": "right-side answer",
+      "intent": "right-side answer Straight-beat revision: snapped to quarter-beat 4.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 6939,
+      "timeMs": 7096,
       "section": "opening stare",
       "pattern": "recruit_contact",
-      "intent": "counter-question on the next phrase",
+      "intent": "counter-question on the next phrase Straight-beat revision: snapped to quarter-beat 7.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 8569,
+      "timeMs": 8420,
       "section": "opening stare",
       "pattern": "recruit_contact",
-      "intent": "soft left reply to the counter",
+      "intent": "soft left reply to the counter Straight-beat revision: snapped to quarter-beat 10.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 9547,
+      "timeMs": 9743,
       "section": "opening stare",
       "pattern": "recruit_hold_suspense",
-      "intent": "short offer sustain",
+      "intent": "short offer sustain Straight-beat revision: snapped to quarter-beat 13.",
       "lanes": [
         "D"
       ],
-      "durationMs": 815
+      "durationMs": 882
     },
     {
-      "timeMs": 11178,
+      "timeMs": 11067,
       "section": "opening stare",
       "pattern": "recruit_hold_suspense",
-      "intent": "reply after the offer",
+      "intent": "reply after the offer Straight-beat revision: snapped to quarter-beat 16.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 12156,
-      "section": "opening stare",
-      "pattern": "recruit_contact",
-      "intent": "small nudge before the groove",
-      "lanes": [
-        "F"
-      ]
-    },
-    {
-      "timeMs": 13134,
+      "timeMs": 11949,
       "section": "opening stare",
       "pattern": "recruit_contact",
-      "intent": "answer on a mid-bar pulse",
+      "intent": "small nudge before the groove Straight-beat revision: snapped to quarter-beat 18.",
       "lanes": [
-        "J"
+        "F"
       ]
     },
     {
-      "timeMs": 14765,
+      "timeMs": 13273,
       "section": "opening stare",
       "pattern": "recruit_contact",
-      "intent": "opening final anchor",
+      "intent": "answer on a mid-bar pulse Straight-beat revision: snapped to quarter-beat 21.",
+      "lanes": [
+        "J"
+      ]
+    },
+    {
+      "timeMs": 14596,
+      "section": "opening stare",
+      "pattern": "recruit_contact",
+      "intent": "opening final anchor Straight-beat revision: snapped to quarter-beat 24.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 16395,
+      "timeMs": 16361,
       "section": "opening stare",
       "pattern": "recruit_offer_chord",
-      "intent": "first agreement-like split chord",
+      "intent": "first agreement-like split chord Straight-beat revision: snapped to quarter-beat 28.",
       "lanes": [
         "D",
         "J"
       ]
     },
     {
-      "timeMs": 17373,
+      "timeMs": 17243,
       "section": "push and pull",
       "pattern": "recruit_push",
-      "intent": "left question begins the persuasion loop",
+      "intent": "left question begins the persuasion loop Straight-beat revision: snapped to quarter-beat 30.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 18026,
+      "timeMs": 18126,
       "section": "push and pull",
       "pattern": "recruit_push",
-      "intent": "left nudge",
+      "intent": "left nudge Straight-beat revision: snapped to quarter-beat 32.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 18841,
+      "timeMs": 19008,
       "section": "push and pull",
       "pattern": "recruit_push",
-      "intent": "right answer follows the music phrase",
+      "intent": "right answer follows the music phrase Straight-beat revision: snapped to quarter-beat 34.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 19493,
+      "timeMs": 19449,
       "section": "push and pull",
       "pattern": "recruit_push",
-      "intent": "right close",
+      "intent": "right close Straight-beat revision: snapped to quarter-beat 35.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 19982,
+      "timeMs": 19890,
       "section": "push and pull",
       "pattern": "recruit_answer",
-      "intent": "right counter-question",
+      "intent": "right counter-question Straight-beat revision: snapped to quarter-beat 36.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 20634,
+      "timeMs": 20773,
       "section": "push and pull",
       "pattern": "recruit_answer",
-      "intent": "counter nudge",
+      "intent": "counter nudge Straight-beat revision: snapped to quarter-beat 38.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 21450,
+      "timeMs": 21655,
       "section": "push and pull",
       "pattern": "recruit_answer",
-      "intent": "left answer",
+      "intent": "left answer Straight-beat revision: snapped to quarter-beat 40.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 22102,
+      "timeMs": 22096,
       "section": "push and pull",
       "pattern": "recruit_answer",
-      "intent": "left close",
+      "intent": "left close Straight-beat revision: snapped to quarter-beat 41.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 22591,
+      "timeMs": 22537,
       "section": "push and pull",
       "pattern": "recruit_push",
-      "intent": "left question begins the persuasion loop",
+      "intent": "left question begins the persuasion loop Straight-beat revision: snapped to quarter-beat 42.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 23243,
+      "timeMs": 23420,
       "section": "push and pull",
       "pattern": "recruit_push",
-      "intent": "left nudge",
+      "intent": "left nudge Straight-beat revision: snapped to quarter-beat 44.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 24058,
+      "timeMs": 23861,
       "section": "push and pull",
       "pattern": "recruit_push",
-      "intent": "right answer follows the music phrase",
+      "intent": "right answer follows the music phrase Straight-beat revision: snapped to quarter-beat 45.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 24710,
+      "timeMs": 24743,
       "section": "push and pull",
       "pattern": "recruit_offer_chord",
-      "intent": "split-hand agreement accent",
+      "intent": "split-hand agreement accent Straight-beat revision: snapped to quarter-beat 47.",
       "lanes": [
         "D",
         "J"
       ]
     },
     {
-      "timeMs": 25200,
+      "timeMs": 25184,
       "section": "push and pull",
       "pattern": "recruit_answer",
-      "intent": "right counter-question",
+      "intent": "right counter-question Straight-beat revision: snapped to quarter-beat 48.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 25852,
+      "timeMs": 26067,
       "section": "push and pull",
       "pattern": "recruit_answer",
-      "intent": "counter nudge",
+      "intent": "counter nudge Straight-beat revision: snapped to quarter-beat 50.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 26667,
+      "timeMs": 26508,
       "section": "push and pull",
       "pattern": "recruit_answer",
-      "intent": "left answer",
+      "intent": "left answer Straight-beat revision: snapped to quarter-beat 51.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 27319,
+      "timeMs": 27390,
       "section": "push and pull",
       "pattern": "recruit_answer",
-      "intent": "left close",
+      "intent": "left close Straight-beat revision: snapped to quarter-beat 53.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 27808,
+      "timeMs": 27832,
       "section": "push and pull",
       "pattern": "recruit_push",
-      "intent": "left question begins the persuasion loop",
+      "intent": "left question begins the persuasion loop Straight-beat revision: snapped to quarter-beat 54.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 28460,
+      "timeMs": 28273,
       "section": "push and pull",
       "pattern": "recruit_push",
-      "intent": "left nudge",
+      "intent": "left nudge Straight-beat revision: snapped to quarter-beat 55.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 29276,
+      "timeMs": 29155,
       "section": "push and pull",
       "pattern": "recruit_push",
-      "intent": "right answer follows the music phrase",
+      "intent": "right answer follows the music phrase Straight-beat revision: snapped to quarter-beat 57.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 29928,
+      "timeMs": 30037,
       "section": "push and pull",
       "pattern": "recruit_offer_chord",
-      "intent": "split-hand agreement accent",
+      "intent": "split-hand agreement accent Straight-beat revision: snapped to quarter-beat 59.",
       "lanes": [
         "D",
         "J"
       ]
     },
     {
-      "timeMs": 30417,
+      "timeMs": 30479,
       "section": "push and pull",
       "pattern": "recruit_answer",
-      "intent": "right counter-question",
+      "intent": "right counter-question Straight-beat revision: snapped to quarter-beat 60.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 31069,
+      "timeMs": 30920,
       "section": "push and pull",
       "pattern": "recruit_answer",
-      "intent": "counter nudge",
+      "intent": "counter nudge Straight-beat revision: snapped to quarter-beat 61.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 31884,
+      "timeMs": 31802,
       "section": "push and pull",
       "pattern": "recruit_answer",
-      "intent": "left answer",
+      "intent": "left answer Straight-beat revision: snapped to quarter-beat 63.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 32537,
+      "timeMs": 32684,
       "section": "push and pull",
       "pattern": "recruit_answer",
-      "intent": "left close",
+      "intent": "left close Straight-beat revision: snapped to quarter-beat 65.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 33026,
+      "timeMs": 33126,
       "section": "push and pull",
       "pattern": "recruit_push",
-      "intent": "left question begins the persuasion loop",
+      "intent": "left question begins the persuasion loop Straight-beat revision: snapped to quarter-beat 66.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 33678,
+      "timeMs": 33567,
       "section": "push and pull",
       "pattern": "recruit_push",
-      "intent": "left nudge",
+      "intent": "left nudge Straight-beat revision: snapped to quarter-beat 67.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 34493,
+      "timeMs": 34449,
       "section": "push and pull",
       "pattern": "recruit_push",
-      "intent": "right answer follows the music phrase",
+      "intent": "right answer follows the music phrase Straight-beat revision: snapped to quarter-beat 69.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 35145,
+      "timeMs": 35332,
       "section": "push and pull",
       "pattern": "recruit_push",
-      "intent": "right close",
+      "intent": "right close Straight-beat revision: snapped to quarter-beat 71.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 35634,
+      "timeMs": 35773,
       "section": "push and pull",
       "pattern": "recruit_answer",
-      "intent": "right counter-question",
+      "intent": "right counter-question Straight-beat revision: snapped to quarter-beat 72.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 36287,
+      "timeMs": 36214,
       "section": "push and pull",
       "pattern": "recruit_answer",
-      "intent": "counter nudge",
+      "intent": "counter nudge Straight-beat revision: snapped to quarter-beat 73.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 37102,
+      "timeMs": 37096,
       "section": "push and pull",
       "pattern": "recruit_answer",
-      "intent": "left answer",
+      "intent": "left answer Straight-beat revision: snapped to quarter-beat 75.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 37754,
+      "timeMs": 37537,
       "section": "push and pull",
       "pattern": "recruit_offer_chord",
-      "intent": "bright counter-accent",
+      "intent": "bright counter-accent Straight-beat revision: snapped to quarter-beat 76.",
       "lanes": [
         "F",
         "K"
       ]
     },
     {
-      "timeMs": 38243,
+      "timeMs": 38420,
       "section": "push and pull",
       "pattern": "recruit_hold_suspense",
-      "intent": "brief hesitation sustain",
+      "intent": "brief hesitation sustain Straight-beat revision: snapped to quarter-beat 78.",
       "lanes": [
         "F"
       ],
-      "durationMs": 815
+      "durationMs": 882
     },
     {
-      "timeMs": 39873,
+      "timeMs": 39743,
       "section": "push and pull",
       "pattern": "recruit_hold_suspense",
-      "intent": "right-side reply after hesitation",
+      "intent": "right-side reply after hesitation Straight-beat revision: snapped to quarter-beat 81.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 40852,
+      "timeMs": 41067,
       "section": "rising tension",
       "pattern": "recruit_push",
-      "intent": "tension phrase anchor follows a strong bar pulse",
+      "intent": "tension phrase anchor follows a strong bar pulse Straight-beat revision: snapped to quarter-beat 84.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 41341,
+      "timeMs": 41508,
       "section": "rising tension",
       "pattern": "recruit_push",
-      "intent": "quick but readable pressure step",
+      "intent": "quick but readable pressure step Straight-beat revision: snapped to quarter-beat 85.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 41993,
+      "timeMs": 41949,
       "section": "rising tension",
       "pattern": "recruit_push",
-      "intent": "answer step",
+      "intent": "answer step Straight-beat revision: snapped to quarter-beat 86.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 42645,
+      "timeMs": 42832,
       "section": "rising tension",
       "pattern": "recruit_push",
-      "intent": "phrase close",
+      "intent": "phrase close Straight-beat revision: snapped to quarter-beat 88.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 43460,
+      "timeMs": 43273,
       "section": "rising tension",
       "pattern": "recruit_answer",
-      "intent": "tension phrase anchor follows a strong bar pulse",
+      "intent": "tension phrase anchor follows a strong bar pulse Straight-beat revision: snapped to quarter-beat 89.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 43950,
+      "timeMs": 44155,
       "section": "rising tension",
       "pattern": "recruit_answer",
-      "intent": "quick but readable pressure step",
+      "intent": "quick but readable pressure step Straight-beat revision: snapped to quarter-beat 91.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 44602,
+      "timeMs": 44596,
       "section": "rising tension",
       "pattern": "recruit_answer",
-      "intent": "answer step",
+      "intent": "answer step Straight-beat revision: snapped to quarter-beat 92.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 45254,
+      "timeMs": 45037,
       "section": "rising tension",
       "pattern": "recruit_answer",
-      "intent": "phrase close",
+      "intent": "phrase close Straight-beat revision: snapped to quarter-beat 93.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 46069,
+      "timeMs": 45920,
       "section": "rising tension",
       "pattern": "recruit_push",
-      "intent": "tension phrase anchor follows a strong bar pulse",
+      "intent": "tension phrase anchor follows a strong bar pulse Straight-beat revision: snapped to quarter-beat 95.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 46558,
+      "timeMs": 46361,
       "section": "rising tension",
       "pattern": "recruit_push",
-      "intent": "quick but readable pressure step",
+      "intent": "quick but readable pressure step Straight-beat revision: snapped to quarter-beat 96.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 47210,
+      "timeMs": 47243,
       "section": "rising tension",
       "pattern": "recruit_push",
-      "intent": "answer step",
+      "intent": "answer step Straight-beat revision: snapped to quarter-beat 98.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 47863,
+      "timeMs": 47684,
       "section": "rising tension",
       "pattern": "recruit_push",
-      "intent": "phrase close",
+      "intent": "phrase close Straight-beat revision: snapped to quarter-beat 99.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 48352,
+      "timeMs": 48567,
       "section": "rising tension",
       "pattern": "recruit_offer_chord",
-      "intent": "argument lands on a late phrase accent",
+      "intent": "argument lands on a late phrase accent Straight-beat revision: snapped to quarter-beat 101.",
       "lanes": [
         "D",
         "J"
       ]
     },
     {
-      "timeMs": 48678,
+      "timeMs": 49008,
       "section": "rising tension",
       "pattern": "recruit_answer",
-      "intent": "tension phrase anchor follows a strong bar pulse",
+      "intent": "tension phrase anchor follows a strong bar pulse Straight-beat revision: snapped to quarter-beat 102.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 49167,
+      "timeMs": 49449,
       "section": "rising tension",
       "pattern": "recruit_answer",
-      "intent": "quick but readable pressure step",
+      "intent": "quick but readable pressure step Straight-beat revision: snapped to quarter-beat 103.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 49819,
+      "timeMs": 49890,
       "section": "rising tension",
       "pattern": "recruit_answer",
-      "intent": "answer step",
+      "intent": "answer step Straight-beat revision: snapped to quarter-beat 104.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 50471,
+      "timeMs": 50332,
       "section": "rising tension",
       "pattern": "recruit_answer",
-      "intent": "phrase close",
+      "intent": "phrase close Straight-beat revision: snapped to quarter-beat 105.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 51287,
+      "timeMs": 51214,
       "section": "rising tension",
       "pattern": "recruit_push",
-      "intent": "tension phrase anchor follows a strong bar pulse",
+      "intent": "tension phrase anchor follows a strong bar pulse Straight-beat revision: snapped to quarter-beat 107.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 51776,
+      "timeMs": 51655,
       "section": "rising tension",
       "pattern": "recruit_push",
-      "intent": "quick but readable pressure step",
+      "intent": "quick but readable pressure step Straight-beat revision: snapped to quarter-beat 108.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 52428,
+      "timeMs": 52537,
       "section": "rising tension",
       "pattern": "recruit_push",
-      "intent": "answer step",
+      "intent": "answer step Straight-beat revision: snapped to quarter-beat 110.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 53080,
+      "timeMs": 52979,
       "section": "rising tension",
       "pattern": "recruit_push",
-      "intent": "phrase close",
+      "intent": "phrase close Straight-beat revision: snapped to quarter-beat 111.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 53895,
+      "timeMs": 53861,
       "section": "rising tension",
       "pattern": "recruit_answer",
-      "intent": "tension phrase anchor follows a strong bar pulse",
+      "intent": "tension phrase anchor follows a strong bar pulse Straight-beat revision: snapped to quarter-beat 113.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 54384,
+      "timeMs": 54302,
       "section": "rising tension",
       "pattern": "recruit_answer",
-      "intent": "quick but readable pressure step",
+      "intent": "quick but readable pressure step Straight-beat revision: snapped to quarter-beat 114.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 55037,
+      "timeMs": 55184,
       "section": "rising tension",
       "pattern": "recruit_answer",
-      "intent": "answer step",
+      "intent": "answer step Straight-beat revision: snapped to quarter-beat 116.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 55689,
+      "timeMs": 55626,
       "section": "rising tension",
       "pattern": "recruit_answer",
-      "intent": "phrase close",
+      "intent": "phrase close Straight-beat revision: snapped to quarter-beat 117.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 56178,
+      "timeMs": 56067,
       "section": "rising tension",
       "pattern": "recruit_offer_chord",
-      "intent": "argument lands on a late phrase accent",
+      "intent": "argument lands on a late phrase accent Straight-beat revision: snapped to quarter-beat 118.",
       "lanes": [
         "F",
         "K"
       ]
     },
     {
-      "timeMs": 56504,
+      "timeMs": 56508,
       "section": "rising tension",
       "pattern": "recruit_push",
-      "intent": "tension phrase anchor follows a strong bar pulse",
+      "intent": "tension phrase anchor follows a strong bar pulse Straight-beat revision: snapped to quarter-beat 119.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 56993,
+      "timeMs": 56949,
       "section": "rising tension",
       "pattern": "recruit_push",
-      "intent": "quick but readable pressure step",
+      "intent": "quick but readable pressure step Straight-beat revision: snapped to quarter-beat 120.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 57645,
+      "timeMs": 57832,
       "section": "rising tension",
       "pattern": "recruit_push",
-      "intent": "answer step",
+      "intent": "answer step Straight-beat revision: snapped to quarter-beat 122.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 58297,
+      "timeMs": 58273,
       "section": "rising tension",
       "pattern": "recruit_push",
-      "intent": "phrase close",
+      "intent": "phrase close Straight-beat revision: snapped to quarter-beat 123.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 59113,
+      "timeMs": 59155,
       "section": "negotiation duel",
       "pattern": "recruit_duel",
-      "intent": "duel starts on the energetic negotiation section",
+      "intent": "duel starts on the energetic negotiation section Straight-beat revision: snapped to quarter-beat 125.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 59602,
+      "timeMs": 59596,
       "section": "negotiation duel",
       "pattern": "recruit_duel",
-      "intent": "pressure pickup",
+      "intent": "pressure pickup Straight-beat revision: snapped to quarter-beat 126.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 60254,
+      "timeMs": 60037,
       "section": "negotiation duel",
       "pattern": "recruit_duel",
-      "intent": "answer",
+      "intent": "answer Straight-beat revision: snapped to quarter-beat 127.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 60906,
+      "timeMs": 60920,
       "section": "negotiation duel",
       "pattern": "recruit_duel",
-      "intent": "duel payoff chord",
+      "intent": "duel payoff chord Straight-beat revision: snapped to quarter-beat 129.",
       "lanes": [
         "D",
         "J"
       ]
     },
     {
-      "timeMs": 61721,
+      "timeMs": 61802,
       "section": "negotiation duel",
       "pattern": "recruit_duel",
-      "intent": "counter-duel begins",
+      "intent": "counter-duel begins Straight-beat revision: snapped to quarter-beat 131.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 62210,
+      "timeMs": 62243,
       "section": "negotiation duel",
       "pattern": "recruit_duel",
-      "intent": "counter pressure",
+      "intent": "counter pressure Straight-beat revision: snapped to quarter-beat 132.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 62863,
+      "timeMs": 62684,
       "section": "negotiation duel",
       "pattern": "recruit_duel",
-      "intent": "left answer",
+      "intent": "left answer Straight-beat revision: snapped to quarter-beat 133.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 63515,
+      "timeMs": 63567,
       "section": "negotiation duel",
       "pattern": "recruit_duel",
-      "intent": "counter payoff chord",
+      "intent": "counter payoff chord Straight-beat revision: snapped to quarter-beat 135.",
       "lanes": [
         "F",
         "K"
       ]
     },
     {
-      "timeMs": 64330,
+      "timeMs": 64449,
       "section": "negotiation duel",
       "pattern": "recruit_hold_suspense",
-      "intent": "offer hold in the central duel",
+      "intent": "offer hold in the central duel Straight-beat revision: snapped to quarter-beat 137.",
       "lanes": [
         "D"
       ],
-      "durationMs": 815
+      "durationMs": 882
     },
     {
-      "timeMs": 65471,
+      "timeMs": 65332,
       "section": "negotiation duel",
       "pattern": "recruit_hold_suspense",
-      "intent": "tap answer under tension",
+      "intent": "tap answer under tension Straight-beat revision: snapped to quarter-beat 139.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 65960,
+      "timeMs": 65773,
       "section": "negotiation duel",
       "pattern": "recruit_hold_suspense",
-      "intent": "K hesitation hold",
+      "intent": "K hesitation hold Straight-beat revision: snapped to quarter-beat 140.",
       "lanes": [
         "K"
       ],
-      "durationMs": 652
+      "durationMs": 882
     },
     {
-      "timeMs": 66613,
+      "timeMs": 66655,
       "section": "negotiation duel",
       "pattern": "recruit_hold_suspense",
-      "intent": "K hold resolves into F+J for clean playability",
+      "intent": "K hold resolves into F+J for clean playability Straight-beat revision: snapped to quarter-beat 142.",
       "lanes": [
         "F",
         "J"
       ]
     },
     {
-      "timeMs": 66939,
+      "timeMs": 67096,
       "section": "negotiation duel",
       "pattern": "recruit_duel",
-      "intent": "color shift into the next question",
+      "intent": "color shift into the next question Straight-beat revision: snapped to quarter-beat 143.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 67591,
+      "timeMs": 67537,
       "section": "negotiation duel",
       "pattern": "recruit_duel",
-      "intent": "teasing answer",
+      "intent": "teasing answer Straight-beat revision: snapped to quarter-beat 144.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 68406,
+      "timeMs": 68420,
       "section": "negotiation duel",
       "pattern": "recruit_offer_chord",
-      "intent": "inner-lane spark matching the phrase color",
+      "intent": "inner-lane spark matching the phrase color Straight-beat revision: snapped to quarter-beat 146.",
       "lanes": [
         "F",
         "J"
       ]
     },
     {
-      "timeMs": 69547,
+      "timeMs": 69743,
       "section": "negotiation duel",
       "pattern": "recruit_duel",
-      "intent": "right-side push resumes",
+      "intent": "right-side push resumes Straight-beat revision: snapped to quarter-beat 149.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 70037,
+      "timeMs": 70184,
       "section": "negotiation duel",
       "pattern": "recruit_duel",
-      "intent": "counter pickup",
+      "intent": "counter pickup Straight-beat revision: snapped to quarter-beat 150.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 70689,
+      "timeMs": 70626,
       "section": "negotiation duel",
       "pattern": "recruit_duel",
-      "intent": "left answer",
+      "intent": "left answer Straight-beat revision: snapped to quarter-beat 151.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 71341,
+      "timeMs": 71508,
       "section": "negotiation duel",
       "pattern": "recruit_duel",
-      "intent": "single recovery before chord",
+      "intent": "single recovery before chord Straight-beat revision: snapped to quarter-beat 153.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 72156,
+      "timeMs": 71949,
       "section": "negotiation duel",
       "pattern": "recruit_offer_chord",
-      "intent": "outer-lane standoff accent",
+      "intent": "outer-lane standoff accent Straight-beat revision: snapped to quarter-beat 154.",
       "lanes": [
         "D",
         "K"
       ]
     },
     {
-      "timeMs": 73134,
+      "timeMs": 73273,
       "section": "negotiation duel",
       "pattern": "recruit_duel",
-      "intent": "brief recovery",
+      "intent": "brief recovery Straight-beat revision: snapped to quarter-beat 157.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 73787,
+      "timeMs": 73714,
       "section": "negotiation duel",
       "pattern": "recruit_duel",
-      "intent": "answer before cooling",
+      "intent": "answer before cooling Straight-beat revision: snapped to quarter-beat 158.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 74765,
+      "timeMs": 74596,
       "section": "cooling glance",
       "pattern": "recruit_reset",
-      "intent": "cooling glance right anchor",
+      "intent": "cooling glance right anchor Straight-beat revision: snapped to quarter-beat 160.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 75743,
+      "timeMs": 75920,
       "section": "cooling glance",
       "pattern": "recruit_reset",
-      "intent": "soft thought",
+      "intent": "soft thought Straight-beat revision: snapped to quarter-beat 163.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 76395,
+      "timeMs": 76361,
       "section": "cooling glance",
       "pattern": "recruit_reset",
-      "intent": "brief hold as the argument cools",
+      "intent": "brief hold as the argument cools Straight-beat revision: snapped to quarter-beat 164.",
       "lanes": [
         "F"
       ],
-      "durationMs": 652
+      "durationMs": 882
     },
     {
-      "timeMs": 77373,
+      "timeMs": 77243,
       "section": "cooling glance",
       "pattern": "recruit_reset",
-      "intent": "calm left anchor",
+      "intent": "calm left anchor Straight-beat revision: snapped to quarter-beat 166.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 78678,
+      "timeMs": 78567,
       "section": "cooling glance",
       "pattern": "recruit_reset",
-      "intent": "late answer",
+      "intent": "late answer Straight-beat revision: snapped to quarter-beat 169.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 79982,
+      "timeMs": 79890,
       "section": "cooling glance",
       "pattern": "recruit_reset",
-      "intent": "bar-29 energy gets a light tap instead of a spike",
+      "intent": "bar-29 energy gets a light tap instead of a spike Straight-beat revision: snapped to quarter-beat 172.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 80960,
+      "timeMs": 80773,
       "section": "cooling glance",
       "pattern": "recruit_reset",
-      "intent": "soft nudge",
+      "intent": "soft nudge Straight-beat revision: snapped to quarter-beat 174.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 81613,
+      "timeMs": 81655,
       "section": "cooling glance",
       "pattern": "recruit_offer_chord",
-      "intent": "small agreement accent before final persuasion",
+      "intent": "small agreement accent before final persuasion Straight-beat revision: snapped to quarter-beat 176.",
       "lanes": [
         "D",
         "J"
       ]
     },
     {
-      "timeMs": 82591,
+      "timeMs": 82537,
       "section": "last persuasion",
       "pattern": "recruit_push",
-      "intent": "final persuasion anchor follows the steady late-song pulse",
+      "intent": "final persuasion anchor follows the steady late-song pulse Straight-beat revision: snapped to quarter-beat 178.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 83243,
+      "timeMs": 83420,
       "section": "last persuasion",
       "pattern": "recruit_push",
-      "intent": "second step in the recognizable loop",
+      "intent": "second step in the recognizable loop Straight-beat revision: snapped to quarter-beat 180.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 84058,
+      "timeMs": 83861,
       "section": "last persuasion",
       "pattern": "recruit_push",
-      "intent": "answering step",
+      "intent": "answering step Straight-beat revision: snapped to quarter-beat 181.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 84710,
+      "timeMs": 84743,
       "section": "last persuasion",
       "pattern": "recruit_push",
-      "intent": "single close keeps the phrase readable",
+      "intent": "single close keeps the phrase readable Straight-beat revision: snapped to quarter-beat 183.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 85200,
+      "timeMs": 85184,
       "section": "last persuasion",
       "pattern": "recruit_answer",
-      "intent": "final persuasion anchor follows the steady late-song pulse",
+      "intent": "final persuasion anchor follows the steady late-song pulse Straight-beat revision: snapped to quarter-beat 184.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 85852,
+      "timeMs": 86067,
       "section": "last persuasion",
       "pattern": "recruit_answer",
-      "intent": "second step in the recognizable loop",
+      "intent": "second step in the recognizable loop Straight-beat revision: snapped to quarter-beat 186.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 86667,
+      "timeMs": 86508,
       "section": "last persuasion",
       "pattern": "recruit_answer",
-      "intent": "answering step",
+      "intent": "answering step Straight-beat revision: snapped to quarter-beat 187.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 87319,
+      "timeMs": 87390,
       "section": "last persuasion",
       "pattern": "recruit_answer",
-      "intent": "single close keeps the phrase readable",
+      "intent": "single close keeps the phrase readable Straight-beat revision: snapped to quarter-beat 189.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 87808,
+      "timeMs": 87832,
       "section": "last persuasion",
       "pattern": "recruit_push",
-      "intent": "final persuasion anchor follows the steady late-song pulse",
+      "intent": "final persuasion anchor follows the steady late-song pulse Straight-beat revision: snapped to quarter-beat 190.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 88460,
+      "timeMs": 88273,
       "section": "last persuasion",
       "pattern": "recruit_push",
-      "intent": "second step in the recognizable loop",
+      "intent": "second step in the recognizable loop Straight-beat revision: snapped to quarter-beat 191.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 89276,
+      "timeMs": 89155,
       "section": "last persuasion",
       "pattern": "recruit_push",
-      "intent": "answering step",
+      "intent": "answering step Straight-beat revision: snapped to quarter-beat 193.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 89928,
+      "timeMs": 90037,
       "section": "last persuasion",
       "pattern": "recruit_offer_chord",
-      "intent": "late phrase chord reward",
+      "intent": "late phrase chord reward Straight-beat revision: snapped to quarter-beat 195.",
       "lanes": [
         "D",
         "J"
       ]
     },
     {
-      "timeMs": 90417,
+      "timeMs": 90479,
       "section": "last persuasion",
       "pattern": "recruit_answer",
-      "intent": "final persuasion anchor follows the steady late-song pulse",
+      "intent": "final persuasion anchor follows the steady late-song pulse Straight-beat revision: snapped to quarter-beat 196.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 91069,
+      "timeMs": 90920,
       "section": "last persuasion",
       "pattern": "recruit_answer",
-      "intent": "second step in the recognizable loop",
+      "intent": "second step in the recognizable loop Straight-beat revision: snapped to quarter-beat 197.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 91884,
+      "timeMs": 91802,
       "section": "last persuasion",
       "pattern": "recruit_answer",
-      "intent": "answering step",
+      "intent": "answering step Straight-beat revision: snapped to quarter-beat 199.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 92537,
+      "timeMs": 92684,
       "section": "last persuasion",
       "pattern": "recruit_answer",
-      "intent": "single close keeps the phrase readable",
+      "intent": "single close keeps the phrase readable Straight-beat revision: snapped to quarter-beat 201.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 93026,
+      "timeMs": 93126,
       "section": "decision moment",
       "pattern": "recruit_push",
-      "intent": "final persuasion anchor follows the steady late-song pulse",
+      "intent": "final persuasion anchor follows the steady late-song pulse Straight-beat revision: snapped to quarter-beat 202.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 93678,
+      "timeMs": 93567,
       "section": "decision moment",
       "pattern": "recruit_push",
-      "intent": "second step in the recognizable loop",
+      "intent": "second step in the recognizable loop Straight-beat revision: snapped to quarter-beat 203.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 94493,
+      "timeMs": 94449,
       "section": "decision moment",
       "pattern": "recruit_push",
-      "intent": "answering step",
+      "intent": "answering step Straight-beat revision: snapped to quarter-beat 205.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 95145,
+      "timeMs": 95332,
       "section": "decision moment",
       "pattern": "recruit_offer_chord",
-      "intent": "late phrase chord reward",
+      "intent": "late phrase chord reward Straight-beat revision: snapped to quarter-beat 207.",
       "lanes": [
         "D",
         "J"
       ]
     },
     {
-      "timeMs": 95634,
+      "timeMs": 95773,
       "section": "decision moment",
       "pattern": "recruit_answer",
-      "intent": "final persuasion anchor follows the steady late-song pulse",
+      "intent": "final persuasion anchor follows the steady late-song pulse Straight-beat revision: snapped to quarter-beat 208.",
       "lanes": [
         "K"
       ]
     },
     {
-      "timeMs": 96287,
+      "timeMs": 96214,
       "section": "decision moment",
       "pattern": "recruit_answer",
-      "intent": "second step in the recognizable loop",
+      "intent": "second step in the recognizable loop Straight-beat revision: snapped to quarter-beat 209.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 97102,
+      "timeMs": 97096,
       "section": "decision moment",
       "pattern": "recruit_answer",
-      "intent": "answering step",
+      "intent": "answering step Straight-beat revision: snapped to quarter-beat 211.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 97754,
+      "timeMs": 97537,
       "section": "decision moment",
       "pattern": "recruit_offer_chord",
-      "intent": "late phrase chord reward",
+      "intent": "late phrase chord reward Straight-beat revision: snapped to quarter-beat 212.",
       "lanes": [
         "F",
         "K"
       ]
     },
     {
-      "timeMs": 98243,
+      "timeMs": 98420,
       "section": "decision moment",
       "pattern": "recruit_decision",
-      "intent": "decision section begins with a clear anchor",
+      "intent": "decision section begins with a clear anchor Straight-beat revision: snapped to quarter-beat 214.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 99221,
+      "timeMs": 99302,
       "section": "decision moment",
       "pattern": "recruit_decision",
-      "intent": "answer on the phrase",
+      "intent": "answer on the phrase Straight-beat revision: snapped to quarter-beat 216.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 99873,
+      "timeMs": 99743,
       "section": "decision moment",
       "pattern": "recruit_decision",
-      "intent": "outer agreement chord",
+      "intent": "outer agreement chord Straight-beat revision: snapped to quarter-beat 217.",
       "lanes": [
         "D",
         "K"
       ]
     },
     {
-      "timeMs": 100852,
+      "timeMs": 101067,
       "section": "decision moment",
       "pattern": "recruit_decision",
-      "intent": "late final anchor",
+      "intent": "late final anchor Straight-beat revision: snapped to quarter-beat 220.",
       "lanes": [
         "D"
       ]
     },
     {
-      "timeMs": 101830,
+      "timeMs": 101949,
       "section": "decision moment",
       "pattern": "recruit_decision",
-      "intent": "late final answer",
+      "intent": "late final answer Straight-beat revision: snapped to quarter-beat 222.",
       "lanes": [
         "J"
       ]
     },
     {
-      "timeMs": 102645,
+      "timeMs": 102832,
       "section": "decision moment",
       "pattern": "recruit_decision",
-      "intent": "split agreement before the ending tail",
+      "intent": "split agreement before the ending tail Straight-beat revision: snapped to quarter-beat 224.",
       "lanes": [
         "D",
         "J"
       ]
     },
     {
-      "timeMs": 103460,
+      "timeMs": 103273,
       "section": "decision moment",
       "pattern": "recruit_decision",
-      "intent": "late persuasion tap, preserving the good ending timing",
+      "intent": "late persuasion tap, preserving the good ending timing Straight-beat revision: snapped to quarter-beat 225.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 104276,
+      "timeMs": 104155,
       "section": "decision moment",
       "pattern": "recruit_decision",
-      "intent": "late agreement chord before the required silence",
+      "intent": "late agreement chord before the required silence Straight-beat revision: snapped to quarter-beat 227.",
       "lanes": [
         "D",
         "J"
       ]
     },
     {
-      "timeMs": 106069,
+      "timeMs": 105920,
       "section": "decision moment",
       "pattern": "recruit_decision",
-      "intent": "last audible final tap",
+      "intent": "last audible final tap Straight-beat revision: snapped to quarter-beat 231.",
       "lanes": [
         "F"
       ]
     },
     {
-      "timeMs": 106721,
+      "timeMs": 106802,
       "section": "decision moment",
       "pattern": "recruit_decision",
-      "intent": "last chord, matching the existing clean finish before silence",
+      "intent": "last chord, matching the existing clean finish before silence Straight-beat revision: snapped to quarter-beat 233.",
       "lanes": [
         "D",
         "J"
@@ -1425,6 +1425,9 @@
     "storyImpact": true,
     "recruitmentSong": true,
     "audioAlignedRevision": true,
-    "endingSilenceMs": 4000
-  }
+    "endingSilenceMs": 4000,
+    "straightBeatRevision": true
+  },
+  "beatPhaseMs": 4008,
+  "firstPlayableBeatMs": 4008
 }
