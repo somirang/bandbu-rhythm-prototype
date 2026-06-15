@@ -218,6 +218,12 @@
       pointer-events: none;
       color: #fff8fb;
       text-shadow: 0 3px 0 rgba(67, 35, 97, 0.8), 0 0 18px rgba(255, 103, 181, 0.45);
+      opacity: 1;
+      transition: opacity 180ms ease;
+    }
+
+    .ingame-hud.countdown-hidden {
+      opacity: 0;
     }
 
     .hud-combo {
@@ -247,6 +253,43 @@
       font-weight: 950;
       color: #fff08b;
       letter-spacing: 0;
+    }
+
+    .hud-combo-milestone {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 50%;
+      opacity: 0;
+      color: #fff08b;
+      font-size: clamp(20px, 2.5vw, 34px);
+      font-weight: 950;
+      line-height: 1;
+      white-space: nowrap;
+      text-shadow: 0 3px 0 #5d3188;
+      transform: translate(-50%, -4px) scale(0.9);
+    }
+
+    .hud-combo-milestone.show {
+      animation: combo-milestone-pop 760ms ease-out both;
+    }
+
+    @keyframes combo-milestone-pop {
+      0% {
+        opacity: 0;
+        transform: translate(-50%, -4px) scale(0.9);
+      }
+      18% {
+        opacity: 1;
+        transform: translate(-50%, 0) scale(1.1);
+      }
+      58% {
+        opacity: 1;
+        transform: translate(-50%, -2px) scale(1.04);
+      }
+      100% {
+        opacity: 0;
+        transform: translate(-50%, -12px) scale(1);
+      }
     }
 
     .hud-score {
@@ -283,12 +326,7 @@
     }
 
     .hud-left {
-      position: absolute;
-      top: 18px;
-      left: 18px;
-      display: grid;
-      gap: 8px;
-      min-width: 190px;
+      display: none;
     }
 
     .hud-panel {
@@ -332,6 +370,7 @@
       z-index: 5;
       display: grid;
       place-items: center;
+      overflow-y: auto;
       padding: 28px;
       background: radial-gradient(circle at center, rgba(255,255,255,0.16), rgba(41, 22, 89, 0.38) 38%, rgba(28, 14, 62, 0.58));
       color: #fff8fb;
@@ -384,6 +423,61 @@
 
     .difficulty-options[hidden] {
       display: none;
+    }
+
+    .key-settings {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin: 0 0 18px;
+    }
+
+    .key-settings-label {
+      margin-right: 4px;
+      color: #fff8fb;
+      font-size: 13px;
+      font-weight: 950;
+    }
+
+    .key-binding {
+      width: 52px;
+      min-width: 52px;
+      height: 44px;
+      padding: 0;
+      border: 2px solid rgba(255,255,255,0.8);
+      border-bottom: 5px solid var(--key-color);
+      border-radius: 8px;
+      background: rgba(55, 31, 94, 0.7);
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 950;
+      box-shadow: 0 3px 0 rgba(55, 31, 94, 0.55);
+    }
+
+    .key-binding.listening {
+      border-color: #fff08b;
+      background: #ff5da7;
+      color: #fff08b;
+      box-shadow: 0 0 18px rgba(255, 240, 139, 0.65);
+    }
+
+    .key-reset {
+      min-height: 38px;
+      padding: 0 12px;
+      border: 2px solid rgba(255,255,255,0.56);
+      border-radius: 8px;
+      background: rgba(55, 31, 94, 0.48);
+      color: #fff8fb;
+      font-size: 12px;
+    }
+
+    .key-bind-message {
+      min-height: 18px;
+      margin: -12px 0 10px;
+      color: #fff08b;
+      font-size: 12px;
+      font-weight: 900;
     }
 
     .song-option,
@@ -548,6 +642,10 @@
       .difficulty-options {
         grid-template-columns: 1fr;
       }
+
+      .key-settings {
+        flex-wrap: wrap;
+      }
     }
   </style>
 </head>
@@ -608,6 +706,7 @@
         <div class="hud-combo">
           <div class="hud-combo-value" id="gameComboText">0</div>
           <div class="hud-combo-label">COMBO</div>
+          <div class="hud-combo-milestone" id="comboMilestoneText" aria-live="polite"></div>
         </div>
         <div class="hud-score">
           <div class="hud-pill">score</div>
@@ -657,6 +756,15 @@
               <span class="difficulty-meta" id="hardMeta">loading...</span>
             </button>
           </div>
+          <div class="key-settings" role="group" aria-label="Key bindings">
+            <span class="key-settings-label">KEYS</span>
+            <button type="button" class="key-binding" data-lane="0" style="--key-color:#ff5da7" title="Change lane 1 key">D</button>
+            <button type="button" class="key-binding" data-lane="1" style="--key-color:#ffd849" title="Change lane 2 key">F</button>
+            <button type="button" class="key-binding" data-lane="2" style="--key-color:#61d8ff" title="Change lane 3 key">J</button>
+            <button type="button" class="key-binding" data-lane="3" style="--key-color:#58d96f" title="Change lane 4 key">K</button>
+            <button type="button" class="key-reset" id="keyResetBtn">Reset</button>
+          </div>
+          <div class="key-bind-message" id="keyBindMessage" aria-live="polite"></div>
           <button type="button" class="big-start" id="startBtn">Start</button>
         </div>
       </div>
@@ -718,11 +826,15 @@
     const pauseBtn = document.getElementById('pauseBtn');
     const restartBtn = document.getElementById('restartBtn');
     const soundBtn = document.getElementById('soundBtn');
+    const gameHud = document.getElementById('gameHud');
     const startOverlay = document.getElementById('startOverlay');
     const resultOverlay = document.getElementById('resultOverlay');
     const startSubtitle = document.getElementById('startSubtitle');
     const songBtns = [...document.querySelectorAll('.song-option')];
     const difficultyOptions = document.getElementById('difficultyOptions');
+    const keyBindingBtns = [...document.querySelectorAll('.key-binding')];
+    const keyResetBtn = document.getElementById('keyResetBtn');
+    const keyBindMessage = document.getElementById('keyBindMessage');
     const difficultyBtns = [...document.querySelectorAll('.difficulty-option')];
     const songMeta = {
       Tutorial: document.getElementById('tutorialSongMeta'),
@@ -737,6 +849,7 @@
     };
     const gameScoreText = document.getElementById('gameScoreText');
     const gameComboText = document.getElementById('gameComboText');
+    const comboMilestoneText = document.getElementById('comboMilestoneText');
     const gameAccuracyText = document.getElementById('gameAccuracyText');
     const gameFeverText = document.getElementById('gameFeverText');
     const stageSyncText = document.getElementById('stageSyncText');
@@ -756,14 +869,21 @@
     const resultSyncText = document.getElementById('resultSyncText');
     const resultStoryText = document.getElementById('resultStoryText');
 
+    const chartLaneKeys = ['D', 'F', 'J', 'K'];
+    const defaultKeyBindings = [
+      { key: 'D', code: 'KeyD' },
+      { key: 'F', code: 'KeyF' },
+      { key: 'J', code: 'KeyJ' },
+      { key: 'K', code: 'KeyK' },
+    ];
     const laneDefs = [
       { key: 'D', code: 'KeyD', color: '#ff5da7' },
       { key: 'F', code: 'KeyF', color: '#ffd849' },
       { key: 'J', code: 'KeyJ', color: '#61d8ff' },
       { key: 'K', code: 'KeyK', color: '#58d96f' },
     ];
-    const laneByCode = new Map(laneDefs.map((lane, index) => [lane.code, index]));
-    const laneByKey = new Map(laneDefs.map((lane, index) => [lane.key, index]));
+    let laneByCode = new Map();
+    let laneByKey = new Map();
     const scoreWeights = { Perfect: 1000, Great: 750, Good: 420, Miss: 0 };
     const commonJudgementWindows = { perfect: 60, great: 110, good: 180 };
     const judgementColors = {
@@ -780,6 +900,15 @@
       inputEffects: 24,
       judgementPopups: 10,
     };
+    const countdownPhases = [
+      { label: 'READY', durationMs: 700 },
+      { label: '3', durationMs: 650 },
+      { label: '2', durationMs: 650 },
+      { label: '1', durationMs: 650 },
+    ];
+    const countdownLeadMs = countdownPhases.reduce((total, phase) => total + phase.durationMs, 0);
+    const startBannerDurationMs = 520;
+    const keyGuideDurationMs = 2800;
     const maxCanvasDpr = 1.5;
     const assetPaths = {
       background: 'assets/ui/background.png',
@@ -827,6 +956,7 @@
     let score = 0;
     let combo = 0;
     let maxCombo = 0;
+    let shownComboMilestones = new Set();
     let judged = 0;
     let hitScore = 0;
     let counts = { Perfect: 0, Great: 0, Good: 0, Miss: 0 };
@@ -845,6 +975,12 @@
     let lastHudUpdateAt = 0;
     let canvasNeedsResize = true;
     let effectQuality = 1;
+    let remappingLane = -1;
+    let gamePhase = 'idle';
+    let countdownStartedAt = 0;
+    let playbackRequested = false;
+    let keyGuideStartedAt = -Infinity;
+    let startBannerUntil = 0;
 
     function imageIsReady(image) {
       return image && image.complete && image.naturalWidth > 0;
@@ -896,6 +1032,8 @@
 
     function handleAudioEnded() {
       running = false;
+      gamePhase = 'result';
+      gameHud.classList.remove('countdown-hidden');
       showResult();
     }
 
@@ -936,7 +1074,7 @@
       if (startSubtitle && chart) {
         const songName = chart.songTitle || (selectedSong === 'Main' ? 'Main Song' : selectedSong);
         const modeText = selectedSong === 'Tutorial' ? 'First Song' : selectedSong === 'ClassRoom' ? 'Next Song' : selectedSong === 'Recruitment' ? 'Standoff Song' : chart.difficulty;
-        startSubtitle.textContent = `${songName} / ${modeText} / ${chart.keys.join(' ')}`;
+        startSubtitle.textContent = `${songName} / ${modeText} / ${laneDefs.map((lane) => lane.key).join(' ')}`;
       }
     }
 
@@ -997,6 +1135,7 @@
     }
 
     function selectDifficulty(difficulty) {
+      cancelKeyRemap();
       selectedSong = 'Main';
       selectedDifficulty = difficulty;
       if (!ready || !chartsByDifficulty[difficulty]) {
@@ -1014,6 +1153,7 @@
     }
 
     function selectSong(song) {
+      cancelKeyRemap();
       selectedSong = song;
       if (!ready || !getActiveChart()) {
         updateDifficultyUI();
@@ -1030,7 +1170,7 @@
     }
 
     function prepareChart() {
-      const laneIndex = new Map(laneDefs.map((lane, index) => [lane.key, index]));
+      const laneIndex = new Map(chartLaneKeys.map((key, index) => [key, index]));
       notes = [];
       chartGroups = chart.notes.map((event, groupIndex) => {
         const lanes = event.lanes
@@ -1076,6 +1216,7 @@
       score = 0;
       combo = 0;
       maxCombo = 0;
+      resetComboMilestones();
       judged = 0;
       hitScore = 0;
       counts = { Perfect: 0, Great: 0, Good: 0, Miss: 0 };
@@ -1096,11 +1237,30 @@
       inputEffects = [];
       effectQuality = 1;
       heldKeys.clear();
+      gamePhase = 'idle';
+      gameHud.classList.remove('countdown-hidden');
+      countdownStartedAt = 0;
+      playbackRequested = false;
+      keyGuideStartedAt = -Infinity;
+      startBannerUntil = 0;
       updateHud();
     }
 
     function getNowMs() {
       return audio ? audio.currentTime * 1000 : 0;
+    }
+
+    function resetComboMilestones() {
+      shownComboMilestones.clear();
+      comboMilestoneText.classList.remove('show');
+      comboMilestoneText.textContent = '';
+    }
+
+    function showComboMilestone(value) {
+      if (value < 50 || value % 50 !== 0 || shownComboMilestones.has(value)) return;
+      shownComboMilestones.add(value);
+      comboMilestoneText.textContent = `${value} COMBO!`;
+      comboMilestoneText.classList.add('show');
     }
 
     function addActiveHold(note) {
@@ -1211,6 +1371,7 @@
       if (resultShown || !ready) return;
       resultShown = true;
       running = false;
+      gamePhase = 'result';
       const accuracy = getAccuracy();
       const stageSync = getStageSync();
       resultRankText.textContent = rankForPerformance(accuracy);
@@ -1338,22 +1499,50 @@
     }
 
     function startGame() {
-      if (!ready) return;
+      if (!ready || gamePhase === 'countdown' || running) return;
+      cancelKeyRemap();
       blurControls();
       canvas.focus({ preventScroll: true });
       ensureAudioContext();
       resultOverlay.classList.add('hidden');
       startOverlay.classList.add('hidden');
-      if (audio.ended || audio.currentTime >= audio.duration - 0.05) {
-        audio.currentTime = 0;
-        resetRunState();
-      }
+      gameHud.classList.add('countdown-hidden');
+      audio.pause();
+      audio.currentTime = 0;
+      clearHeldKeys();
+      running = false;
+      gamePhase = 'countdown';
+      countdownStartedAt = performance.now();
+      playbackRequested = false;
+      keyGuideStartedAt = -Infinity;
+      startBannerUntil = 0;
+      statusText.textContent = '';
+    }
+
+    function beginPlaybackAfterCountdown() {
+      if (playbackRequested || gamePhase !== 'countdown') return;
+      playbackRequested = true;
+      audio.currentTime = 0;
       audio.play().then(() => {
         running = true;
+        gamePhase = 'playing';
+        gameHud.classList.remove('countdown-hidden');
+        keyGuideStartedAt = performance.now();
+        startBannerUntil = keyGuideStartedAt + startBannerDurationMs;
         statusText.textContent = '';
       }).catch(() => {
+        running = false;
+        gamePhase = 'idle';
+        playbackRequested = false;
+        gameHud.classList.remove('countdown-hidden');
+        startOverlay.classList.remove('hidden');
         statusText.textContent = 'Audio could not start. Click Start again.';
       });
+    }
+
+    function updateCountdown(frameNow) {
+      if (gamePhase !== 'countdown') return;
+      if (frameNow - countdownStartedAt >= countdownLeadMs) beginPlaybackAfterCountdown();
     }
 
     function pauseGame() {
@@ -1361,6 +1550,7 @@
       if (!audio) return;
       audio.pause();
       running = false;
+      gamePhase = 'paused';
       statusText.textContent = 'Paused.';
     }
 
@@ -1372,7 +1562,6 @@
       running = false;
       resetRunState();
       resultOverlay.classList.add('hidden');
-      startOverlay.classList.add('hidden');
       statusText.textContent = '';
       startGame();
     }
@@ -1383,6 +1572,123 @@
       soundBtn.textContent = muted ? 'Sound Off' : 'Sound On';
     }
 
+    function keyLabelForCode(code) {
+      if (/^Key[A-Z]$/.test(code)) return code.slice(3);
+      if (/^Digit[0-9]$/.test(code)) return code.slice(5);
+      if (/^Numpad[0-9]$/.test(code)) return `N${code.slice(6)}`;
+      if (code.startsWith('Arrow')) return code.slice(5).toUpperCase();
+      return {
+        Semicolon: ';',
+        Quote: "'",
+        Comma: ',',
+        Period: '.',
+        Slash: '/',
+        Backslash: '\\',
+        BracketLeft: '[',
+        BracketRight: ']',
+        Minus: '-',
+        Equal: '=',
+      }[code] || code.replace(/^(Key|Digit)/, '').toUpperCase();
+    }
+
+    function isBindableCode(code) {
+      return /^(Key[A-Z]|Digit[0-9]|Numpad[0-9]|Arrow(Up|Down|Left|Right)|Semicolon|Quote|Comma|Period|Slash|Backslash|BracketLeft|BracketRight|Minus|Equal)$/.test(code);
+    }
+
+    function rebuildLaneLookup() {
+      laneByCode = new Map(laneDefs.map((lane, index) => [lane.code, index]));
+      laneByKey = new Map(laneDefs.map((lane, index) => [lane.key, index]));
+    }
+
+    function renderKeyBindings() {
+      for (const button of keyBindingBtns) {
+        const lane = Number(button.dataset.lane);
+        button.textContent = remappingLane === lane ? '...' : laneDefs[lane].key;
+        button.classList.toggle('listening', remappingLane === lane);
+        button.setAttribute('aria-pressed', String(remappingLane === lane));
+      }
+    }
+
+    function saveKeyBindings() {
+      try {
+        localStorage.setItem('rhythm4KeyBindings', JSON.stringify(laneDefs.map((lane) => lane.code)));
+      } catch (error) {
+        console.warn('Key bindings could not be saved.', error);
+      }
+    }
+
+    function restoreKeyBindings() {
+      let codes = null;
+      try {
+        codes = JSON.parse(localStorage.getItem('rhythm4KeyBindings'));
+      } catch (error) {
+        console.warn('Saved key bindings could not be loaded.', error);
+      }
+      const valid = Array.isArray(codes)
+        && codes.length === laneDefs.length
+        && new Set(codes).size === laneDefs.length
+        && codes.every(isBindableCode);
+      const bindings = valid ? codes.map((code) => ({ code, key: keyLabelForCode(code) })) : defaultKeyBindings;
+      bindings.forEach((binding, lane) => {
+        laneDefs[lane].code = binding.code;
+        laneDefs[lane].key = binding.key;
+      });
+      rebuildLaneLookup();
+      renderKeyBindings();
+    }
+
+    function cancelKeyRemap() {
+      if (remappingLane < 0) return;
+      remappingLane = -1;
+      keyBindMessage.textContent = '';
+      renderKeyBindings();
+    }
+
+    function beginKeyRemap(lane) {
+      if (running) return;
+      remappingLane = lane;
+      keyBindMessage.textContent = 'Press a key';
+      renderKeyBindings();
+    }
+
+    function applyKeyRemap(event) {
+      if (event.code === 'Escape') {
+        cancelKeyRemap();
+        return;
+      }
+      if (!isBindableCode(event.code)) {
+        keyBindMessage.textContent = 'Choose a letter, number, arrow, or symbol key';
+        return;
+      }
+      if (laneDefs.some((lane, index) => index !== remappingLane && lane.code === event.code)) {
+        keyBindMessage.textContent = 'That key is already assigned';
+        return;
+      }
+      const lane = remappingLane;
+      laneDefs[lane].code = event.code;
+      laneDefs[lane].key = keyLabelForCode(event.code);
+      remappingLane = -1;
+      keyBindMessage.textContent = '';
+      clearHeldKeys();
+      rebuildLaneLookup();
+      saveKeyBindings();
+      renderKeyBindings();
+      updateDifficultyUI();
+    }
+
+    function resetKeyBindings() {
+      cancelKeyRemap();
+      defaultKeyBindings.forEach((binding, lane) => {
+        laneDefs[lane].code = binding.code;
+        laneDefs[lane].key = binding.key;
+      });
+      clearHeldKeys();
+      rebuildLaneLookup();
+      saveKeyBindings();
+      renderKeyBindings();
+      updateDifficultyUI();
+    }
+
     function laneFromEvent(event) {
       if (laneByCode.has(event.code)) return laneByCode.get(event.code);
       const key = event.key ? event.key.toUpperCase() : '';
@@ -1390,9 +1696,15 @@
     }
 
     function handleKeyDown(event) {
+      if (remappingLane >= 0) {
+        event.preventDefault();
+        if (!event.repeat) applyKeyRemap(event);
+        return;
+      }
       const lane = laneFromEvent(event);
       if (lane < 0) return;
       event.preventDefault();
+      if (gamePhase === 'countdown' || !running) return;
       if (event.repeat || heldKeys.has(lane)) return;
       heldKeys.add(lane);
       lanePulse[lane] = 1;
@@ -1405,6 +1717,7 @@
       const lane = laneFromEvent(event);
       if (lane < 0) return;
       event.preventDefault();
+      if (gamePhase === 'countdown' || !running) return;
       heldKeys.delete(lane);
       checkEarlyHoldRelease(lane);
     }
@@ -1486,10 +1799,12 @@
       latestJudge = popupText === 'Hold' ? result : popupText;
       if (result === 'Miss') {
         combo = 0;
+        resetComboMilestones();
         perfectStreak = 0;
       } else {
         combo += 1;
         maxCombo = Math.max(maxCombo, combo);
+        showComboMilestone(combo);
         perfectStreak = result === 'Perfect' ? perfectStreak + 1 : 0;
       }
       const multiplier = feverActive && result !== 'Miss' ? 2 : 1;
@@ -1524,7 +1839,7 @@
       }
       comboPulse = result === 'Miss' ? 0 : Math.max(comboPulse, result === 'Perfect' ? 1 : result === 'Great' ? 0.78 : 0.52);
       scorePulse = result === 'Miss' ? scorePulse : Math.max(scorePulse, result === 'Perfect' ? 0.9 : result === 'Great' ? 0.68 : 0.45);
-      if (result !== 'Miss' && combo > 0 && combo % 10 === 0) {
+      if (result !== 'Miss' && combo > 0 && combo % 10 === 0 && combo % 50 !== 0) {
         judgementPopups.push({
           text: `${combo} COMBO`,
           lane: Math.max(0, note.lane - 0.35),
@@ -2298,12 +2613,127 @@
       }
     }
 
+    function getCountdownVisual(frameNow) {
+      const elapsed = Math.max(0, frameNow - countdownStartedAt);
+      let phaseStart = 0;
+      for (const phase of countdownPhases) {
+        const phaseEnd = phaseStart + phase.durationMs;
+        if (elapsed < phaseEnd) {
+          return {
+            label: phase.label,
+            progress: Math.max(0, Math.min(1, (elapsed - phaseStart) / phase.durationMs)),
+          };
+        }
+        phaseStart = phaseEnd;
+      }
+      return { label: 'START', progress: 0.5 };
+    }
+
+    function drawKeyGuide(layout, frameNow) {
+      const countingDown = gamePhase === 'countdown';
+      const guideAge = frameNow - keyGuideStartedAt;
+      const showingPlayGuide = gamePhase === 'playing' && guideAge >= 0 && guideAge < keyGuideDurationMs;
+      const showingStartBanner = frameNow < startBannerUntil;
+      if (!countingDown && !showingPlayGuide && !showingStartBanner) return;
+
+      const countdownVisual = countingDown ? getCountdownVisual(frameNow) : null;
+      const fadeStart = 850;
+      const playGuideAlpha = showingPlayGuide
+        ? 1 - Math.max(0, Math.min(1, (guideAge - fadeStart) / (keyGuideDurationMs - fadeStart)))
+        : 0;
+      const guideAlpha = countingDown ? 1 : playGuideAlpha * 0.72;
+      const pulse = countingDown ? 1 + Math.sin(countdownVisual.progress * Math.PI) * 0.1 : 0.78;
+      const capWidth = Math.min(72, Math.max(50, layout.laneHeight * 0.58)) * pulse;
+      const capHeight = Math.min(58, Math.max(40, layout.laneHeight * 0.43)) * pulse;
+      const capX = Math.max(capWidth / 2 + 10, layout.judgeX - 68);
+
+      ctx.save();
+      if (countingDown) {
+        ctx.fillStyle = 'rgba(35, 18, 68, 0.42)';
+        ctx.fillRect(0, 0, layout.width, layout.height);
+      }
+
+      if (countingDown || showingStartBanner) {
+        const label = countingDown ? countdownVisual.label : 'START';
+        const bannerProgress = countingDown ? countdownVisual.progress : Math.min(1, Math.max(0, 1 - (startBannerUntil - frameNow) / startBannerDurationMs));
+        const bannerScale = 0.94 + Math.sin(Math.min(1, bannerProgress) * Math.PI) * 0.12;
+        ctx.save();
+        ctx.translate(layout.width * 0.5, layout.height * 0.46);
+        ctx.scale(bannerScale, bannerScale);
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        const countdownSize = Math.min(112, Math.max(76, layout.height * 0.16));
+        const wordSize = Math.min(76, Math.max(54, layout.height * 0.1));
+        ctx.font = `950 ${label === 'READY' || label === 'START' ? wordSize : countdownSize}px "Segoe UI", sans-serif`;
+        ctx.lineWidth = 12;
+        ctx.strokeStyle = '#56347e';
+        ctx.fillStyle = label === 'START' ? '#fff08b' : '#ffffff';
+        ctx.shadowColor = label === 'START' ? '#fff08b' : '#ff5da7';
+        ctx.shadowBlur = 24;
+        ctx.strokeText(label, 0, 0);
+        ctx.fillText(label, 0, 0);
+        ctx.restore();
+      }
+
+      if (guideAlpha > 0.01) {
+        for (let lane = 0; lane < laneDefs.length; lane += 1) {
+          const y = laneY(lane, layout);
+          const lanePulseAmount = countingDown ? 0.68 + Math.sin(countdownVisual.progress * Math.PI) * 0.32 : 0.72;
+          ctx.save();
+          ctx.globalAlpha = guideAlpha;
+          if (countingDown) {
+            ctx.fillStyle = laneDefs[lane].color;
+            ctx.globalAlpha = guideAlpha * (0.055 + lanePulseAmount * 0.045);
+            ctx.fillRect(0, y - layout.laneHeight * 0.43, layout.width, layout.laneHeight * 0.86);
+            ctx.globalAlpha = guideAlpha;
+          }
+          ctx.strokeStyle = laneDefs[lane].color;
+          ctx.lineWidth = 4;
+          ctx.shadowColor = laneDefs[lane].color;
+          ctx.shadowBlur = countingDown ? 18 * lanePulseAmount : 8;
+          ctx.beginPath();
+          ctx.moveTo(capX + capWidth * 0.5 - 2, y);
+          ctx.lineTo(layout.judgeX - 8, y);
+          ctx.stroke();
+
+          ctx.fillStyle = 'rgba(55, 31, 94, 0.88)';
+          ctx.strokeStyle = '#ffffff';
+          ctx.lineWidth = 4;
+          ctx.beginPath();
+          ctx.roundRect(capX - capWidth / 2, y - capHeight / 2, capWidth, capHeight, 9);
+          ctx.fill();
+          ctx.stroke();
+          ctx.strokeStyle = laneDefs[lane].color;
+          ctx.lineWidth = 5;
+          ctx.beginPath();
+          ctx.moveTo(capX - capWidth * 0.34, y + capHeight * 0.34);
+          ctx.lineTo(capX + capWidth * 0.34, y + capHeight * 0.34);
+          ctx.stroke();
+
+          const label = laneDefs[lane].key;
+          const fontSize = label.length > 2 ? Math.min(18, capHeight * 0.34) : Math.min(28, capHeight * 0.52);
+          ctx.shadowBlur = 0;
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.font = `950 ${Math.round(fontSize)}px "Segoe UI", sans-serif`;
+          ctx.lineWidth = 4;
+          ctx.strokeStyle = '#47286f';
+          ctx.fillStyle = '#ffffff';
+          ctx.strokeText(label, capX, y - 2);
+          ctx.fillText(label, capX, y - 2);
+          ctx.restore();
+        }
+      }
+      ctx.restore();
+    }
+
     function renderFrame(now) {
       const delta = Math.min(40, now - lastFrame);
       lastFrame = now;
       if (delta > 30) effectQuality = Math.max(0.68, effectQuality - 0.06);
       else effectQuality = Math.min(feverActive ? 0.82 : 1, effectQuality + 0.01);
       if (canvasNeedsResize) resizeCanvas();
+      updateCountdown(now);
       updateFeverTimer();
       processPassedNotes();
       updateEffects(delta);
@@ -2319,7 +2749,7 @@
       }
       drawBackground(layout);
       drawLanes(layout);
-      drawNotes(layout);
+      if (gamePhase !== 'countdown') drawNotes(layout);
       drawInputEffects(layout);
       drawParticles();
       drawJudgements(layout);
@@ -2327,6 +2757,7 @@
       drawSongProgress(layout);
       ctx.restore();
       drawScreenOverlays(layout);
+      drawKeyGuide(layout, now);
       requestAnimationFrame(renderFrame);
     }
 
@@ -2340,6 +2771,13 @@
     for (const button of difficultyBtns) {
       button.addEventListener('click', () => selectDifficulty(button.dataset.difficulty));
     }
+    for (const button of keyBindingBtns) {
+      button.addEventListener('click', () => beginKeyRemap(Number(button.dataset.lane)));
+    }
+    keyResetBtn.addEventListener('click', resetKeyBindings);
+    comboMilestoneText.addEventListener('animationend', () => {
+      comboMilestoneText.classList.remove('show');
+    });
     for (const button of document.querySelectorAll('button')) {
       button.addEventListener('pointerup', () => button.blur());
     }
@@ -2368,6 +2806,7 @@
       };
     }
 
+    restoreKeyBindings();
     Promise.all([preloadAssets(), loadChart()]).catch((error) => {
       console.error(error);
       statusText.textContent = 'Failed to load prototype.';
