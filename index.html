@@ -53,6 +53,12 @@
       filter: brightness(1.06);
     }
 
+    button:disabled {
+      cursor: default;
+      filter: saturate(0.45) brightness(0.78);
+      opacity: 0.62;
+    }
+
     button:focus-visible {
       outline: 3px solid #ffffff;
       outline-offset: 2px;
@@ -551,7 +557,8 @@
     }
 
     .big-start,
-    .replay-button {
+    .replay-button,
+    .select-button {
       min-width: 190px;
       min-height: 58px;
       padding: 0 28px;
@@ -617,6 +624,10 @@
     }
 
     .result-actions {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
       text-align: center;
     }
 
@@ -716,9 +727,9 @@
       <div class="screen-overlay" id="startOverlay">
         <div class="start-card">
           <div class="start-title">Select Song</div>
-          <div class="start-subtitle" id="startSubtitle">Tutorial / D F J K</div>
+          <div class="start-subtitle" id="startSubtitle">Select a song / click a song to preview</div>
           <div class="song-options" role="group" aria-label="Song">
-            <button type="button" class="song-option active" data-song="Tutorial" aria-pressed="true">
+            <button type="button" class="song-option" data-song="Tutorial" aria-pressed="false">
               <span class="song-name">Tutorial</span>
               <span class="song-desc">first song / easy groove</span>
               <span class="song-meta" id="tutorialSongMeta">loading...</span>
@@ -745,7 +756,7 @@
               <span class="difficulty-desc">wide spacing / light loops</span>
               <span class="difficulty-meta" id="easyMeta">loading...</span>
             </button>
-            <button type="button" class="difficulty-option active" data-difficulty="Normal" aria-pressed="true">
+            <button type="button" class="difficulty-option" data-difficulty="Normal" aria-pressed="false">
               <span class="difficulty-name">Normal</span>
               <span class="difficulty-desc">current chart / fuller pattern</span>
               <span class="difficulty-meta" id="normalMeta">loading...</span>
@@ -765,7 +776,7 @@
             <button type="button" class="key-reset" id="keyResetBtn">Reset</button>
           </div>
           <div class="key-bind-message" id="keyBindMessage" aria-live="polite"></div>
-          <button type="button" class="big-start" id="startBtn">Start</button>
+          <button type="button" class="big-start" id="startBtn" disabled>Select Song</button>
         </div>
       </div>
       <div class="screen-overlay hidden" id="resultOverlay">
@@ -785,7 +796,8 @@
             <div class="result-item"><span>Story Impact</span><strong id="resultStoryText">Stable Live</strong></div>
           </div>
           <div class="result-actions">
-            <button type="button" class="replay-button" id="restartBtn">Replay</button>
+            <button type="button" class="replay-button" id="restartBtn">REPLAY</button>
+            <button type="button" class="select-button" id="selectBtn">SELECT SONG</button>
           </div>
         </div>
       </div>
@@ -825,6 +837,7 @@
     const startBtn = document.getElementById('startBtn');
     const pauseBtn = document.getElementById('pauseBtn');
     const restartBtn = document.getElementById('restartBtn');
+    const selectBtn = document.getElementById('selectBtn');
     const soundBtn = document.getElementById('soundBtn');
     const gameHud = document.getElementById('gameHud');
     const startOverlay = document.getElementById('startOverlay');
@@ -933,10 +946,12 @@
     let tutorialChart = null;
     let classRoomChart = null;
     let recruitmentChart = null;
-    let selectedSong = 'Tutorial';
-    let selectedDifficulty = 'Normal';
+    let selectedSong = null;
+    let selectedDifficulty = null;
     let chart = null;
     let audio = null;
+    let previewAudio = null;
+    let previewAudioSrc = null;
     let audioContext = null;
     let notes = [];
     let chartGroups = [];
@@ -978,6 +993,7 @@
     let remappingLane = -1;
     let gamePhase = 'idle';
     let countdownStartedAt = 0;
+    let countdownSoundIndex = -1;
     let playbackRequested = false;
     let keyGuideStartedAt = -Infinity;
     let startBannerUntil = 0;
@@ -1024,10 +1040,12 @@
     }
 
     function getActiveChart() {
+      if (!selectedSong) return null;
       if (selectedSong === 'Tutorial') return tutorialChart;
       if (selectedSong === 'ClassRoom') return classRoomChart;
       if (selectedSong === 'Recruitment') return recruitmentChart;
-      return chartsByDifficulty[selectedDifficulty] || chartsByDifficulty.Normal;
+      if (selectedSong === 'Main') return selectedDifficulty ? chartsByDifficulty[selectedDifficulty] : null;
+      return null;
     }
 
     function handleAudioEnded() {
@@ -1042,9 +1060,59 @@
         audio.pause();
         audio.removeEventListener('ended', handleAudioEnded);
       }
+      if (!chart) {
+        audio = null;
+        return;
+      }
       audio = new Audio(chart.audio || 'main.wav');
       audio.preload = 'auto';
       audio.addEventListener('ended', handleAudioEnded);
+    }
+
+    function stopPreviewAudio(reset = true) {
+      if (!previewAudio) return;
+      previewAudio.pause();
+      previewAudio.onended = null;
+      if (reset) previewAudio.currentTime = 0;
+      previewAudio = null;
+      previewAudioSrc = null;
+    }
+
+    function getSongPreviewChart(song) {
+      if (song === 'Tutorial') return tutorialChart;
+      if (song === 'ClassRoom') return classRoomChart;
+      if (song === 'Recruitment') return recruitmentChart;
+      if (song === 'Main') return (selectedDifficulty && chartsByDifficulty[selectedDifficulty]) || chartsByDifficulty.Normal || chartsByDifficulty.Easy;
+      return null;
+    }
+
+    function playSongPreview(targetChart, { keepSameAudio = false } = {}) {
+      if (!targetChart || muted) {
+        stopPreviewAudio();
+        return;
+      }
+      const source = targetChart.audio || 'main.wav';
+      if (keepSameAudio && previewAudio && previewAudioSrc === source && !previewAudio.ended) {
+        previewAudio.volume = 0.24;
+        if (previewAudio.paused) {
+          previewAudio.play().catch(() => {
+            stopPreviewAudio();
+          });
+        }
+        return;
+      }
+      stopPreviewAudio();
+      previewAudioSrc = source;
+      previewAudio = new Audio(source);
+      previewAudio.preload = 'auto';
+      previewAudio.volume = 0.24;
+      previewAudio.onended = () => {
+        previewAudio = null;
+        previewAudioSrc = null;
+      };
+      previewAudio.play().catch(() => {
+        stopPreviewAudio();
+      });
     }
 
     function updateDifficultyUI() {
@@ -1071,10 +1139,24 @@
       for (const [difficulty, target] of Object.entries(difficultyMeta)) {
         if (target && chartsByDifficulty[difficulty]) target.textContent = summarizeChart(chartsByDifficulty[difficulty]);
       }
-      if (startSubtitle && chart) {
+      const canStart = Boolean(chart);
+      if (startBtn) {
+        startBtn.disabled = !canStart;
+        startBtn.textContent = canStart ? 'Start' : selectedSong === 'Main' ? 'Select Difficulty' : 'Select Song';
+      }
+      if (chart) {
         const songName = chart.songTitle || (selectedSong === 'Main' ? 'Main Song' : selectedSong);
         const modeText = selectedSong === 'Tutorial' ? 'First Song' : selectedSong === 'ClassRoom' ? 'Next Song' : selectedSong === 'Recruitment' ? 'Standoff Song' : chart.difficulty;
         startSubtitle.textContent = `${songName} / ${modeText} / ${laneDefs.map((lane) => lane.key).join(' ')}`;
+      } else if (startSubtitle) {
+        startSubtitle.textContent = selectedSong === 'Main'
+          ? `Main Song / choose Easy, Normal, or Hard / ${laneDefs.map((lane) => lane.key).join(' ')}`
+          : 'Select a song / click a song to preview';
+      }
+      if (!chart) {
+        chartInfo.textContent = 'Select a song to preview and start';
+        countText.textContent = '0 / 0';
+        progressFill.style.width = '0%';
       }
     }
 
@@ -1125,9 +1207,11 @@
           }
         }
       }
-      chart = getActiveChart() || chartsByDifficulty.Normal;
+      chart = null;
+      notes = [];
+      chartGroups = [];
       installAudioForChart();
-      prepareChart();
+      resetRunState();
       updateDifficultyUI();
       ready = true;
       statusText.textContent = '';
@@ -1150,23 +1234,34 @@
       prepareChart();
       updateDifficultyUI();
       statusText.textContent = '';
+      playSongPreview(chart, { keepSameAudio: true });
     }
 
     function selectSong(song) {
       cancelKeyRemap();
       selectedSong = song;
-      if (!ready || !getActiveChart()) {
+      selectedDifficulty = null;
+      const previewChart = getSongPreviewChart(song);
+      if (!ready) {
         updateDifficultyUI();
         return;
       }
       running = false;
       chart = getActiveChart();
-      installAudioForChart();
       resultOverlay.classList.add('hidden');
       startOverlay.classList.remove('hidden');
-      prepareChart();
+      if (chart) {
+        installAudioForChart();
+        prepareChart();
+      } else {
+        installAudioForChart();
+        notes = [];
+        chartGroups = [];
+        resetRunState();
+      }
       updateDifficultyUI();
       statusText.textContent = '';
+      playSongPreview(previewChart);
     }
 
     function prepareChart() {
@@ -1240,10 +1335,39 @@
       gamePhase = 'idle';
       gameHud.classList.remove('countdown-hidden');
       countdownStartedAt = 0;
+      countdownSoundIndex = -1;
       playbackRequested = false;
       keyGuideStartedAt = -Infinity;
       startBannerUntil = 0;
       updateHud();
+    }
+
+    function resetGameState() {
+      stopPreviewAudio();
+      if (audio) {
+        audio.pause();
+        audio.currentTime = 0;
+      }
+      running = false;
+      resetRunState();
+    }
+
+    function goToSelectScreen() {
+      blurControls();
+      if (!ready) return;
+      cancelKeyRemap();
+      resetGameState();
+      selectedSong = null;
+      selectedDifficulty = null;
+      chart = null;
+      notes = [];
+      chartGroups = [];
+      installAudioForChart();
+      resetRunState();
+      resultOverlay.classList.add('hidden');
+      startOverlay.classList.remove('hidden');
+      updateDifficultyUI();
+      statusText.textContent = '';
     }
 
     function getNowMs() {
@@ -1498,12 +1622,29 @@
       playTone({ frequency: 2300, endFrequency: 2760, type: 'triangle', volume: 0.015, duration: 0.045, attack: 0.0015, delay: 0.098 });
     }
 
+    function playCountdownSound(label) {
+      if (label === 'READY') {
+        playTone({ frequency: 420, endFrequency: 640, type: 'triangle', volume: 0.026, duration: 0.09, attack: 0.003 });
+        playTone({ frequency: 840, endFrequency: 980, type: 'triangle', volume: 0.014, duration: 0.05, attack: 0.002, delay: 0.06 });
+        return;
+      }
+      if (label === 'START') {
+        playTone({ frequency: 620, endFrequency: 1240, type: 'triangle', volume: 0.04, duration: 0.13, attack: 0.003 });
+        playTone({ frequency: 1500, endFrequency: 2100, type: 'square', volume: 0.018, duration: 0.07, attack: 0.002, delay: 0.055 });
+        return;
+      }
+      const pitch = label === '1' ? 760 : label === '2' ? 680 : 600;
+      playTone({ frequency: pitch, endFrequency: pitch * 0.72, type: 'square', volume: 0.032, duration: 0.075, attack: 0.002 });
+      playTone({ frequency: pitch * 2, endFrequency: pitch * 1.28, type: 'triangle', volume: 0.01, duration: 0.038, attack: 0.0015 });
+    }
+
     function startGame() {
-      if (!ready || gamePhase === 'countdown' || running) return;
+      if (!ready || !chart || gamePhase === 'countdown' || running) return;
       cancelKeyRemap();
       blurControls();
       canvas.focus({ preventScroll: true });
       ensureAudioContext();
+      stopPreviewAudio(true);
       resultOverlay.classList.add('hidden');
       startOverlay.classList.add('hidden');
       gameHud.classList.add('countdown-hidden');
@@ -1513,6 +1654,7 @@
       running = false;
       gamePhase = 'countdown';
       countdownStartedAt = performance.now();
+      countdownSoundIndex = -1;
       playbackRequested = false;
       keyGuideStartedAt = -Infinity;
       startBannerUntil = 0;
@@ -1542,7 +1684,27 @@
 
     function updateCountdown(frameNow) {
       if (gamePhase !== 'countdown') return;
-      if (frameNow - countdownStartedAt >= countdownLeadMs) beginPlaybackAfterCountdown();
+      const elapsed = frameNow - countdownStartedAt;
+      if (elapsed >= countdownLeadMs) {
+        if (countdownSoundIndex < countdownPhases.length) {
+          countdownSoundIndex = countdownPhases.length;
+          playCountdownSound('START');
+        }
+        beginPlaybackAfterCountdown();
+        return;
+      }
+      let phaseStart = 0;
+      for (let i = 0; i < countdownPhases.length; i += 1) {
+        const phase = countdownPhases[i];
+        if (elapsed < phaseStart + phase.durationMs) {
+          if (countdownSoundIndex !== i) {
+            countdownSoundIndex = i;
+            playCountdownSound(phase.label);
+          }
+          return;
+        }
+        phaseStart += phase.durationMs;
+      }
     }
 
     function pauseGame() {
@@ -1557,11 +1719,9 @@
     function restartGame() {
       blurControls();
       if (!ready) return;
-      audio.pause();
-      audio.currentTime = 0;
-      running = false;
-      resetRunState();
+      resetGameState();
       resultOverlay.classList.add('hidden');
+      startOverlay.classList.add('hidden');
       statusText.textContent = '';
       startGame();
     }
@@ -1570,6 +1730,7 @@
       blurControls();
       muted = !muted;
       soundBtn.textContent = muted ? 'Sound Off' : 'Sound On';
+      if (muted) stopPreviewAudio();
     }
 
     function keyLabelForCode(code) {
@@ -2764,6 +2925,7 @@
     startBtn.addEventListener('click', startGame);
     pauseBtn.addEventListener('click', pauseGame);
     restartBtn.addEventListener('click', restartGame);
+    selectBtn.addEventListener('click', goToSelectScreen);
     soundBtn.addEventListener('click', toggleSound);
     for (const button of songBtns) {
       button.addEventListener('click', () => selectSong(button.dataset.song));
