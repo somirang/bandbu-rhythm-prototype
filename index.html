@@ -925,6 +925,10 @@
     const maxCanvasDpr = 1.5;
     const assetPaths = {
       background: 'assets/ui/background.png',
+      tutorialBackground: 'assets/ui/tutorial_background.png',
+      classroomBackground: 'assets/ui/classroom_background.png',
+      recruitmentBackground: 'assets/ui/recruitment_background.png',
+      mainBackground: 'assets/ui/main_background.png',
       tapNote: 'assets/ui/tap_note.png',
       holdHead: 'assets/ui/hold_head.png',
       holdTail: 'assets/ui/hold_tail.png',
@@ -2201,9 +2205,18 @@
       return true;
     }
 
+    function getCurrentBackgroundImage() {
+      if (selectedSong === 'Tutorial') return assets.tutorialBackground;
+      if (selectedSong === 'ClassRoom') return assets.classroomBackground;
+      if (selectedSong === 'Recruitment') return assets.recruitmentBackground;
+      if (selectedSong === 'Main') return assets.mainBackground;
+      return assets.background;
+    }
+
     function drawBackground(layout) {
       ctx.clearRect(0, 0, layout.width, layout.height);
-      if (!drawCoverImage(assets.background, 0, 0, layout.width, layout.height)) {
+      const backgroundImage = getCurrentBackgroundImage();
+      if (!drawCoverImage(backgroundImage, 0, 0, layout.width, layout.height)) {
         const gradient = ctx.createLinearGradient(0, 0, layout.width, layout.height);
         gradient.addColorStop(0, '#482c9c');
         gradient.addColorStop(0.5, '#ff8fc4');

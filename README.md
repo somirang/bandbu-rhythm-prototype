@@ -40,6 +40,10 @@
 - `note_chart_normal_4key.csv`: Main Normal 노트 제작 검토용 CSV입니다.
 - `note_chart_hard_4key.csv`: Main Hard 노트 제작 검토용 CSV입니다.
 - `assets/ui`: 현재 UI와 노트 참고 에셋입니다.
+- `assets/ui/tutorial_background.png`: Tutorial 곡 전용 학교 앞 배경입니다.
+- `assets/ui/classroom_background.png`: ClassRoom 곡 전용 교실 배경입니다.
+- `assets/ui/recruitment_background.png`: Recruitment 곡 전용 영입 장면 교실 배경입니다.
+- `assets/ui/main_background.png`: Main 곡 전용 옥상 공연장 배경입니다.
 
 ## 판정 기준
 
